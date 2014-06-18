@@ -1,0 +1,10 @@
+This is an expirence.
+<<<<<<< HEAD
+mine too
+milena
+lh
+aabo milyo hola
+=======
+kjabdfkjdsbiv
+>>>>>>> 399531a6967134b3b22773f46e8de1cde990e311
+fadfadsfasdfadlkajdlfjal
