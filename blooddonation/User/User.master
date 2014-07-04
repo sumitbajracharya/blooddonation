@@ -75,13 +75,14 @@
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-     <%--<img src="Assets/Images/Slider/u28_normal.jpg" alt="1" class="img-responsive" />
-        <asp:Image ID="Image2" runat="server" ImageUrl="~/Assets/Images/Slider/u28_normal.jpg" />
+     <%--<img src="Assets/Images/Slider/u28_normal.jpg" alt="1" class="img-responsive" />--%>
+        <asp:Image ID="Image2" runat="server" ImageUrl="~/Assets/Images/Slider/slider3.jpg" />
          <div class="carousel-caption">
           
        <!--  Caption Here -->
@@ -90,16 +91,23 @@
 
      <div class="item">
      <%-- <img src="Assets/Images/Slider/u32_normal.jpg" alt="1" class="img-responsive" />--%>
-     <asp:Image ID="Image6" runat="server" ImageUrl="~/Assets/Images/Slider/u32_normal.jpg" />
+     <asp:Image ID="Image6" runat="server" ImageUrl="~/Assets/Images/Slider/slider1.jpg" />
       <div class="carousel-caption">
        <!--  Caption Here -->
       </div>
     </div>
 
+      <div class="item">
+     <%-- <img src="Assets/Images/Slider/u32_normal.jpg" alt="1" class="img-responsive" />--%>
+     <asp:Image ID="Image5" runat="server" ImageUrl="~/Assets/Images/Slider/slider4.jpg" />
+      <div class="carousel-caption">
+       <!--  Caption Here -->
+      </div>
+    </div>
 
     <div class="item">
    <%-- <img src="Assets/Images/Slider/u30_normal.jpg" alt="1" class="img-responsive" />--%>
-     <asp:Image ID="Image3" runat="server" ImageUrl="~/Assets/Images/Slider/u30_normal.jpg" />
+     <asp:Image ID="Image3" runat="server" ImageUrl="~/Assets/Images/Slider/slider2.jpg" />
       <div class="carousel-caption">
        <!--  Caption Here -->
       </div>
