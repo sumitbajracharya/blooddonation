@@ -4,66 +4,64 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
+
+
 <div class="row">
- <div class="col-md-12">
-      
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
+  <div class="col-md-4"><h3>Current Blood Request</h3>
+  
+  <ul>
+  <li>1. Sushma Karki Baneshor 9800000 </li>
+ <li>1. Sushma Karki Baneshor 9800000 </li>
+  <li>1. Sushma Karki Baneshor 9800000 </li>
+   <li>1. Sushma Karki Baneshor 9800000 </li>
+    <li>1. Sushma Karki Baneshor 9800000 </li>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-     <%--<img src="Assets/Images/Slider/u28_normal.jpg" alt="1" class="img-responsive" />--%>
-        <asp:Image ID="Image2" runat="server" ImageUrl="~/Assets/Images/Slider/u28_normal.jpg" />
-         <div class="carousel-caption">
-          
-       <!--  Caption Here -->
-      </div>
-    </div>
-
-     <div class="item">
-     <%-- <img src="Assets/Images/Slider/u32_normal.jpg" alt="1" class="img-responsive" />--%>
-     <asp:Image ID="Image6" runat="server" ImageUrl="~/Assets/Images/Slider/u32_normal.jpg" />
-      <div class="carousel-caption">
-       <!--  Caption Here -->
-      </div>
-    </div>
-
-
-    <div class="item">
-   <%-- <img src="Assets/Images/Slider/u30_normal.jpg" alt="1" class="img-responsive" />--%>
-     <asp:Image ID="Image3" runat="server" ImageUrl="~/Assets/Images/Slider/u30_normal.jpg" />
-      <div class="carousel-caption">
-       <!--  Caption Here -->
-      </div>
-    </div>
-    ...
+  
+  </ul>
+  
   </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
-  </div> 
-</div>
-<div class="row">
-  <div class="col-md-9"> 
-
-<div class="row">
-  <div class="col-md-6">Current Blood Request</div>
-  <div class="col-md-6">
+  <div class="col-md-8">
   <div class="row">
-   <div class="col-md-12">ADVANCE BLOOD REQUEST</div>
-  <div class="col-md-12">BLOOD CENTERS</div>
+   <div class="col-md-12"><h3>ADVANCE BLOOD REQUEST</h3>
+  <div class="row">
+  <div class="col-md-3"><h4>Date</h4>
+  <h6>07/05/2014</h6>
+  <h6>07/05/2014</h6>
+<h6>07/05/2014</h6>
+<h6>07/05/2014</h6>
+  <h6>07/05/2014</h6>
+  
+  </div>
+  <div class="col-md-9"><h4>Program</h4>
+   <h6>Urusha Shrestha</h6>
+  <h6>Urusha Shrestha</h6>
+<h6>Urusha Shrestha</h6>
+<h6>Urusha Shrestha</h6>
+  <h6>07/05/2014</h6>
+  </div>
+</div>
+   </div>
+  <div class="col-md-12"><h3>BLOOD CENTERS</h3>
+  <div class="row">
+  <div class="col-md-3"><h4>Date</h4>
+  <h6>BLOOD BANK</h6>
+ <h6>BLOOD BANK</h6>
+ <h6>BLOOD BANK</h6>
+ <h6>BLOOD BANK</h6>
+  
+  </div>
+  <div class="col-md-9"><h4>Program</h4>
+   <h6>Bhrikuti Mandap, Kathmandu Phone no:- 01-4229344</h6>
+   <h6>Bhrikuti Mandap, Kathmandu Phone no:- 01-4229344</h6>
+   <h6>Bhrikuti Mandap, Kathmandu Phone no:- 01-4229344</h6>
+   <h6>Bhrikuti Mandap, Kathmandu Phone no:- 01-4229344</h6>
+ 
+  </div>
+</div>
+  
+  
+  
+  </div>
   </div>
   </div>
 </div>
