@@ -14,6 +14,8 @@
    
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -25,8 +27,9 @@
      <div class="row">
   <div class="col-md-3">
   <!-- Main Logo 225px x 224px -->
-      <asp:Image ID="Image1" ImageUrl="~/Assets/Images/logo.jpg" runat="server" CssClass="img-responsive" /></div>
-  <div class="col-md-9">  <asp:Image ID="Image4" ImageUrl="~/Assets/Images/header.jpg" runat="server" CssClass="img-responsive" />
+      <asp:Image ID="Image1" ImageUrl="~/Assets/Images/logo.png" runat="server" CssClass="img-responsive" /></div>
+      <!-- header banner width 700 x 200 -->
+  <div class="col-md-9">  <asp:Image ID="Image4" height="200" Width="850" ImageUrl="~/Assets/Images/header.jpg" runat="server" CssClass="img-responsive" />
   
   </div>
 </div>
@@ -149,7 +152,9 @@
 
   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
-        </asp:ContentPlaceHolder></div>
+        </asp:ContentPlaceHolder>
+        
+       </div>
 
          <!-- Start Event -->
   <div class="col-md-3">
