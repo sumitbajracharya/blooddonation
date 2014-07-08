@@ -9,6 +9,21 @@
 <body>
     <form id="form1" runat="server">
     <div>
+
+    <asp:TextBox ID="txtLocation" runat="server"></asp:TextBox>
+    <asp:Button runat="server" ID="btnAdd" Text="Add" />
+
+    <br /><br /><br /><br />
+
+    <asp:GridView ID="gdvLocation" runat="server" onrowcommand="GridView1_RowCommand">
+    <Columns>
+    <asp:TemplateField>
+    <ItemTemplate>
+    <asp:Button ID="BtnDelete" runat="server" text="Delete" CommandArgument='<%#Eval("LocationID") %>' />
+    </ItemTemplate>
+    </asp:TemplateField>
+    </Columns>
+    </asp:GridView>
     
     </div>
     </form>
