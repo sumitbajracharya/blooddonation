@@ -17,50 +17,35 @@
     
         <table class="auto-style1">
             <tr>
-                <td colspan="4">WEB SETTINGS</td>
+                <td colspan="2">WEB SETTINGS</td>
             </tr>
             <tr>
-                <td>Add Location</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>Location</td>
                 <td>
-                    <asp:Button ID="btnAddLocation" runat="server" Text="ADD" />
                     <asp:Button ID="btnEditLocation" runat="server" Text="EDIT" />
                 </td>
             </tr>
             <tr>
-                <td>Add Blood Center</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>Blood Center</td>
                 <td>
-                    <asp:Button ID="btnAdd" runat="server" Text="ADD" />
                     <asp:Button ID="btnEditBloodCenter" runat="server" Text="EDIT" />
                 </td>
             </tr>
             <tr>
-                <td>Add Blood Group</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>Blood Group</td>
                 <td>
-                    <asp:Button ID="btnAddLocation1" runat="server" Text="ADD" />
                     <asp:Button ID="btnEditBloodGroup" runat="server" Text="EDIT" />
                 </td>
             </tr>
             <tr>
-                <td>Add Image To The Slider</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>Slider Image </td>
                 <td>
-                    <asp:Button ID="btnAddLocation2" runat="server" Text="ADD" />
                     <asp:Button ID="btnEditImageToTheSlider" runat="server" Text="EDIT" />
                 </td>
             </tr>
             <tr>
-                <td>Add News Artical</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>News Artical</td>
                 <td>
-                    <asp:Button ID="btnAddLocation3" runat="server" Text="ADD" />
                     <asp:Button ID="btnEditNewsArtical" runat="server" Text="EDIT" />
                 </td>
             </tr>
