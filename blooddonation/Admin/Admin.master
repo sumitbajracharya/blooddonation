@@ -64,26 +64,8 @@
   <div class="col-md-3">
  <ul class="list-group">
   <li class="list-group-item"><a href="DashBoard.aspx">Dash Board</a></li>
-
- 
-  <li class="list-group-item">
-  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> User Management  </a>
-    
-    </li>
-    <div id="collapseOne" class="panel-collapse collapse out">
-     
-      
-  <li class="list-group-item" style="padding-left:50px;"><a href="UserManagement.aspx"> LIst Member</a></li>
-  <li id="Verify" class="list-group-item" style="padding-left:50px;"><a href="UserManagement.aspx#Verify">Verify Member</a></li>
-  <li class="list-group-item" style="padding-left:50px;">Update Member</li>
-  
-     
-    </div>
-
- 
-  
-
-  <li class="list-group-item">Event Verify</li>
+ <li class="list-group-item"><a href="UserManagement.aspx">User Management </a></li>
+<li class="list-group-item">Event Verify</li>
   <li class="list-group-item">Advance Blood requests</li>
   <li class="list-group-item">Settings</li>
 </ul>
