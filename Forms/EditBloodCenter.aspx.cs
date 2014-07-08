@@ -11,4 +11,14 @@ public partial class EditBloodCenter : System.Web.UI.Page
     {
 
     }
+    protected void LnkAddCenter_Click(object sender, EventArgs e)
+    {
+        pnlAddBloodCenter.Visible = true;
+        PnlEditBloodCenter.Visible = false;
+    }
+    protected void LnkEditCenter_Click(object sender, EventArgs e)
+    {
+        pnlAddBloodCenter.Visible = false;
+        PnlEditBloodCenter.Visible = true;
+    }
 }
