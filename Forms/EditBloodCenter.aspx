@@ -9,11 +9,11 @@
 <body>
     <form id="form1" runat="server">
     <div>
-
+    <!--Added two buttons to toggle between two panels -->
         <asp:LinkButton ID="LnkAddCenter" runat="server" onclick="LnkAddCenter_Click">Add Blood Centers</asp:LinkButton>   
          &nbsp;&nbsp;&nbsp;&nbsp;   
-         <asp:LinkButton ID="LnkEditCenter" runat="server" 
-            onclick="LnkEditCenter_Click">Edit Blood Centers</asp:LinkButton>      
+         <asp:LinkButton ID="LnkEditCenter" runat="server" onclick="LnkEditCenter_Click">Edit Blood Centers</asp:LinkButton>  
+             
     <!-- Add Blood Center Form -->
     <asp:Panel ID="pnlAddBloodCenter" runat="server" GroupingText="Add Blood Centers">
     
