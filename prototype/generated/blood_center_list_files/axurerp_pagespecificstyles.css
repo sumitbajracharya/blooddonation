@@ -1,0 +1,168 @@
+﻿body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+#u0 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:404px;
+    height:114px
+}
+
+.u1_normal {
+    background-image: url('../blood_center_list_files/u1_normal.png');
+}
+
+.u1_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:178px;
+    height:48px;
+}
+
+#u1_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:184px;
+    height:54px;
+}
+
+.u2 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:174px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3_normal {
+    background-image: url('../blood_center_list_files/u3_normal.png');
+}
+
+.u3_container {
+    position:absolute;
+    left:178px;
+    top:0px;
+    width:221px;
+    height:48px;
+}
+
+#u3_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:227px;
+    height:54px;
+}
+
+.u4 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:217px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5_normal {
+    background-image: url('../blood_center_list_files/u5_normal.png');
+}
+
+.u5_container {
+    position:absolute;
+    left:0px;
+    top:48px;
+    width:178px;
+    height:61px;
+}
+
+#u5_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:184px;
+    height:67px;
+}
+
+.u6 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:174px;
+    height:41px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7_normal {
+    background-image: url('../blood_center_list_files/u7_normal.png');
+}
+
+.u7_container {
+    position:absolute;
+    left:178px;
+    top:48px;
+    width:221px;
+    height:61px;
+}
+
+#u7_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:227px;
+    height:67px;
+}
+
+.u8 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:217px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

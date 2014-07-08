@@ -12,11 +12,13 @@
             width: 500px;
         }
     </style>
-    <asp:ScriptManager runat="server"></asp:ScriptManager>
+   
+    
     
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <div>
     
         <table class="auto-style1">
@@ -59,7 +61,11 @@
             <tr>
                 <td>Location</td>
                 <td>
-                    <asp:DropDownList ID="ddlDistrict" runat="server">
+                    
+                    <asp:DropDownList ID="ddlDistrict" runat="server"
+                        <cc1:TextBoxWatermarkExtender ID="TextBoxWatermarkExtender1" runat="server"></cc1:TextBoxWatermarkExtender>
+                        >
+                        
                         <asp:ListItem>Kathmandu</asp:ListItem>
                     </asp:DropDownList>
                     <br />
@@ -71,9 +77,11 @@
             <tr>
                 <td>Date</td>
                 <td>
+                    
                     <asp:TextBox ID="txtDate" runat="server"></asp:TextBox>
-                    <cc1:CalendarExtender ID="txtDate_CalendarExtender" runat="server" TargetControlID="txtDate">
+                     <cc1:CalendarExtender ID="txtDate_CalendarExtender" runat="server" TargetControlID="txtDate">
                     </cc1:CalendarExtender>
+                   
                 </td>
             </tr>
             <tr>
@@ -90,8 +98,6 @@
                 <td>Phone no.</td>
                 <td>
                     <asp:TextBox ID="txtPhonenumber" runat="server" Height="16px" Width="168px"></asp:TextBox>
-                    <cc1:CalendarExtender ID="txtPhonenumber_CalendarExtender" runat="server" TargetControlID="txtPhonenumber">
-                    </cc1:CalendarExtender>
                 </td>
             </tr>
             <tr>
