@@ -9,6 +9,17 @@
 <body>
     <form id="form1" runat="server">
     <div>
+    <!-- Add Blood Center Form -->
+    <asp:Panel ID="AddBloodCenter" runat="server" GroupingText="Add Blood Centers">
+    
+    </asp:Panel>
+
+
+    <!-- Edit Blood Center Form -->
+    <asp:Panel ID="Panel1" runat="server" GroupingText="Add Blood Centers">
+    
+    </asp:Panel>
+
     
     </div>
     </form>
