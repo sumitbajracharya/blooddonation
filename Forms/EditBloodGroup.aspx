@@ -9,6 +9,20 @@
 <body>
     <form id="form1" runat="server">
     <div>
+    <asp:TextBox ID="txtBloodGroup" runat="server"></asp:TextBox>
+    <asp:Button runat="server" ID="btnAdd" Text="Add" />
+
+    <br /><br /><br /><br />
+
+    <asp:GridView ID="gdvBloodGroup" runat="server" onrowcommand="GridView1_RowCommand">
+    <Columns>
+    <asp:TemplateField>
+    <ItemTemplate>
+    <asp:Button ID="BtnDelete" runat="server" text="Delete" CommandArgument='<%#Eval("BloodGroupID") %>' />
+    </ItemTemplate>
+    </asp:TemplateField>
+    </Columns>
+    </asp:GridView>
     
     </div>
     </form>
