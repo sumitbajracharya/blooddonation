@@ -19,7 +19,7 @@
     
         <table class="table-responsive table form-group exampleInputEmail1" border="1">
             <tr>
-                <td colspan="2">Advance Blood Request Form</td>
+                <td colspan="2">Advance Blood Request Form s</td>
             </tr>
             <tr>
                 <td>Full Name</td>
