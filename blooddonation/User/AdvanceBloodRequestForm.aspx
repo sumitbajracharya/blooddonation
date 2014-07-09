@@ -16,7 +16,7 @@
             <tr>
                 <td class="col-sm-3">Full Name</td>
                 <td>
-                    <asp:TextBox ID="txtFullname"  placeholder="Enter email" cssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtFullname"  placeholder="FullName" cssClass="form-control" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -117,8 +117,8 @@
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
-                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" />
+                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="btn btn-default" />
+                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="btn btn-default" />
                 </td>
             </tr>
         </table>
