@@ -14,7 +14,7 @@
 
     <br /><br /><br /><br />
 
-    <asp:GridView ID="gdvBloodGroup" runat="server" onrowcommand="GridView1_RowCommand">
+    <asp:GridView ID="gdvBloodGroup" runat="server">
     <Columns>
     <asp:TemplateField>
     <ItemTemplate>
