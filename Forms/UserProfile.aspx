@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="DonarDetails.aspx.cs" Inherits="DonarDetails" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="UserProfile.aspx.cs" Inherits="UserProfile" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -9,6 +9,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
+    <p align="right"><a href=EditUser.aspx >Edit </a> </p>
+
     <table>
     
     <tr>
@@ -72,11 +74,8 @@
     <td colspan='2'><%#Eval("BestAvalibility")%></td>
     </tr>
 
-    <tr>
-    <td colspan='3'><center><asp:button ID="btnRequest" runat="server" Text="send Request" /></center></td>
-    </tr>
-
     </table>
+    
     </div>
     </form>
 </body>

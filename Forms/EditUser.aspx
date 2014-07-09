@@ -22,19 +22,19 @@
             <tr>
                 <td>First Name</td>
                 <td>
-                    <asp:TextBox ID="TextBox17" runat="server" Height="18px" Width="310px"></asp:TextBox>
+                    <asp:TextBox ID="txtFName" runat="server" Height="18px" Width="310px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Last Name</td>
                 <td>
-                    <asp:TextBox ID="TextBox16" runat="server" Height="16px" Width="307px"></asp:TextBox>
+                    <asp:TextBox ID="txtLName" runat="server" Height="16px" Width="307px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Date of Birth</td>
                 <td>
-                    <asp:TextBox ID="TextBox15" runat="server"></asp:TextBox>
+                    <asp:DropDownList ID="ddlYear" ></asp:DropDownList><asp:DropDownList ID="ddlMonths" ></asp:DropDownList><asp:DropDownList ID="ddlDate" ></asp:DropDownList>
                 </td>
             </tr>
             <tr>
