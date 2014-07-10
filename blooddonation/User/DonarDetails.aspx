@@ -4,12 +4,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
- <table>
+  <table class="table table-bordered">
     
     <tr>
-    <td rowspan='4'><img src=<%#Eval("ProfilePicture")%>></td>
-    <td>Name:</td>
-    <td><%#Eval("Name")%></td>
+    <td rowspan='4'><img width="150" src='<%#Eval("ProfilePicture")%>'></td>
+    <td class="col-sm-3">Name:</td>
+    <td><%#Eval("Name")%>asdfasdf</td>
     </tr>
 
     <tr>

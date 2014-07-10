@@ -6,7 +6,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
  
-        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        
  
     
         <table class="table table-bordered">
