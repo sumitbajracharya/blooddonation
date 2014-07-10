@@ -1,15 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="EditBloodGroup.aspx.cs" Inherits="EditBloodGroup" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.master" AutoEventWireup="true" CodeFile="EditBloodGroup.aspx.cs" Inherits="Admin_EditBloodGroup" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
 
 <asp:TextBox ID="txtBloodGroup" runat="server" cssClass="form-control pull-left" Width="40%"></asp:TextBox>
     <asp:Button runat="server" ID="btnAdd"  CssClass="btn btn-default" Text="Add" />
@@ -26,8 +20,7 @@
     </Columns>
     </asp:GridView>
     
-    </div>
-    </form>
-    
-</body>
-</html>
+
+   
+</asp:Content>
+
