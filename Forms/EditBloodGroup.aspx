@@ -9,8 +9,10 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <asp:TextBox ID="txtBloodGroup" runat="server"></asp:TextBox>
-    <asp:Button runat="server" ID="btnAdd" Text="Add" />
+    
+
+<asp:TextBox ID="txtBloodGroup" runat="server" cssClass="form-control pull-left" Width="40%"></asp:TextBox>
+    <asp:Button runat="server" ID="btnAdd"  CssClass="btn btn-default" Text="Add" />
 
     <br /><br /><br /><br />
 
@@ -26,5 +28,6 @@
     
     </div>
     </form>
+    
 </body>
 </html>
