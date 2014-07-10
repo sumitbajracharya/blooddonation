@@ -43,7 +43,7 @@ $axure.eventManager.click('u86', function(e) {
 
 if (true) {
 
-	self.location.href=$axure.globalVariableProvider.getLinkUrl('ABOUT_US.html');
+	self.location.href=$axure.globalVariableProvider.getLinkUrl('CONTACT_US.html');
 
 }
 });
