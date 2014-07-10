@@ -12,9 +12,9 @@
   <li><a href="#Update" role="tab" data-toggle="tab">Update Member</a></li>
  
 </ul>
-=======
+
   <li><a href="#Update" role="tab" data-toggle="tab">Update Member</a></li></ul>
->>>>>>> 1239360e3601f14e340b0fd9b53ffa95cfa6c265
+
 
 <!-- Tab panes -->
 <div class="tab-content">
