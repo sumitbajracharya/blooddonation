@@ -5,13 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class AdvanceBloodRequestForm : System.Web.UI.Page
+public partial class AdvanceAndEmergencyBloodRequest : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
-    {
-
-    }
-    protected void FormView1_PageIndexChanging(object sender, FormViewPageEventArgs e)
     {
 
     }
