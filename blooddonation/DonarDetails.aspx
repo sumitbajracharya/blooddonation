@@ -1,12 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/User.master" AutoEventWireup="true" CodeFile="DonarDetails.aspx.cs" Inherits="User_Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="DonarDetails.aspx.cs" Inherits="DonarDetails" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
+<<<<<<< HEAD:blooddonation/User/DonarDetails.aspx
 
   <table class="table table-bordered">
+=======
+    <table class="table table-bordered">
+>>>>>>> cc3579e75851df46bca359f40e5a65fa34aaee7a:blooddonation/DonarDetails.aspx
     
     <tr>
     
@@ -78,5 +82,6 @@
     </tr>
 
     </table>
+
 </asp:Content>
 
