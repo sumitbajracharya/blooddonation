@@ -9,7 +9,7 @@
     <asp:Button runat="server"   CssClass="btn btn-default" ID="btnAdd" Text="Add" />
 
     <br /><br /><br /><br />
-
+    del
     <asp:GridView ID="gdvLocation" runat="server" >
     <Columns>
     <asp:TemplateField>

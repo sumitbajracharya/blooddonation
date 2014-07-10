@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-  <table class="table table-bordered">
+  <table class="table table-bordered">xsv
     <tr>
     <td class="col-sm-2">News Title</td>
     <td><asp:TextBox ID="txtNewsTitle" runat="server" cssClass="form-control"></asp:TextBox></td>

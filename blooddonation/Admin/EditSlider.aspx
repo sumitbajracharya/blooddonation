@@ -7,7 +7,7 @@
  <asp:FileUpload ID="fupSlider" CssClass="btn btn-default" runat="server" />
     <asp:Button runat="server"  CssClass="btn btn-default" ID="btnAdd" Text="Add" />
 
-    <br /><br /><br /><br />
+    <br /><br /><br /><br />del
 
     <asp:GridView ID="gdvSlider" runat="server">
     <Columns>
