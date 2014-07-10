@@ -424,205 +424,7 @@ div {
     word-wrap:break-word;
 }
 
-.u25_menu {
-    background-image: url('../Master_Admin_files/u25_menu.png');
-}
-
-.u25_menu {
-    position:absolute;
-    left:140px;
-    top:145px;
-    width:569px;
-    height:42px;
-}
-
-#u25_menu {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:566px;
-    height:39px;
-}
-
-#u26 {
-    position:absolute;
-    left:3px;
-    top:3px;
-    width:559px;
-    height:32px
-}
-
-.u27_normal {
-    background-image: url('../Master_Admin_files/u27_normal.png');
-}
-
-.u27_container {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:100px;
-    height:27px;
-}
-
-#u27_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:106px;
-    height:33px;
-}
-
-.u28 {
-    position:absolute;
-    left:2px;
-    top:6px;
-    width:96px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u29_normal {
-    background-image: url('../Master_Admin_files/u29_normal.png');
-}
-
-.u29_container {
-    position:absolute;
-    left:100px;
-    top:0px;
-    width:115px;
-    height:27px;
-}
-
-#u29_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:121px;
-    height:33px;
-}
-
-.u30 {
-    position:absolute;
-    left:2px;
-    top:6px;
-    width:111px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u31_normal {
-    background-image: url('../Master_Admin_files/u31_normal.png');
-}
-
-.u31_container {
-    position:absolute;
-    left:215px;
-    top:0px;
-    width:123px;
-    height:27px;
-}
-
-#u31_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:129px;
-    height:33px;
-}
-
-.u32 {
-    position:absolute;
-    left:2px;
-    top:6px;
-    width:119px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u33_normal {
-    background-image: url('../Master_Admin_files/u27_normal.png');
-}
-
-.u33_container {
-    position:absolute;
-    left:338px;
-    top:0px;
-    width:100px;
-    height:27px;
-}
-
-#u33_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:106px;
-    height:33px;
-}
-
-.u34 {
-    position:absolute;
-    left:2px;
-    top:6px;
-    width:96px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u35_normal {
-    background-image: url('../Master_Admin_files/u35_normal.png');
-}
-
-.u35_container {
-    position:absolute;
-    left:438px;
-    top:0px;
-    width:116px;
-    height:27px;
-}
-
-#u35_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:122px;
-    height:33px;
-}
-
-.u36 {
-    position:absolute;
-    left:2px;
-    top:6px;
-    width:112px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u37 {
+.u25 {
     position:absolute;
     left:1126px;
     top:124px;
@@ -636,7 +438,7 @@ div {
     word-wrap:break-word;
 }
 
-.u38 {
+.u26 {
     position:absolute;
     left:968px;
     top:36px;
@@ -650,7 +452,7 @@ div {
     word-wrap:break-word;
 }
 
-.u39 {
+.u27 {
     position:absolute;
     left:1017px;
     top:36px;
@@ -664,11 +466,11 @@ div {
     word-wrap:break-word;
 }
 
-.u40_normal {
-    background-image: url('../Master_Admin_files/u40_normal.png');
+.u28_normal {
+    background-image: url('../Master_Admin_files/u28_normal.png');
 }
 
-.u40_container {
+.u28_container {
     position:absolute;
     left:121px;
     top:20px;
@@ -676,7 +478,7 @@ div {
     height:120px;
 }
 
-#u40_img {
+#u28_img {
     position:absolute;
     left:0px;
     top:0px;
@@ -684,7 +486,7 @@ div {
     height:120px;
 }
 
-.u41 {
+.u29 {
     position:absolute;
     left:2px;
     top:52px;
@@ -698,7 +500,7 @@ div {
     word-wrap:break-word;
 }
 
-#u43 {
+#u31 {
     position:absolute;
     left:621px;
     top:179px;
@@ -707,7 +509,7 @@ div {
     overflow:hidden;
 }
 
-#pd0u43 {
+#pd0u31 {
     position:absolute;
     left:0px;
     top:0px;
@@ -716,7 +518,7 @@ div {
     
 }
 
-.u45 {
+.u33 {
     position:absolute;
     left:343px;
     top:191px;
@@ -730,7 +532,7 @@ div {
     word-wrap:break-word;
 }
 
-.u46 {
+.u34 {
     position:absolute;
     left:996px;
     top:869px;
@@ -748,7 +550,7 @@ div {
     
 }
 
-.u47 {
+.u35 {
     position:absolute;
     left:1097px;
     top:869px;
@@ -766,12 +568,216 @@ div {
     
 }
 
-#u48 {
+#u36 {
     position:absolute;
     left:344px;
     top:220px;
     width:272px;
     height:199px
+}
+
+.u37_normal {
+    background-image: url('../ADVANCE_BLOOD_REQUEST_VERIFYCATION_files/u37_normal.png');
+}
+
+.u37_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:105px;
+    height:20px;
+}
+
+#u37_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:26px;
+}
+
+.u38 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39_normal {
+    background-image: url('../ADVANCE_BLOOD_REQUEST_VERIFYCATION_files/u39_normal.png');
+}
+
+.u39_container {
+    position:absolute;
+    left:105px;
+    top:0px;
+    width:162px;
+    height:20px;
+}
+
+#u39_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:168px;
+    height:26px;
+}
+
+.u40 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:158px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41_normal {
+    background-image: url('../ADVANCE_BLOOD_REQUEST_VERIFYCATION_files/u41_normal.png');
+}
+
+.u41_container {
+    position:absolute;
+    left:0px;
+    top:20px;
+    width:105px;
+    height:50px;
+}
+
+#u41_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:56px;
+}
+
+.u42 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43_normal {
+    background-image: url('../ADVANCE_BLOOD_REQUEST_VERIFYCATION_files/u43_normal.png');
+}
+
+.u43_container {
+    position:absolute;
+    left:105px;
+    top:20px;
+    width:162px;
+    height:50px;
+}
+
+#u43_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:168px;
+    height:56px;
+}
+
+.u44 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:158px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45_normal {
+    background-image: url('../ADVANCE_BLOOD_REQUEST_VERIFYCATION_files/u45_normal.png');
+}
+
+.u45_container {
+    position:absolute;
+    left:0px;
+    top:70px;
+    width:105px;
+    height:52px;
+}
+
+#u45_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:111px;
+    height:58px;
+}
+
+.u46 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:101px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47_normal {
+    background-image: url('../ADVANCE_BLOOD_REQUEST_VERIFYCATION_files/u47_normal.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:105px;
+    top:70px;
+    width:162px;
+    height:52px;
+}
+
+#u47_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:168px;
+    height:58px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:158px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
 }
 
 .u49_normal {
@@ -781,9 +787,9 @@ div {
 .u49_container {
     position:absolute;
     left:0px;
-    top:0px;
+    top:122px;
     width:105px;
-    height:20px;
+    height:72px;
 }
 
 #u49_img {
@@ -791,7 +797,7 @@ div {
     left:-3px;
     top:-3px;
     width:111px;
-    height:26px;
+    height:78px;
 }
 
 .u50 {
@@ -815,9 +821,9 @@ div {
 .u51_container {
     position:absolute;
     left:105px;
-    top:0px;
+    top:122px;
     width:162px;
-    height:20px;
+    height:72px;
 }
 
 #u51_img {
@@ -825,214 +831,10 @@ div {
     left:-3px;
     top:-3px;
     width:168px;
-    height:26px;
+    height:78px;
 }
 
 .u52 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:158px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u53_normal {
-    background-image: url('../ADVANCE_BLOOD_REQUEST_VERIFYCATION_files/u53_normal.png');
-}
-
-.u53_container {
-    position:absolute;
-    left:0px;
-    top:20px;
-    width:105px;
-    height:50px;
-}
-
-#u53_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:111px;
-    height:56px;
-}
-
-.u54 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:101px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u55_normal {
-    background-image: url('../ADVANCE_BLOOD_REQUEST_VERIFYCATION_files/u55_normal.png');
-}
-
-.u55_container {
-    position:absolute;
-    left:105px;
-    top:20px;
-    width:162px;
-    height:50px;
-}
-
-#u55_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:168px;
-    height:56px;
-}
-
-.u56 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:158px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u57_normal {
-    background-image: url('../ADVANCE_BLOOD_REQUEST_VERIFYCATION_files/u57_normal.png');
-}
-
-.u57_container {
-    position:absolute;
-    left:0px;
-    top:70px;
-    width:105px;
-    height:52px;
-}
-
-#u57_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:111px;
-    height:58px;
-}
-
-.u58 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:101px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u59_normal {
-    background-image: url('../ADVANCE_BLOOD_REQUEST_VERIFYCATION_files/u59_normal.png');
-}
-
-.u59_container {
-    position:absolute;
-    left:105px;
-    top:70px;
-    width:162px;
-    height:52px;
-}
-
-#u59_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:168px;
-    height:58px;
-}
-
-.u60 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:158px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u61_normal {
-    background-image: url('../ADVANCE_BLOOD_REQUEST_VERIFYCATION_files/u61_normal.png');
-}
-
-.u61_container {
-    position:absolute;
-    left:0px;
-    top:122px;
-    width:105px;
-    height:72px;
-}
-
-#u61_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:111px;
-    height:78px;
-}
-
-.u62 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:101px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u63_normal {
-    background-image: url('../ADVANCE_BLOOD_REQUEST_VERIFYCATION_files/u63_normal.png');
-}
-
-.u63_container {
-    position:absolute;
-    left:105px;
-    top:122px;
-    width:162px;
-    height:72px;
-}
-
-#u63_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:168px;
-    height:78px;
-}
-
-.u64 {
     position:absolute;
     left:2px;
     top:2px;

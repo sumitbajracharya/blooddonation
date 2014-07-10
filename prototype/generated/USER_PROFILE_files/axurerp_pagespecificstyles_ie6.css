@@ -110,12 +110,12 @@
 
 * html .u86_normal {
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="Master_UserPannel_files/u80_normal.png");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="Master_UserPannel_files/u86_normal.png");
 }
 
 * html .u88_normal {
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="Master_UserPannel_files/u88_normal.png");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="Master_UserPannel_files/u80_normal.png");
 }
 
 * html .u90_normal {
@@ -133,8 +133,13 @@
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="Master_UserPannel_files/u94_normal.png");
 }
 
-* html .u97_normal {
+* html .u96_normal {
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="USER_PROFILE_files/u97_normal.png");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="Master_UserPannel_files/u96_normal.png");
+}
+
+* html .u99_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="USER_PROFILE_files/u99_normal.png");
 }
 

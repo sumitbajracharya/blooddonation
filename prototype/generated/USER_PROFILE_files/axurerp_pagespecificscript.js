@@ -1,4 +1,4 @@
-﻿for(var i = 0; i < 126; i++) { var scriptId = 'u' + i; window[scriptId] = document.getElementById(scriptId); }
+﻿for(var i = 0; i < 128; i++) { var scriptId = 'u' + i; window[scriptId] = document.getElementById(scriptId); }
 
 $axure.eventManager.pageLoad(
 function (e) {
@@ -50,18 +50,28 @@ $axure.eventManager.click('u86', function(e) {
 
 if (true) {
 
-	self.location.href=$axure.globalVariableProvider.getLinkUrl('CONTACT_US.html');
+	self.location.href=$axure.globalVariableProvider.getLinkUrl('REQUEST_BLOOD.html');
 
 }
 });
-gv_vAlignTable['u25'] = 'center';gv_vAlignTable['u16'] = 'center';gv_vAlignTable['u76'] = 'center';gv_vAlignTable['u48'] = 'center';gv_vAlignTable['u93'] = 'center';gv_vAlignTable['u119'] = 'top';gv_vAlignTable['u23'] = 'center';gv_vAlignTable['u62'] = 'center';gv_vAlignTable['u53'] = 'center';gv_vAlignTable['u85'] = 'center';gv_vAlignTable['u1'] = 'center';gv_vAlignTable['u7'] = 'center';gv_vAlignTable['u103'] = 'top';gv_vAlignTable['u115'] = 'top';gv_vAlignTable['u104'] = 'top';gv_vAlignTable['u106'] = 'top';gv_vAlignTable['u109'] = 'top';gv_vAlignTable['u67'] = 'top';gv_vAlignTable['u60'] = 'center';document.getElementById('u94_img').tabIndex = 0;
+gv_vAlignTable['u25'] = 'center';gv_vAlignTable['u16'] = 'center';gv_vAlignTable['u76'] = 'center';gv_vAlignTable['u48'] = 'center';gv_vAlignTable['u93'] = 'center';gv_vAlignTable['u119'] = 'top';gv_vAlignTable['u23'] = 'center';gv_vAlignTable['u62'] = 'center';gv_vAlignTable['u53'] = 'center';gv_vAlignTable['u85'] = 'center';gv_vAlignTable['u1'] = 'center';gv_vAlignTable['u7'] = 'center';
+u103.style.cursor = 'pointer';
+$axure.eventManager.click('u103', function(e) {
+
+if (true) {
+
+	NewWindow($axure.globalVariableProvider.getLinkUrl('edit_user_profile.html'), "", "directories=1, height=500, location=1, menubar=1, resizable=1, scrollbars=1, status=1, toolbar=1, width=500", true, 500, 500);
+
+}
+});
+gv_vAlignTable['u97'] = 'center';gv_vAlignTable['u115'] = 'top';gv_vAlignTable['u104'] = 'top';gv_vAlignTable['u106'] = 'top';gv_vAlignTable['u109'] = 'top';gv_vAlignTable['u121'] = 'top';gv_vAlignTable['u60'] = 'center';document.getElementById('u94_img').tabIndex = 0;
 
 u94.style.cursor = 'pointer';
 $axure.eventManager.click('u94', function(e) {
 
 if (true) {
 
-	self.location.href=$axure.globalVariableProvider.getLinkUrl('User_Home.html');
+	NewTab('https://www.facebook.com/expertstraining.net?fref=ts', "");
 
 }
 });
@@ -76,7 +86,7 @@ if (true) {
 
 }
 });
-gv_vAlignTable['u64'] = 'top';gv_vAlignTable['u100'] = 'center';gv_vAlignTable['u19'] = 'center';gv_vAlignTable['u81'] = 'center';gv_vAlignTable['u124'] = 'top';gv_vAlignTable['u112'] = 'top';gv_vAlignTable['u102'] = 'top';gv_vAlignTable['u118'] = 'top';gv_vAlignTable['u17'] = 'top';gv_vAlignTable['u45'] = 'center';gv_vAlignTable['u66'] = 'center';gv_vAlignTable['u87'] = 'center';document.getElementById('u92_img').tabIndex = 0;
+gv_vAlignTable['u64'] = 'top';gv_vAlignTable['u100'] = 'center';gv_vAlignTable['u19'] = 'center';gv_vAlignTable['u81'] = 'center';gv_vAlignTable['u124'] = 'top';gv_vAlignTable['u112'] = 'top';gv_vAlignTable['u102'] = 'center';gv_vAlignTable['u118'] = 'top';gv_vAlignTable['u17'] = 'top';gv_vAlignTable['u45'] = 'center';gv_vAlignTable['u66'] = 'center';gv_vAlignTable['u126'] = 'top';gv_vAlignTable['u87'] = 'center';gv_vAlignTable['u127'] = 'top';document.getElementById('u92_img').tabIndex = 0;
 
 u92.style.cursor = 'pointer';
 $axure.eventManager.click('u92', function(e) {
@@ -94,7 +104,7 @@ $axure.eventManager.click('u77', function(e) {
 
 if (true) {
 
-	NewWindow($axure.globalVariableProvider.getLinkUrl('Log_In.html'), "", "directories=0, height=500, location=0, menubar=0, resizable=0, scrollbars=0, status=0, toolbar=0, width=500", true, 500, 500);
+	self.location.href=$axure.globalVariableProvider.getLinkUrl('User_Home.html');
 
 }
 });
@@ -105,32 +115,33 @@ $axure.eventManager.click('u90', function(e) {
 
 if (true) {
 
-	NewTab('https://www.facebook.com/expertstraining.net?fref=ts', "");
+	self.location.href=$axure.globalVariableProvider.getLinkUrl('WHY_TO_DO_DONATE.html');
 
 }
 });
-gv_vAlignTable['u28'] = 'center';gv_vAlignTable['u50'] = 'center';gv_vAlignTable['u123'] = 'top';
-u101.style.cursor = 'pointer';
-$axure.eventManager.click('u101', function(e) {
-
-if (true) {
-
-	NewWindow($axure.globalVariableProvider.getLinkUrl('edit_user_profile.html'), "", "directories=1, height=500, location=1, menubar=1, resizable=1, scrollbars=1, status=1, toolbar=1, width=500", true, 500, 500);
-
-}
-});
-gv_vAlignTable['u98'] = 'center';gv_vAlignTable['u107'] = 'top';gv_vAlignTable['u39'] = 'center';gv_vAlignTable['u69'] = 'center';document.getElementById('u84_img').tabIndex = 0;
+gv_vAlignTable['u28'] = 'center';gv_vAlignTable['u50'] = 'center';gv_vAlignTable['u123'] = 'top';gv_vAlignTable['u107'] = 'top';gv_vAlignTable['u39'] = 'center';gv_vAlignTable['u69'] = 'center';document.getElementById('u84_img').tabIndex = 0;
 
 u84.style.cursor = 'pointer';
 $axure.eventManager.click('u84', function(e) {
 
 if (true) {
 
-	self.location.href=$axure.globalVariableProvider.getLinkUrl('REQUEST_BLOOD.html');
+	self.location.href=$axure.globalVariableProvider.getLinkUrl('BLOOD_CENTER.html');
 
 }
 });
-gv_vAlignTable['u114'] = 'top';gv_vAlignTable['u117'] = 'top';gv_vAlignTable['u31'] = 'center';
+gv_vAlignTable['u114'] = 'top';gv_vAlignTable['u117'] = 'top';gv_vAlignTable['u31'] = 'center';document.getElementById('u96_img').tabIndex = 0;
+
+u96.style.cursor = 'pointer';
+$axure.eventManager.click('u96', function(e) {
+
+if (true) {
+
+	self.location.href=$axure.globalVariableProvider.getLinkUrl('User_Home.html');
+
+}
+});
+
 u26.style.cursor = 'pointer';
 $axure.eventManager.click('u26', function(e) {
 
@@ -158,7 +169,7 @@ $axure.eventManager.click('u82', function(e) {
 
 if (true) {
 
-	self.location.href=$axure.globalVariableProvider.getLinkUrl('BLOOD_CENTER.html');
+    self.location.href="resources/reload.html#" + encodeURI($axure.globalVariableProvider.getLinkUrl($axure.pageData.url));
 
 }
 });
@@ -180,11 +191,11 @@ $axure.eventManager.click('u88', function(e) {
 
 if (true) {
 
-	self.location.href=$axure.globalVariableProvider.getLinkUrl('WHY_TO_DO_DONATE.html');
+	self.location.href=$axure.globalVariableProvider.getLinkUrl('ABOUT_US.html');
 
 }
 });
-document.getElementById('u80_img').tabIndex = 0;
+gv_vAlignTable['u67'] = 'top';document.getElementById('u80_img').tabIndex = 0;
 
 u80.style.cursor = 'pointer';
 $axure.eventManager.click('u80', function(e) {
@@ -236,4 +247,4 @@ if (true) {
 
 }
 });
-gv_vAlignTable['u4'] = 'top';gv_vAlignTable['u108'] = 'top';gv_vAlignTable['u91'] = 'center';gv_vAlignTable['u121'] = 'top';
+gv_vAlignTable['u4'] = 'top';gv_vAlignTable['u108'] = 'top';gv_vAlignTable['u91'] = 'center';

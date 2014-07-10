@@ -1175,7 +1175,7 @@ div {
     position:absolute;
     left:140px;
     top:145px;
-    width:569px;
+    width:680px;
     height:42px;
 }
 
@@ -1183,7 +1183,7 @@ div {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:566px;
+    width:677px;
     height:39px;
 }
 
@@ -1191,7 +1191,7 @@ div {
     position:absolute;
     left:3px;
     top:3px;
-    width:559px;
+    width:670px;
     height:32px
 }
 
@@ -1237,7 +1237,7 @@ div {
     position:absolute;
     left:100px;
     top:0px;
-    width:115px;
+    width:111px;
     height:27px;
 }
 
@@ -1245,7 +1245,7 @@ div {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:121px;
+    width:117px;
     height:33px;
 }
 
@@ -1253,7 +1253,7 @@ div {
     position:absolute;
     left:2px;
     top:6px;
-    width:111px;
+    width:107px;
     height:16px;
     ;
     ;
@@ -1269,9 +1269,9 @@ div {
 
 .u84_container {
     position:absolute;
-    left:215px;
+    left:211px;
     top:0px;
-    width:123px;
+    width:115px;
     height:27px;
 }
 
@@ -1279,11 +1279,45 @@ div {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:129px;
+    width:121px;
     height:33px;
 }
 
 .u85 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:111px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u86_normal {
+    background-image: url('../Master_UserPannel_files/u86_normal.png');
+}
+
+.u86_container {
+    position:absolute;
+    left:326px;
+    top:0px;
+    width:123px;
+    height:27px;
+}
+
+#u86_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:129px;
+    height:33px;
+}
+
+.u87 {
     position:absolute;
     left:2px;
     top:6px;
@@ -1297,49 +1331,15 @@ div {
     word-wrap:break-word;
 }
 
-.u86_normal {
-    background-image: url('../Master_UserPannel_files/u80_normal.png');
-}
-
-.u86_container {
-    position:absolute;
-    left:338px;
-    top:0px;
-    width:100px;
-    height:27px;
-}
-
-#u86_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:106px;
-    height:33px;
-}
-
-.u87 {
-    position:absolute;
-    left:2px;
-    top:6px;
-    width:96px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
 .u88_normal {
-    background-image: url('../Master_UserPannel_files/u88_normal.png');
+    background-image: url('../Master_UserPannel_files/u80_normal.png');
 }
 
 .u88_container {
     position:absolute;
-    left:438px;
+    left:449px;
     top:0px;
-    width:116px;
+    width:100px;
     height:27px;
 }
 
@@ -1347,7 +1347,7 @@ div {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:122px;
+    width:106px;
     height:33px;
 }
 
@@ -1355,7 +1355,7 @@ div {
     position:absolute;
     left:2px;
     top:6px;
-    width:112px;
+    width:96px;
     height:16px;
     ;
     ;
@@ -1371,25 +1371,25 @@ div {
 
 .u90_container {
     position:absolute;
-    left:1032px;
-    top:932px;
-    width:34px;
-    height:33px;
+    left:549px;
+    top:0px;
+    width:116px;
+    height:27px;
 }
 
 #u90_img {
     position:absolute;
-    left:0px;
-    top:0px;
-    width:34px;
+    left:-3px;
+    top:-3px;
+    width:122px;
     height:33px;
 }
 
 .u91 {
     position:absolute;
     left:2px;
-    top:8px;
-    width:30px;
+    top:6px;
+    width:112px;
     height:16px;
     ;
     ;
@@ -1405,7 +1405,7 @@ div {
 
 .u92_container {
     position:absolute;
-    left:1076px;
+    left:1032px;
     top:932px;
     width:34px;
     height:33px;
@@ -1439,13 +1439,47 @@ div {
 
 .u94_container {
     position:absolute;
+    left:1076px;
+    top:932px;
+    width:34px;
+    height:33px;
+}
+
+#u94_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:34px;
+    height:33px;
+}
+
+.u95 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:30px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u96_normal {
+    background-image: url('../Master_UserPannel_files/u96_normal.png');
+}
+
+.u96_container {
+    position:absolute;
     left:121px;
     top:20px;
     width:200px;
     height:120px;
 }
 
-#u94_img {
+#u96_img {
     position:absolute;
     left:0px;
     top:0px;
@@ -1453,7 +1487,7 @@ div {
     height:120px;
 }
 
-.u95 {
+.u97 {
     position:absolute;
     left:2px;
     top:52px;
@@ -1467,7 +1501,7 @@ div {
     word-wrap:break-word;
 }
 
-.u98 {
+.u100 {
     position:absolute;
     left:338px;
     top:465px;
