@@ -1,10 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/User.master" AutoEventWireup="true" CodeFile="DonarDetails.aspx.cs" Inherits="User_Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/User.master" AutoEventWireup="true" CodeFile="UserProfile.aspx.cs" Inherits="User_UserProfile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <p align="right"><a href=EditUser.aspx >Edit </a> </p>
 
- <table class="table table-bordered">
+    <table class="table table-bordered">
     
     <tr>
     <td rowspan='4'><img src='<%#Eval("ProfilePicture")%>'></td>
@@ -65,10 +66,6 @@
     <tr>
     <td>Best Avaliability:</td>
     <td colspan='2'><%#Eval("BestAvalibility")%></td>
-    </tr>
-
-    <tr>
-    <td colspan='3'><center><asp:button ID="btnRequest" runat="server" Text="send Request" cssClass="btn btn-default"/></center></td>
     </tr>
 
     </table>
