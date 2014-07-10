@@ -4,13 +4,9 @@
   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
-<<<<<<< HEAD:blooddonation/User/DonarDetails.aspx
-
-  <table class="table table-bordered">
-=======
+<br />
     <table class="table table-bordered">
->>>>>>> cc3579e75851df46bca359f40e5a65fa34aaee7a:blooddonation/DonarDetails.aspx
+
     
     <tr>
     
@@ -78,7 +74,7 @@
     </tr>
 
     <tr>
-    <td colspan='3'><center><asp:button ID="btnRequest" runat="server" Text="send Request" cssClass="btn btn-default"/></center></td>
+    <td colspan='3' align="center"><asp:button ID="btnRequest" runat="server" Text="send Request" cssClass="btn btn-default"/></td>
     </tr>
 
     </table>
