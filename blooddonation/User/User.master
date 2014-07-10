@@ -19,6 +19,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
+
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
     <div class="container">
 
     <!-- Start Header --> 
@@ -53,7 +56,7 @@
     <li><a href="">Home</a></li>
     <li><a href="">Blood Center</a></li>
     <li><a href="">Request Blood </a></li>
-    <li><a href="">About Us</a></li>
+    <li><a href="">Contact Us</a></li>
     <li><a href="">Why To Donate</a></li>
     </ul>
     </div>
@@ -62,72 +65,7 @@
 
  <!-- End Navigation -->
 
- <!-- Start Slider -->
 
- <!-- Slide Image should be height 315px and width 1140px -->
-
-<div class="row">
- <div class="col-md-12">
-      
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-     <%--<img src="Assets/Images/Slider/u28_normal.jpg" alt="1" class="img-responsive" />--%>
-        <asp:Image ID="Image2" runat="server" ImageUrl="~/Assets/Images/Slider/slider3.jpg" />
-         <div class="carousel-caption">
-          
-       <!--  Caption Here -->
-      </div>
-    </div>
-
-     <div class="item">
-     <%-- <img src="Assets/Images/Slider/u32_normal.jpg" alt="1" class="img-responsive" />--%>
-     <asp:Image ID="Image6" runat="server" ImageUrl="~/Assets/Images/Slider/slider1.jpg" />
-      <div class="carousel-caption">
-       <!--  Caption Here -->
-      </div>
-    </div>
-
-      <div class="item">
-     <%-- <img src="Assets/Images/Slider/u32_normal.jpg" alt="1" class="img-responsive" />--%>
-     <asp:Image ID="Image5" runat="server" ImageUrl="~/Assets/Images/Slider/slider4.jpg" />
-      <div class="carousel-caption">
-       <!--  Caption Here -->
-      </div>
-    </div>
-
-    <div class="item">
-   <%-- <img src="Assets/Images/Slider/u30_normal.jpg" alt="1" class="img-responsive" />--%>
-     <asp:Image ID="Image3" runat="server" ImageUrl="~/Assets/Images/Slider/slider2.jpg" />
-      <div class="carousel-caption">
-       <!--  Caption Here -->
-      </div>
-    </div>
-  <!-- some text here--></some>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
-  </div> 
-</div>
-
- <!-- End Slider -->
- <br />
 
   <!-- Start Search -->
 
@@ -149,14 +87,25 @@
   </div>
   
 </div>
-
+<br />
  <!-- End  Search -->
 
   <!-- Start Main Container  Home Page -->
 
 
 <div class="row">
-  <div class="col-md-9"> 
+   <div class="col-md-3">
+ <ul class="list-group">
+  <li class="list-group-item"><a href="DashBoard.aspx">Dash Board</a></li>
+ <li class="list-group-item"><a href="">Profile </a></li>
+<li class="list-group-item"><a href="AdvanceBloodRequestForm.aspx"> Blood Requests</a></li>
+  
+</ul>
+  
+  </div>
+
+
+  <div class="col-md-6"> 
 
   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
@@ -166,13 +115,12 @@
 
          <!-- Start Event -->
   <div class="col-md-3">
+  <h3 class="text-center"style="margin-top:0px; ">Events</h3>
   
-  <h3 class="text-center">Events</h3>
+     <div class="panel-group" id="accordion">
     
-
-
-  <div class="panel-group" id="accordion">
   <div class="panel panel-default">
+   
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">

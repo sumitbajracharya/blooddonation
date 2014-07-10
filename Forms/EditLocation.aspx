@@ -15,7 +15,7 @@
 
     <br /><br /><br /><br />
 
-    <asp:GridView ID="gdvLocation" runat="server" onrowcommand="GridView1_RowCommand">
+    <asp:GridView ID="gdvLocation" runat="server" >
     <Columns>
     <asp:TemplateField>
     <ItemTemplate>

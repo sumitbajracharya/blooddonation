@@ -14,7 +14,7 @@
 
     <br /><br /><br /><br />
 
-    <asp:GridView ID="gdvSlider" runat="server" onrowcommand="GridView1_RowCommand">
+    <asp:GridView ID="gdvSlider" runat="server">
     <Columns>
     <asp:TemplateField>
     <ItemTemplate>
