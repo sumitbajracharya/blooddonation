@@ -19,6 +19,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        
     <div class="container">
 
     <!-- Start Header --> 
@@ -112,10 +113,12 @@
 
          <!-- Start Event -->
   <div class="col-md-3">
+  <h3 class="text-center"style="margin-top:0px; ">Events</h3>
   
-  <h3 class="text-center">Events</h3>
      <div class="panel-group" id="accordion">
+    
   <div class="panel panel-default">
+   
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">

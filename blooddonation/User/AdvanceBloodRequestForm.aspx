@@ -1,42 +1,34 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="AdvanceBloodRequestForm.aspx.cs" Inherits="AdvanceBloodRequestForm" %>
+﻿<%@ Page Title="Advance Blood Request Form" Language="C#" MasterPageFile="~/User/User.master" AutoEventWireup="true" CodeFile="AdvanceBloodRequestForm.aspx.cs" Inherits="User_Default" %>
 
-<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 
-<!DOCTYPE html>
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Advance Blood Request Form</title>
-   
-   
-    
-    
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+ 
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-    <div>
+ 
     
-        <table class="table-responsive table form-group exampleInputEmail1" border="1">
+        <table class="table table-bordered">
             <tr>
-                <td colspan="2">Advance Blood Request Form s</td>
+                <th colspan="2">Advance Blood Request Form</th>
             </tr>
             <tr>
-                <td>Full Name</td>
+                <td class="col-sm-3">Full Name</td>
                 <td>
-                    <asp:TextBox ID="txtFullname" runat="server" Height="16px" Width="385px"></asp:TextBox>
+                    <asp:TextBox ID="txtFullname"  placeholder="FullName" cssClass="form-control" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Age</td>
                 <td>
-                    <asp:TextBox ID="txtAge" runat="server" Height="16px" Width="40px"></asp:TextBox>
+                    <asp:TextBox ID="txtAge" cssClass="form-control" runat="server" Width="50px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Blood Group</td>
                 <td>
-                    <asp:DropDownList ID="ddlBloodgroup" runat="server">
+                    <asp:DropDownList ID="ddlBloodgroup" runat="server" cssClass="form-control" Width="50%">
                         <asp:ListItem>A+ve</asp:ListItem>
                         <asp:ListItem>A-ve</asp:ListItem>
                         <asp:ListItem>B+ve</asp:ListItem>
@@ -51,21 +43,21 @@
             <tr>
                 <td>Quantity</td>
                 <td>
-                    <asp:TextBox ID="txtQuantity" runat="server" Height="16px" Width="83px"></asp:TextBox>
+                    <asp:TextBox ID="txtQuantity" cssClass="form-control" runat="server" Width="60px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Location</td>
                 <td>
                     
-                    <asp:DropDownList ID="ddlDistrict" runat="server">
+                    <asp:DropDownList ID="ddlDistrict" runat="server" cssClass="form-control" Width="50%">
                       
                         
                         
                         <asp:ListItem>Kathmandu</asp:ListItem>
                     </asp:DropDownList>
                     <br />
-                    <asp:DropDownList ID="ddlLocation" runat="server">
+                    <asp:DropDownList ID="ddlLocation" runat="server" cssClass="form-control" Width="50%">
                         <asp:ListItem>New Road</asp:ListItem>
                     </asp:DropDownList>
                 </td>
@@ -74,17 +66,22 @@
                 <td>Date</td>
                 <td>
                     
-                    <asp:TextBox ID="txtDate" runat="server"></asp:TextBox>
-                     <cc1:CalendarExtender ID="txtDate_CalendarExtender" runat="server" TargetControlID="txtDate">
-                    </cc1:CalendarExtender>
+                    <asp:TextBox ID="txtDate" runat="server" cssClass="form-control"></asp:TextBox>
+                   
                    
                 </td>
             </tr>
             <tr>
                 <td>Time</td>
                 <td>
-                    <asp:TextBox ID="txtTimeNumber" runat="server" Height="16px" Width="32px"></asp:TextBox>
-                    <asp:DropDownList ID="ddlTimeAmPm" runat="server">
+                      <asp:DropDownList ID="DropDownList1" runat="server" cssClass="form-control pull-left" style="margin-right:10px;"  Width="65px" >
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                         <asp:ListItem>3</asp:ListItem>
+                         <asp:ListItem>4</asp:ListItem>
+                         <asp:ListItem>12</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:DropDownList ID="ddlTimeAmPm" runat="server" cssClass="form-control"  Width="65px" >
                         <asp:ListItem>am</asp:ListItem>
                         <asp:ListItem>pm</asp:ListItem>
                     </asp:DropDownList>
@@ -93,39 +90,41 @@
             <tr>
                 <td>Phone no.</td>
                 <td>
-                    <asp:TextBox ID="txtPhonenumber" runat="server" Height="16px" Width="168px"></asp:TextBox>
+                    <asp:TextBox ID="txtPhonenumber" runat="server" cssClass="form-control"  Width="115px" ></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Purpose</td>
                 <td>
-                    <asp:TextBox ID="txtPurpose" runat="server" Height="16px" Width="276px"></asp:TextBox>
+                    <asp:TextBox ID="txtPurpose" runat="server" cssClass="form-control" placeholder="Enter Purpose"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Hospital Paper</td>
                 <td>
-                    <asp:FileUpload ID="fupImage" runat="server" style="margin-bottom: 1px" />
+                  <asp:Image ID="imgHospitalpaprer" runat="server" Height="223px" Width="281px" />
+                    <asp:FileUpload ID="fupImage" runat="server" cssClass="btn btn-default" />
                     <br />
-                    <asp:Image ID="imgHospitalpaprer" runat="server" Height="223px" Width="281px" />
+                  
                 </td>
             </tr>
             <tr>
                 <td>Message</td>
                 <td>
-                    <asp:TextBox ID="txtMessage" runat="server" Height="191px" TextMode="MultiLine" Width="281px"></asp:TextBox>
+                    <asp:TextBox ID="txtMessage" runat="server" cssClass="form-control" TextMode="MultiLine"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
-                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" />
+                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="btn btn-default" />
+                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="btn btn-default" />
                 </td>
             </tr>
         </table>
     
-    </div>
-    </form>
-</body>
-</html>
+ 
+   
+
+
+</asp:Content>

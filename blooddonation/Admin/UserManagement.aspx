@@ -8,9 +8,13 @@
 <ul class="nav nav-tabs" role="tablist">
   <li class="active"><a href="#List" role="tab" data-toggle="tab">List Member</a></li>
   <li><a href="#Verify" role="tab" data-toggle="tab">Verify Member</a></li>
+<<<<<<< HEAD
   <li><a href="#Update" role="tab" data-toggle="tab">Update Member</a></li>
  
 </ul>
+=======
+  <li><a href="#Update" role="tab" data-toggle="tab">Update Member</a></li></ul>
+>>>>>>> 1239360e3601f14e340b0fd9b53ffa95cfa6c265
 
 <!-- Tab panes -->
 <div class="tab-content">
