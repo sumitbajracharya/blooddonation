@@ -1,20 +1,15 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/User.master" AutoEventWireup="true" CodeFile="EventVerify.aspx.cs" Inherits="User_EventVerify" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.master" AutoEventWireup="true" CodeFile="EventVerify.aspx.cs" Inherits="Admin_EventVerify" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
-        .style1
-        {
-            height: 49px;
-        }
-        .style4
-        {
-            height: 49px;
-            width: 178px;
+        .auto-style1 {
+            height: 20px;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<br /><br /><br />
+
+    <br /><br /><br />
 <!-- listing the event in table-->
 <div id="divListEvent" style="float:left; margin:10px">
 <table border=2px>
@@ -36,7 +31,7 @@
 </div>
 
 
-<table style="min-width:300px; margin-right: 0px;">
+<table  style="min-width:300px; margin-right: 0px;" >
 
 <tr>
 <td class="style4">Event Title</td>
@@ -44,8 +39,8 @@
 </tr>
 
 <tr>
-<td  class="style4">Event Date </td>
-<td  class="style1"><asp:Label ID="lblDate" runat="server"></asp:Label></td>
+<td  class="auto-style1">Event Date </td>
+<td  class="auto-style1"><asp:Label ID="lblDate" runat="server"></asp:Label></td>
 </tr>
 
 <tr>
@@ -87,6 +82,6 @@
 
 <div id="divEventContent" style="min-width:400px; padding-left:4px;" >
 
-</div>
+
 </asp:Content>
 
