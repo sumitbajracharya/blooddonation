@@ -44,8 +44,12 @@
               <div class="col-md-12">
                   <div class="col-md-6"><h5>Available Services:</h5></div>
                   <div class="col-md-6"><h5>I dont know</h5></div>
-                  
-
+     
+              </div>
+              <div class="col-md-12">
+                  <div class="col-md-6"><h5>Contact NO:</h5></div>
+                  <div class="col-md-6"><h5>01-444444</h5></div>
+     
               </div>
               <div class="col-md-12">
                   <h4>Blood Stocks</h4>
