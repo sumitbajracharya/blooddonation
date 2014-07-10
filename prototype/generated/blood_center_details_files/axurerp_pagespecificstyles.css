@@ -27,7 +27,7 @@ div {
     left:3px;
     top:2px;
     width:829px;
-    height:338px
+    height:412px
 }
 
 .u1_normal {
@@ -303,7 +303,7 @@ div {
 }
 
 .u17_normal {
-    background-image: url('../blood_center_details_files/u17_normal.png');
+    background-image: url('../blood_center_details_files/u9_normal.png');
 }
 
 .u17_container {
@@ -311,7 +311,7 @@ div {
     left:0px;
     top:161px;
     width:202px;
-    height:172px;
+    height:37px;
 }
 
 #u17_img {
@@ -319,7 +319,7 @@ div {
     left:-3px;
     top:-3px;
     width:208px;
-    height:178px;
+    height:43px;
 }
 
 .u18 {
@@ -337,7 +337,7 @@ div {
 }
 
 .u19_normal {
-    background-image: url('../blood_center_details_files/u19_normal.png');
+    background-image: url('../blood_center_details_files/u11_normal.png');
 }
 
 .u19_container {
@@ -345,7 +345,7 @@ div {
     left:202px;
     top:161px;
     width:622px;
-    height:172px;
+    height:37px;
 }
 
 #u19_img {
@@ -353,7 +353,7 @@ div {
     left:-3px;
     top:-3px;
     width:628px;
-    height:178px;
+    height:43px;
 }
 
 .u20 {
@@ -370,15 +370,151 @@ div {
     word-wrap:break-word;
 }
 
+.u21_normal {
+    background-image: url('../blood_center_details_files/u9_normal.png');
+}
+
 .u21_container {
     position:absolute;
+    left:0px;
+    top:198px;
+    width:202px;
+    height:37px;
+}
+
+#u21_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:208px;
+    height:43px;
+}
+
+.u22 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:198px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23_normal {
+    background-image: url('../blood_center_details_files/u11_normal.png');
+}
+
+.u23_container {
+    position:absolute;
+    left:202px;
+    top:198px;
+    width:622px;
+    height:37px;
+}
+
+#u23_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:628px;
+    height:43px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:618px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25_normal {
+    background-image: url('../blood_center_details_files/u25_normal.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:0px;
+    top:235px;
+    width:202px;
+    height:172px;
+}
+
+#u25_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:208px;
+    height:178px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:198px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../blood_center_details_files/u27_normal.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:202px;
+    top:235px;
+    width:622px;
+    height:172px;
+}
+
+#u27_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:628px;
+    height:178px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:618px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29_container {
+    position:absolute;
     left:3px;
-    top:5px;
+    top:28px;
     width:200px;
     height:327px;
 }
 
-#u21_img {
+#u29_img {
     position:absolute;
     left:0px;
     top:0px;
@@ -386,7 +522,7 @@ div {
     height:327px;
 }
 
-.u22 {
+.u30 {
     position:absolute;
     left:2px;
     top:156px;
@@ -400,19 +536,19 @@ div {
     word-wrap:break-word;
 }
 
-#u23 {
+#u31 {
     position:absolute;
     left:213px;
-    top:173px;
+    top:263px;
     width:571px;
     height:121px
 }
 
-.u24_normal {
-    background-image: url('../blood_center_details_files/u24_normal.png');
+.u32_normal {
+    background-image: url('../blood_center_details_files/u32_normal.png');
 }
 
-.u24_container {
+.u32_container {
     position:absolute;
     left:0px;
     top:0px;
@@ -420,7 +556,7 @@ div {
     height:36px;
 }
 
-#u24_img {
+#u32_img {
     position:absolute;
     left:-3px;
     top:-3px;
@@ -428,7 +564,7 @@ div {
     height:42px;
 }
 
-.u25 {
+.u33 {
     position:absolute;
     left:2px;
     top:2px;
@@ -442,149 +578,13 @@ div {
     word-wrap:break-word;
 }
 
-.u26_normal {
-    background-image: url('../blood_center_details_files/u26_normal.png');
-}
-
-.u26_container {
-    position:absolute;
-    left:85px;
-    top:0px;
-    width:60px;
-    height:36px;
-}
-
-#u26_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:66px;
-    height:42px;
-}
-
-.u27 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:56px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u28_normal {
-    background-image: url('../blood_center_details_files/u26_normal.png');
-}
-
-.u28_container {
-    position:absolute;
-    left:145px;
-    top:0px;
-    width:60px;
-    height:36px;
-}
-
-#u28_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:66px;
-    height:42px;
-}
-
-.u29 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:56px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u30_normal {
-    background-image: url('../blood_center_details_files/u26_normal.png');
-}
-
-.u30_container {
-    position:absolute;
-    left:205px;
-    top:0px;
-    width:60px;
-    height:36px;
-}
-
-#u30_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:66px;
-    height:42px;
-}
-
-.u31 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:56px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
-.u32_normal {
-    background-image: url('../blood_center_details_files/u26_normal.png');
-}
-
-.u32_container {
-    position:absolute;
-    left:265px;
-    top:0px;
-    width:60px;
-    height:36px;
-}
-
-#u32_img {
-    position:absolute;
-    left:-3px;
-    top:-3px;
-    width:66px;
-    height:42px;
-}
-
-.u33 {
-    position:absolute;
-    left:2px;
-    top:2px;
-    width:56px;
-    height:16px;
-    ;
-    ;
-    ;
-    font-family:Arial;
-    text-align:left;
-    word-wrap:break-word;
-}
-
 .u34_normal {
-    background-image: url('../blood_center_details_files/u26_normal.png');
+    background-image: url('../blood_center_details_files/u34_normal.png');
 }
 
 .u34_container {
     position:absolute;
-    left:325px;
+    left:85px;
     top:0px;
     width:60px;
     height:36px;
@@ -613,12 +613,12 @@ div {
 }
 
 .u36_normal {
-    background-image: url('../blood_center_details_files/u26_normal.png');
+    background-image: url('../blood_center_details_files/u34_normal.png');
 }
 
 .u36_container {
     position:absolute;
-    left:385px;
+    left:145px;
     top:0px;
     width:60px;
     height:36px;
@@ -647,12 +647,12 @@ div {
 }
 
 .u38_normal {
-    background-image: url('../blood_center_details_files/u26_normal.png');
+    background-image: url('../blood_center_details_files/u34_normal.png');
 }
 
 .u38_container {
     position:absolute;
-    left:445px;
+    left:205px;
     top:0px;
     width:60px;
     height:36px;
@@ -681,12 +681,12 @@ div {
 }
 
 .u40_normal {
-    background-image: url('../blood_center_details_files/u26_normal.png');
+    background-image: url('../blood_center_details_files/u34_normal.png');
 }
 
 .u40_container {
     position:absolute;
-    left:506px;
+    left:265px;
     top:0px;
     width:60px;
     height:36px;
@@ -715,30 +715,30 @@ div {
 }
 
 .u42_normal {
-    background-image: url('../blood_center_details_files/u42_normal.png');
+    background-image: url('../blood_center_details_files/u34_normal.png');
 }
 
 .u42_container {
     position:absolute;
-    left:0px;
-    top:36px;
-    width:85px;
-    height:20px;
+    left:325px;
+    top:0px;
+    width:60px;
+    height:36px;
 }
 
 #u42_img {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:91px;
-    height:26px;
+    width:66px;
+    height:42px;
 }
 
 .u43 {
     position:absolute;
     left:2px;
     top:2px;
-    width:81px;
+    width:56px;
     height:16px;
     ;
     ;
@@ -749,15 +749,15 @@ div {
 }
 
 .u44_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u34_normal.png');
 }
 
 .u44_container {
     position:absolute;
-    left:85px;
-    top:36px;
+    left:385px;
+    top:0px;
     width:60px;
-    height:20px;
+    height:36px;
 }
 
 #u44_img {
@@ -765,7 +765,7 @@ div {
     left:-3px;
     top:-3px;
     width:66px;
-    height:26px;
+    height:42px;
 }
 
 .u45 {
@@ -783,15 +783,15 @@ div {
 }
 
 .u46_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u34_normal.png');
 }
 
 .u46_container {
     position:absolute;
-    left:145px;
-    top:36px;
+    left:445px;
+    top:0px;
     width:60px;
-    height:20px;
+    height:36px;
 }
 
 #u46_img {
@@ -799,7 +799,7 @@ div {
     left:-3px;
     top:-3px;
     width:66px;
-    height:26px;
+    height:42px;
 }
 
 .u47 {
@@ -817,15 +817,15 @@ div {
 }
 
 .u48_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u34_normal.png');
 }
 
 .u48_container {
     position:absolute;
-    left:205px;
-    top:36px;
+    left:506px;
+    top:0px;
     width:60px;
-    height:20px;
+    height:36px;
 }
 
 #u48_img {
@@ -833,7 +833,7 @@ div {
     left:-3px;
     top:-3px;
     width:66px;
-    height:26px;
+    height:42px;
 }
 
 .u49 {
@@ -851,14 +851,14 @@ div {
 }
 
 .u50_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u50_normal.png');
 }
 
 .u50_container {
     position:absolute;
-    left:265px;
+    left:0px;
     top:36px;
-    width:60px;
+    width:85px;
     height:20px;
 }
 
@@ -866,7 +866,7 @@ div {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:66px;
+    width:91px;
     height:26px;
 }
 
@@ -874,7 +874,7 @@ div {
     position:absolute;
     left:2px;
     top:2px;
-    width:56px;
+    width:81px;
     height:16px;
     ;
     ;
@@ -885,12 +885,12 @@ div {
 }
 
 .u52_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u52_container {
     position:absolute;
-    left:325px;
+    left:85px;
     top:36px;
     width:60px;
     height:20px;
@@ -919,12 +919,12 @@ div {
 }
 
 .u54_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u54_container {
     position:absolute;
-    left:385px;
+    left:145px;
     top:36px;
     width:60px;
     height:20px;
@@ -953,12 +953,12 @@ div {
 }
 
 .u56_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u56_container {
     position:absolute;
-    left:445px;
+    left:205px;
     top:36px;
     width:60px;
     height:20px;
@@ -987,12 +987,12 @@ div {
 }
 
 .u58_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u58_container {
     position:absolute;
-    left:506px;
+    left:265px;
     top:36px;
     width:60px;
     height:20px;
@@ -1021,14 +1021,14 @@ div {
 }
 
 .u60_normal {
-    background-image: url('../blood_center_details_files/u42_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u60_container {
     position:absolute;
-    left:0px;
-    top:56px;
-    width:85px;
+    left:325px;
+    top:36px;
+    width:60px;
     height:20px;
 }
 
@@ -1036,7 +1036,7 @@ div {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:91px;
+    width:66px;
     height:26px;
 }
 
@@ -1044,7 +1044,7 @@ div {
     position:absolute;
     left:2px;
     top:2px;
-    width:81px;
+    width:56px;
     height:16px;
     ;
     ;
@@ -1055,13 +1055,13 @@ div {
 }
 
 .u62_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u62_container {
     position:absolute;
-    left:85px;
-    top:56px;
+    left:385px;
+    top:36px;
     width:60px;
     height:20px;
 }
@@ -1089,13 +1089,13 @@ div {
 }
 
 .u64_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u64_container {
     position:absolute;
-    left:145px;
-    top:56px;
+    left:445px;
+    top:36px;
     width:60px;
     height:20px;
 }
@@ -1123,13 +1123,13 @@ div {
 }
 
 .u66_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u66_container {
     position:absolute;
-    left:205px;
-    top:56px;
+    left:506px;
+    top:36px;
     width:60px;
     height:20px;
 }
@@ -1157,14 +1157,14 @@ div {
 }
 
 .u68_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u50_normal.png');
 }
 
 .u68_container {
     position:absolute;
-    left:265px;
+    left:0px;
     top:56px;
-    width:60px;
+    width:85px;
     height:20px;
 }
 
@@ -1172,7 +1172,7 @@ div {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:66px;
+    width:91px;
     height:26px;
 }
 
@@ -1180,7 +1180,7 @@ div {
     position:absolute;
     left:2px;
     top:2px;
-    width:56px;
+    width:81px;
     height:16px;
     ;
     ;
@@ -1191,12 +1191,12 @@ div {
 }
 
 .u70_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u70_container {
     position:absolute;
-    left:325px;
+    left:85px;
     top:56px;
     width:60px;
     height:20px;
@@ -1225,12 +1225,12 @@ div {
 }
 
 .u72_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u72_container {
     position:absolute;
-    left:385px;
+    left:145px;
     top:56px;
     width:60px;
     height:20px;
@@ -1259,12 +1259,12 @@ div {
 }
 
 .u74_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u74_container {
     position:absolute;
-    left:445px;
+    left:205px;
     top:56px;
     width:60px;
     height:20px;
@@ -1293,12 +1293,12 @@ div {
 }
 
 .u76_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u76_container {
     position:absolute;
-    left:506px;
+    left:265px;
     top:56px;
     width:60px;
     height:20px;
@@ -1327,14 +1327,14 @@ div {
 }
 
 .u78_normal {
-    background-image: url('../blood_center_details_files/u42_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u78_container {
     position:absolute;
-    left:0px;
-    top:76px;
-    width:85px;
+    left:325px;
+    top:56px;
+    width:60px;
     height:20px;
 }
 
@@ -1342,7 +1342,7 @@ div {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:91px;
+    width:66px;
     height:26px;
 }
 
@@ -1350,7 +1350,7 @@ div {
     position:absolute;
     left:2px;
     top:2px;
-    width:81px;
+    width:56px;
     height:16px;
     ;
     ;
@@ -1361,13 +1361,13 @@ div {
 }
 
 .u80_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u80_container {
     position:absolute;
-    left:85px;
-    top:76px;
+    left:385px;
+    top:56px;
     width:60px;
     height:20px;
 }
@@ -1395,13 +1395,13 @@ div {
 }
 
 .u82_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u82_container {
     position:absolute;
-    left:145px;
-    top:76px;
+    left:445px;
+    top:56px;
     width:60px;
     height:20px;
 }
@@ -1429,13 +1429,13 @@ div {
 }
 
 .u84_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u84_container {
     position:absolute;
-    left:205px;
-    top:76px;
+    left:506px;
+    top:56px;
     width:60px;
     height:20px;
 }
@@ -1463,14 +1463,14 @@ div {
 }
 
 .u86_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u50_normal.png');
 }
 
 .u86_container {
     position:absolute;
-    left:265px;
+    left:0px;
     top:76px;
-    width:60px;
+    width:85px;
     height:20px;
 }
 
@@ -1478,7 +1478,7 @@ div {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:66px;
+    width:91px;
     height:26px;
 }
 
@@ -1486,7 +1486,7 @@ div {
     position:absolute;
     left:2px;
     top:2px;
-    width:56px;
+    width:81px;
     height:16px;
     ;
     ;
@@ -1497,12 +1497,12 @@ div {
 }
 
 .u88_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u88_container {
     position:absolute;
-    left:325px;
+    left:85px;
     top:76px;
     width:60px;
     height:20px;
@@ -1531,12 +1531,12 @@ div {
 }
 
 .u90_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u90_container {
     position:absolute;
-    left:385px;
+    left:145px;
     top:76px;
     width:60px;
     height:20px;
@@ -1565,12 +1565,12 @@ div {
 }
 
 .u92_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u92_container {
     position:absolute;
-    left:445px;
+    left:205px;
     top:76px;
     width:60px;
     height:20px;
@@ -1599,12 +1599,12 @@ div {
 }
 
 .u94_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u94_container {
     position:absolute;
-    left:506px;
+    left:265px;
     top:76px;
     width:60px;
     height:20px;
@@ -1633,14 +1633,14 @@ div {
 }
 
 .u96_normal {
-    background-image: url('../blood_center_details_files/u42_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u96_container {
     position:absolute;
-    left:0px;
-    top:96px;
-    width:85px;
+    left:325px;
+    top:76px;
+    width:60px;
     height:20px;
 }
 
@@ -1648,7 +1648,7 @@ div {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:91px;
+    width:66px;
     height:26px;
 }
 
@@ -1656,7 +1656,7 @@ div {
     position:absolute;
     left:2px;
     top:2px;
-    width:81px;
+    width:56px;
     height:16px;
     ;
     ;
@@ -1667,13 +1667,13 @@ div {
 }
 
 .u98_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u98_container {
     position:absolute;
-    left:85px;
-    top:96px;
+    left:385px;
+    top:76px;
     width:60px;
     height:20px;
 }
@@ -1701,13 +1701,13 @@ div {
 }
 
 .u100_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u100_container {
     position:absolute;
-    left:145px;
-    top:96px;
+    left:445px;
+    top:76px;
     width:60px;
     height:20px;
 }
@@ -1735,13 +1735,13 @@ div {
 }
 
 .u102_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u102_container {
     position:absolute;
-    left:205px;
-    top:96px;
+    left:506px;
+    top:76px;
     width:60px;
     height:20px;
 }
@@ -1769,14 +1769,14 @@ div {
 }
 
 .u104_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u50_normal.png');
 }
 
 .u104_container {
     position:absolute;
-    left:265px;
+    left:0px;
     top:96px;
-    width:60px;
+    width:85px;
     height:20px;
 }
 
@@ -1784,7 +1784,7 @@ div {
     position:absolute;
     left:-3px;
     top:-3px;
-    width:66px;
+    width:91px;
     height:26px;
 }
 
@@ -1792,7 +1792,7 @@ div {
     position:absolute;
     left:2px;
     top:2px;
-    width:56px;
+    width:81px;
     height:16px;
     ;
     ;
@@ -1803,12 +1803,12 @@ div {
 }
 
 .u106_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u106_container {
     position:absolute;
-    left:325px;
+    left:85px;
     top:96px;
     width:60px;
     height:20px;
@@ -1837,12 +1837,12 @@ div {
 }
 
 .u108_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u108_container {
     position:absolute;
-    left:385px;
+    left:145px;
     top:96px;
     width:60px;
     height:20px;
@@ -1871,12 +1871,12 @@ div {
 }
 
 .u110_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u110_container {
     position:absolute;
-    left:445px;
+    left:205px;
     top:96px;
     width:60px;
     height:20px;
@@ -1905,12 +1905,12 @@ div {
 }
 
 .u112_normal {
-    background-image: url('../blood_center_details_files/u44_normal.png');
+    background-image: url('../blood_center_details_files/u52_normal.png');
 }
 
 .u112_container {
     position:absolute;
-    left:506px;
+    left:265px;
     top:96px;
     width:60px;
     height:20px;
@@ -1938,7 +1938,143 @@ div {
     word-wrap:break-word;
 }
 
-.u114 {
+.u114_normal {
+    background-image: url('../blood_center_details_files/u52_normal.png');
+}
+
+.u114_container {
+    position:absolute;
+    left:325px;
+    top:96px;
+    width:60px;
+    height:20px;
+}
+
+#u114_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:26px;
+}
+
+.u115 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u116_normal {
+    background-image: url('../blood_center_details_files/u52_normal.png');
+}
+
+.u116_container {
+    position:absolute;
+    left:385px;
+    top:96px;
+    width:60px;
+    height:20px;
+}
+
+#u116_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:26px;
+}
+
+.u117 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u118_normal {
+    background-image: url('../blood_center_details_files/u52_normal.png');
+}
+
+.u118_container {
+    position:absolute;
+    left:445px;
+    top:96px;
+    width:60px;
+    height:20px;
+}
+
+#u118_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:26px;
+}
+
+.u119 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u120_normal {
+    background-image: url('../blood_center_details_files/u52_normal.png');
+}
+
+.u120_container {
+    position:absolute;
+    left:506px;
+    top:96px;
+    width:60px;
+    height:20px;
+}
+
+#u120_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:26px;
+}
+
+.u121 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u122 {
     position:absolute;
     left:800px;
     top:0px;
