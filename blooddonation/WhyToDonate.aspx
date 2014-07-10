@@ -1,66 +1,59 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/User.master" AutoEventWireup="true" CodeFile="WhyToDonate.aspx.cs" Inherits="WhyToDonate" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <style type="text/css">
-        .style1
-        {
-            font-size: large;
-        }
-    </style>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 
 
 
-    <strong><span class="style1">Why should we donate blood?</span></strong><br /><br />
-
+   <h4>Why should we donate blood?</h4>
+<p class="text-justify">
 Blood contains many life-saving components that can help to treat different illnesses and injuries. For many people, blood donors are their life-line. Blood donation gives a proud feeling of touching someone's life in such a beautiful way. It's an experience that no words can define. You have to donate blood yourself to find out. You also benefit in other ways by donating blood as it reduces the chances of ischemic heart diseases (beginning of heart problems) as frequent donations reduce the accumulated and unwanted iron load from the body. Your blood donation will also get you your blood insurance from us. By keeping the blood line flowing, you will greatly contribute towards a healthier, happier society. Do remember, any one may require blood any time including ourselves and our dear ones.
- <br /><br />
+</p>
 
 
 
 
-    <span class="style1"><strong>Is Donating Blood Safe?</strong></span><br /><br />
- 
+    <h4>Is Donating Blood Safe?</h4>
+ <p class="text-justify">
 Blood donation takes only about 45 minutes and it is a safe procedure. In general, blood donation, whether whole blood or aphaeresis does not usually have significant adverse effects on a donor's health. Donors give about 10-12% of their circulating blood volume during each blood donation. Healthy adult donors who meet the required screening criteria should be able to donate safely and regularly. If you ask any regular blood donor about it, a small percentage of first time donors may psychologically feel a little dizzy but only for a few minutes. The Doctors staff at the blood drive will ensure that your first blood donation is a happy experience.<br /><br />
  
+ </p>
 
 
-
-    <strong><span class="style1">Can I get any disease like AIDS or Hepatitis or any other disease by Blood donation?</span></strong><br /><br />
- 
+    <h4>Can I get any disease like AIDS or Hepatitis or any other disease by Blood donation?</h4>
+ <p class="text-justify">
 That is impossible. We use only brand new, sterile, disposable needles for each and every donor. These needles are discarded after each use. Donors can therefore never catch any infectious diseases from blood donation. This totally eliminates any remote chance of catching any disease from blood donation.<br /><br />
  
+ </p>
 
 
-
-    <strong><span class="style1">How much Blood and how often can I donate?</span></strong><br /><br />
- 
+    <h4>How much Blood and how often can I donate?</h4>
+ <p class="text-justify">
 You can donate blood every 12 weeks, up to 4 times a year. Eligible donors (any body between 18 to 60 years of age and leading a healthy life) with weight above 50 kgs. can donate up to 450 ml of blood. Your body can replenish this volume within 24 hours.
-<br /><br />
+</p>
 
 
 
-    <strong><span class="style1">How frequently can I donate Blood?</span></strong><br /><br />
+    <h4>How frequently can I donate Blood?</h4>
 Males — Every 3 months.
     <br />
     Females — Every 4 months.
- <br /><br />
 
 
 
-    <strong><span class="style1">Why should I become a regular blood donor?
- </span></strong>
- <br /><br />
+
+    <h4>Why should I become a regular blood donor? </h4>
+    <p class="text-justify">
 As you know, blood is a life saving medicine, which works wonders in certain medical treatments, and life threatening situations. Our society is today threatened by scarcity of blood and the only blood source today is human being. This issue has got further complexes by professional donors, who donate blood for money. These donors have contributed towards rapid spread of killer diseases like AIDS, Hepatitis B & Hepatitis C in the society. Your regular donation will go a long way in salvaging the situation.
+</p>
 
 
-
- <br /><br />
-    <span class="style1"><strong>What Types of Blood Donation are There?</strong></span>
- <br /><br />
-
+ 
+    <h4>What Types of Blood Donation are There?</h4>
+    <p class="text-justify">
     <strong>General Blood Donation</strong><br />
 
 450-mL, or less than 1 pint, of whole blood is collected from each donor in a plastic bag that contains an anticoagulant preservative.<br /><br />
@@ -69,13 +62,13 @@ As you know, blood is a life saving medicine, which works wonders in certain med
 
 Apheresis is a specialized form of blood donation in which only one specific blood component (platelets, plasma or red cells) are extracted from the donor. It is slightly more physically demanding than a whole blood donation. The process is also longer, about 45 to 90 minutes.
 Donate Blood Plasma can be carried on very casually. After donating the blood you can even go for work. The blood volume or plasma is replaced within a day. Four to eight weeks are needed for complete replacement of the red cells.
- <br /><br />
+
+</p>
 
 
 
-
-    <span class="style1"><strong>Common Reasons for Postponing Your Donation</strong></span><br /><br />
- 
+    <h4>Common Reasons for Postponing Your Donation</h4>
+ <p class="text-justify">
     <strong>You should postpone your donation as required, if any of these apply to you:</strong><br />
  
     <strong>1 week deferral: </strong>Upper respiratory tract infections such as cold, flu or sore throat. Please wait at least 1 week after symptoms have been resolved before donating; Chloroquine ingestion; Antibiotics;
@@ -98,12 +91,12 @@ Donate Blood Plasma can be carried on very casually. After donating the blood yo
  <br />
     <strong>3 days' deferral:</strong>Most prescription medication (excluding paracetamol, anti-histamines or sedatives provided they are not taken for fever/flu/illness), eg. Non-Steroidal Anti-Inflammatory Drugs (NSAIDS) like Diclofenac, Ibuprofen, Indomethacin, Ketoprofen, Mefenamic acid, Naproxen; or Aspirin (except if taken for heart disease, stroke & other medical conditions, which makes the donor ineligible for blood donation);
  <br /><br />
+ </p>
 
 
 
 
-
-    <span class="style1"><strong>When Not to Donate Blood? </strong></span> <br /><br />
+    <h4>When Not to Donate Blood?</h4>
 
     <strong>You should not give blood if you have: </strong>
  <br />
@@ -120,10 +113,11 @@ Donate Blood Plasma can be carried on very casually. After donating the blood yo
 
 
 
-    <span class="style1"><strong>What is the Criteria for Donating Blood?
- </strong></span>
- <br /><br />
+    <h4>What is the Criteria for Donating Blood?</h4>
+   <p class="text-justify">
 Blood donors should be in good health and not suffer from any serious illness. It is very important to ensure that the act of donating blood does not jeopardize the donor's health in any way.</p>
 Safe blood is blood that does not contain viruses, bacteria, parasites, drugs or other injurious factors that may harm a blood recipient. Donated blood must also not harm the recipient. It must be safe for transfusion to those who need it.
+
+</p>
 </asp:Content>
 
