@@ -123,7 +123,7 @@ $axure.eventManager.click('u39', function(e) {
 
 if (true) {
 
-	self.location.href=$axure.globalVariableProvider.getLinkUrl('CONTACT_US.html');
+	self.location.href=$axure.globalVariableProvider.getLinkUrl('ABOUT_US.html');
 
 }
 });
