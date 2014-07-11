@@ -11,7 +11,7 @@
 <div class="row">
   <div class="col-md-3">
   
-  <div id="divListEvent" style="float:left; margin:10px">
+ 
  <table class="table table-bordered">
 <tr>
 <th>Date.</th>
@@ -28,19 +28,15 @@
   </asp:Repeater>
 
 </table>
-</div>
-<<<<<<< HEAD
+
+
   </div>
   <div class="col-md-9">
   
-  <table class="table table-bordered">
-=======
 
 
-<div id="divEventContent" style="min-width:400px; padding-left:4px;" >
+ <table class="table table-bordered">
 
-<table  style="min-width:300px; margin-right: 0px;" >
->>>>>>> 18d02f15168915eef693c54b0138f0a54ab0a316
 
 <tr>
 <td class="col-sm-3">Event Title</td>
@@ -87,8 +83,10 @@
 <td colspan='2' align="center" ><asp:Button ID="btnAllow"  CssClass="btn btn-default" runat="server" Text="Allow" /><asp:Button ID="btnDiscard" CssClass="btn btn-default" runat="server" Text="Discard" /></td>
 </tr>
 
-</table></div>
-</div>
+</table>
+
+  </div>
+
 
 
 

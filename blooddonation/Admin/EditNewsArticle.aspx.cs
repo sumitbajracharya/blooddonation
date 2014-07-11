@@ -11,4 +11,8 @@ public partial class Admin_EditNewsArticle : System.Web.UI.Page
     {
 
     }
+    protected void btnUpdate_Click(object sender, EventArgs e)
+    {
+       
+    }
 }

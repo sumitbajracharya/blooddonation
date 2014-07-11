@@ -3,10 +3,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <br /><br /><br />
+  
 <!-- listing the Advance Blood Request in table-->
-<div id="divListEvent" style="float:left; margin:10px">
-<table border=2px>
+<div class="row">
+  <div class="col-md-3">
+  
+ <table class="table table-bordered">
 <tr>
 <th>Date</th>
 <th>Contact Person</th>
@@ -24,63 +26,66 @@
 </table>
 </div>
 
-    <div id="divEventContent" style="min-width:400px; padding-left:4px;" >
+     <div class="col-md-9">
+  
 
-<table  style="min-width:300px; margin-right: 0px;" >
+
+ <table class="table table-bordered">
 
 <tr>
-<td class="style4">Full Name:</td>
-<td class="style1"><asp:Label ID="lblFullName" runat="server"></asp:Label></td>
+<td class="col-sm-3">Full Name</td>
+<td><asp:Label ID="lblFullName" runat="server"></asp:Label></td>
 </tr>
 
 <tr>
-<td  class="auto-style1">Age </td>
-<td  class="auto-style1"><asp:Label ID="lblAge" runat="server"></asp:Label></td>
+<td>Age </td>
+<td><asp:Label ID="lblAge" runat="server"></asp:Label></td>
 </tr>
 
 <tr>
-<td  class="style4">Blood Group :</td>
-<td  class="style1"><asp:Label ID="lblBloodGroup" runat="server"></asp:Label></td>
+<td  >Blood Group</td>
+<td ><asp:Label ID="lblBloodGroup" runat="server"></asp:Label></td>
 </tr>
 
 <tr>
-<td class="style4">Quantity :</td>
-<td class="style1"><asp:Label ID="lblQuantity" runat="server"></asp:Label></td>
+<td >Quantity</td>
+<td><asp:Label ID="lblQuantity" runat="server"></asp:Label></td>
 </tr>
 
 <tr>
-<td class="style4">Location:</td>
-<td class="style1"><asp:Label ID="lblLocation" runat="server"></asp:Label></td>
+<td >Location</td>
+<td><asp:Label ID="lblLocation" runat="server"></asp:Label></td>
 </tr>
 
 <tr>
-<td class="style4">Date : </td>
-<td class="style1"><asp:Label ID="lblDate" runat="server"></asp:Label></td>
+<td >Date</td>
+<td><asp:Label ID="lblDate" runat="server"></asp:Label></td>
 </tr>
 
 <tr>
-<td class="style4">Time : </td>
-<td class="style1"><asp:Label ID="lblTime" runat="server"></asp:Label></td>
+<td >Time</td>
+<td><asp:Label ID="lblTime" runat="server"></asp:Label></td>
 </tr>
 
 <tr>
-<td class="style4">Contact No. : </td>
-<td class="style1"><asp:Label ID="Label1" runat="server"></asp:Label></td>
+<td >Contact No.</td>
+<td><asp:Label ID="Label1" runat="server"></asp:Label></td>
 </tr>
 
 <tr>
-<td class="style4">Purpose : </td>
-<td class="style1"><asp:Label ID="Label2" runat="server"></asp:Label></td>
+<td >Purpose</td>
+<td><asp:Label ID="Label2" runat="server"></asp:Label></td>
 </tr>
 
 
 <tr>
-<td class="style4">Hospital Docs: </td>
-<td class="style1"> <img src='<%#Eval("EventImage")%>' /></td>
+<td >Hospital Docs </td>
+    
+<td><asp:Image ID="Image1" ImageUrl='<%#Eval("EventImage")%>' runat="server" /> </td>
 </tr>
 
 <tr>
-<td colspan='2' class="style1"><center> <asp:Button ID="btnAllow" runat="server" Text="Allow" /> &nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnDiscard" runat="server" Text="Discard" /></center></td>
+<td colspan='2' align="center" > <asp:Button ID="btnAllow"  CssClass="btn btn-default"  runat="server" Text="Allow" /> <asp:Button ID="btnDiscard"  CssClass="btn btn-default" runat="server" Text="Discard" /></td>
 </tr>
 
 </table>

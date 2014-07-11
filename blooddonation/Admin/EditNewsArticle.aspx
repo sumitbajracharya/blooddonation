@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-  <table class="table table-bordered">xsv
+  <table class="table table-bordered">
     <tr>
     <td class="col-sm-2">News Title</td>
     <td><asp:TextBox ID="txtNewsTitle" runat="server" cssClass="form-control"></asp:TextBox></td>
@@ -21,7 +21,7 @@
     </tr>
 
     <tr>
-    <td colspan='2'><center> <asp:Button ID="btnAdd" runat="server" CssClass="btn btn-default" Text="Add" /> &nbsp;&nbsp;&nbsp; <asp:Button ID="btnCancel" CssClass="btn btn-default" runat="server" Text="Cancel" /></center></td>
+    <td colspan='2'><center> <asp:Button ID="btnUpdate" runat="server" CssClass="btn btn-default" Text="Update" OnClick="btnUpdate_Click" /> &nbsp;&nbsp;&nbsp; <asp:Button ID="btnCancel" CssClass="btn btn-default" runat="server" Text="Cancel" /></center></td>
     </tr>
     </table>
    
