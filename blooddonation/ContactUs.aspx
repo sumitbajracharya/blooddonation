@@ -9,25 +9,24 @@
   <h3>Contact Us</h3>
  <div class="form-group">
 
-    <label for="exampleInputEmail1">Full Name</label>
+    <label for="fullname">Full Name</label>
      <asp:TextBox ID="TextBox1" CssClass="form-control" placeholder="Full Name" runat="server"></asp:TextBox>
     
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Email Id</label>
+    <label for="email">Email Id</label>
       <asp:TextBox ID="txtEmail" CssClass="form-control" placeholder="Email Id" runat="server"></asp:TextBox>
     
   </div>
     <div class="form-group">
-   <label for="exampleInputPassword1">Message</label>
+   <label for="Message">Message</label>
         <asp:TextBox ID="txtMessage" runat="server" CssClass="form-control" TextMode="MultiLine"></asp:TextBox>
 
   </div>
       <asp:Button ID="btnSubmit" CssClass="btn btn-default" runat="server" Text="Submit" />
-  
-  
+
   </div>
-</div>
+
 
 
 
