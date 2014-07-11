@@ -9,6 +9,14 @@ public partial class BloodDonation : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        //if(Role==admin)
+        //{
+        //    pnllink.Visible = true;
+        //}
+        //else
+        //{
+        //  pnllink.Visible = false;
+        //}
+        
     }
 }

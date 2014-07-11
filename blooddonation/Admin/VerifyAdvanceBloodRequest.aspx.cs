@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class User_Advance_blood_request_Update_panel : System.Web.UI.Page
+public partial class Admin_VerifyAdvanceBloodRequest : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {

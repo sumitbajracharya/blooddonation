@@ -21,7 +21,7 @@
                 <td>Date of Birth</td>
                 <td>
                     <asp:DropDownList ID="ddlYear" runat="server" cssClass="form-control"></asp:DropDownList>
-                    <asp:DropDownList ID="ddlMonths" runat="server"cssClass="form-control"></asp:DropDownList>
+                    <asp:DropDownList ID="ddlMonths" runat="server" cssClass="form-control"></asp:DropDownList>
                     <asp:DropDownList ID="ddlDate" runat="server" cssClass="form-control"></asp:DropDownList>
                 </td>
             </tr>
