@@ -180,15 +180,27 @@
   <div class="col-md-3">
         <h3>Current Blood Request</h3>
   
-  <ul>
-  <li>1. Sushma Karki Baneshor 9800000 </li>
- <li>1. Sushma Karki Baneshor 9800000 </li>
-  <li>1. Sushma Karki Baneshor 9800000 </li>
-   <li>1. Sushma Karki Baneshor 9800000 </li>
-    <li>1. Sushma Karki Baneshor 9800000 </li>
-
   
-  </ul>
+
+      <table class="table table-hover">
+          <asp:Repeater ID="Repeater1" runat="server">
+              <HeaderTemplate>
+
+              </HeaderTemplate>
+              <ItemTemplate>
+                  <tr>
+                    <td><%#Eval("Name") %></td>
+                    <td><%#Eval("Location") %></td>
+                    <td><%#Eval("Phone no") %></td>
+            </tr>
+              </ItemTemplate>
+          </asp:Repeater>
+            
+      </table>
+
+      
+  
+  
   
   
   </div>
