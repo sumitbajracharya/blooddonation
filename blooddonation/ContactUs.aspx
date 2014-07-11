@@ -5,22 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 
-
-<div class="row">
-  <div class="col-md-4"><h3>Current Blood Request</h3>
-  
-  <ul>
-  <li>1. Sushma Karki Baneshor 9800000 </li>
- <li>1. Sushma Karki Baneshor 9800000 </li>
-  <li>1. Sushma Karki Baneshor 9800000 </li>
-   <li>1. Sushma Karki Baneshor 9800000 </li>
-    <li>1. Sushma Karki Baneshor 9800000 </li>
-
-  
-  </ul>
-  
-  </div>
-  <div class="col-md-8">
+  <div class="col-md-12">
   <h3>Contact Us</h3>
  <div class="form-group">
 
