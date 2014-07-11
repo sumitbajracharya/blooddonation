@@ -10,36 +10,40 @@
    <div class="col-md-12"><h3>ADVANCE BLOOD REQUEST</h3>
   <div class="row">
   <div class="col-md-3"><h4>Date</h4>
-  <h6>07/05/2014</h6>
-  <h6>07/05/2014</h6>
-<h6>07/05/2014</h6>
-<h6>07/05/2014</h6>
-  <h6>07/05/2014</h6>
+ 
+      <asp:Repeater ID="Repeater1" runat="server">
+          <ItemTemplate>
+              <h6><a href="" <%#Eval("Date") %>></a></h6>
+          </ItemTemplate>
+      </asp:Repeater>
   
   </div>
   <div class="col-md-9"><h4>Program</h4>
-   <h6>Urusha Shrestha</h6>
-  <h6>Urusha Shrestha</h6>
-<h6>Urusha Shrestha</h6>
-<h6>Urusha Shrestha</h6>
-  <h6>07/05/2014</h6>
+   
+      <asp:Repeater ID="Repeater2" runat="server">
+          <ItemTemplate>
+              <h6><a href="" <%#Eval("Program") %>></a></h6>
+          </ItemTemplate>
+      </asp:Repeater>
   </div>
 </div>
    </div>
   <div class="col-md-12"><h3>BLOOD CENTERS</h3>
   <div class="row">
   <div class="col-md-3"><h4>Date</h4>
-  <h6>BLOOD BANK</h6>
- <h6>BLOOD BANK</h6>
- <h6>BLOOD BANK</h6>
- <h6>BLOOD BANK</h6>
+  <asp:Repeater ID="Repeater3" runat="server">
+          <ItemTemplate>
+              <h6><a href="" <%#Eval("Date") %>></a></h6>
+          </ItemTemplate>
+      </asp:Repeater>
   
   </div>
   <div class="col-md-9"><h4>Program</h4>
-   <h6>Bhrikuti Mandap, Kathmandu Phone no:- 01-4229344</h6>
-   <h6>Bhrikuti Mandap, Kathmandu Phone no:- 01-4229344</h6>
-   <h6>Bhrikuti Mandap, Kathmandu Phone no:- 01-4229344</h6>
-   <h6>Bhrikuti Mandap, Kathmandu Phone no:- 01-4229344</h6>
+   <asp:Repeater ID="Repeater4" runat="server">
+          <ItemTemplate>
+              <h6><a href="" <%#Eval("Program") %>></a></h6>
+          </ItemTemplate>
+      </asp:Repeater>
  
   </div>
 </div>
