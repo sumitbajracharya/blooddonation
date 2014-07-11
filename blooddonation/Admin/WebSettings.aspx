@@ -10,31 +10,31 @@
             <tr>
                 <td class="col-sm-3">Location</td>
                 <td>
-                    <asp:Button ID="btnEditLocation" runat="server" Text="EDIT" cssClass="btn btn-default"/>
+                    <asp:Button ID="btnEditLocation" runat="server" Text="EDIT" cssClass="btn btn-default" OnClick="btnEditLocation_Click"/>
                 </td>
             </tr>
             <tr>
                 <td>Blood Center</td>
                 <td>
-                    <asp:Button ID="btnEditBloodCenter" runat="server" Text="EDIT" cssClass="btn btn-default"/>
+                    <asp:Button ID="btnEditBloodCenter" runat="server" Text="EDIT" cssClass="btn btn-default" OnClick="btnEditBloodCenter_Click"/>
                 </td>
             </tr>
             <tr>
                 <td>Blood Group</td>
                 <td>
-                    <asp:Button ID="btnEditBloodGroup" runat="server" Text="EDIT" cssClass="btn btn-default"/>
+                    <asp:Button ID="btnEditBloodGroup" runat="server" Text="EDIT" cssClass="btn btn-default" OnClick="btnEditBloodGroup_Click"/>
                 </td>
             </tr>
             <tr>
                 <td>Slider Image </td>
                 <td>
-                    <asp:Button ID="btnEditImageToTheSlider" runat="server" Text="EDIT" cssClass="btn btn-default"/>
+                    <asp:Button ID="btnEditImageToTheSlider" runat="server" Text="EDIT" cssClass="btn btn-default" OnClick="btnEditImageToTheSlider_Click"/>
                 </td>
             </tr>
             <tr>
                 <td>News Artical</td>
                 <td>
-                    <asp:Button ID="btnEditNewsArtical" runat="server" Text="EDIT" cssClass="btn btn-default"/>
+                    <asp:Button ID="btnEditNewsArtical" runat="server" Text="EDIT" cssClass="btn btn-default" OnClick="btnEditNewsArtical_Click"/>
                 </td>
             </tr>
         </table>
