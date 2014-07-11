@@ -57,7 +57,8 @@
     <li><a href="BloodCenterDetails.aspx">Blood Center</a></li>
     <li><a href="">Request Blood </a></li>
     <li><a href="">Contact Us</a></li>
-    <li><a href="../WhyToDonate.aspx">Why To Donate</a></li>
+    <li><a href="WhyToDonate.aspx">Why To Donate</a></li>
+    <li><a href="">Profile</a></li>
     </ul>
     </div>
     </div>
@@ -72,12 +73,12 @@
 
 <div class="row">
   <div class="col-md-12">
-      <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-default">
+      <asp:DropDownList ID="ddlBloodGroup" runat="server" CssClass="btn btn-default">
           <asp:ListItem>Blood Group</asp:ListItem>
           <asp:ListItem>A</asp:ListItem>
           <asp:ListItem>B</asp:ListItem>
       </asp:DropDownList>
-      <asp:DropDownList ID="DropDownList2" runat="server" CssClass="btn btn-default">
+      <asp:DropDownList ID="ddlLocation" runat="server" CssClass="btn btn-default">
           <asp:ListItem>Choose Location</asp:ListItem>
           <asp:ListItem>Baneswor</asp:ListItem>
           <asp:ListItem>Basantapur</asp:ListItem>
