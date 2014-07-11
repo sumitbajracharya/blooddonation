@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    
     <div>
     
         <table class="table table-bordered">
@@ -20,22 +20,20 @@
                 <td>Event Date</td>
                 <td>
                     <asp:TextBox ID="txtEventDate" runat="server" cssClass="form-control"></asp:TextBox>
-                    <cc1:calendarextender ID="txtEventDate_CalendarExtender" runat="server" TargetControlID="txtEventDate">
-                    </cc1:calendarextender>
+                    
                 </td>
             </tr>
             <tr>
                 <td>Time</td>
                 <td>
-                    <asp:TextBox ID="txtStartingTime" runat="server" cssClass="form-control"></asp:TextBox>
-                    <asp:DropDownList ID="ddlStartingAmPm" runat="server" cssClass="form-control">
-                        <asp:ListItem Selected="True">am</asp:ListItem>
+                    <asp:TextBox ID="txtStartingTime" runat="server" cssClass="form-control pull-left" Width="30%"></asp:TextBox>
+                    <asp:DropDownList ID="ddlStartingAmPm" runat="server" Width="10%" cssClass="form-control pull-left">
+                        <asp:ListItem>am</asp:ListItem>
                         <asp:ListItem>pm</asp:ListItem>
                     </asp:DropDownList>
-&nbsp;TO
-                    <asp:TextBox ID="txtEndingTime" runat="server" cssClass="form-control"></asp:TextBox>
-                    <asp:DropDownList ID="ddlEndingAmPm" runat="server" cssClass="form-control" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
-                        <asp:ListItem Selected="True">am</asp:ListItem>
+<asp:Label ID="lblTo" runat="server" Text=" To " CssClass="pull-left"></asp:Label>                    <asp:TextBox ID="txtEndingTime" runat="server" cssClass="form-control pull-left" Width="30%"></asp:TextBox>
+                    <asp:DropDownList ID="ddlEndingAmPm" runat="server"  Width="10%" cssClass="form-control pull-left">
+                        <asp:ListItem>am</asp:ListItem>
                         <asp:ListItem>pm</asp:ListItem>
                     </asp:DropDownList>
                 </td>
