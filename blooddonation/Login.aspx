@@ -44,8 +44,9 @@
     <form id="form1" runat="server">
     
         
-      <%--  <ul class="nav pull-right">
-          <li class="dropdown" id="menuLogin">
+        <ul  class="nav pull-left">
+          <li style="float:left" ><a href="#">Sign Up</a></li>
+          <li class="dropdown" id="menuLogin" >
             <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
             <div class="dropdown-menu" style="padding:17px;">
               <form class="form" id="formLogin"> 
@@ -56,10 +57,10 @@
               </form>
             </div>
           </li>
-        </ul>--%>
-        <ul class="nav pull-right">
+        </ul>
+        <%--<ul class="nav pull-right">
           <li><a href="/users/sign_up">Sign Up</a></li>
-          <li class="divider-vertical"></li>
+          <li class="divider-horizontal"></li>
           <li class="drop down">
             <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
             <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
@@ -73,7 +74,7 @@
             </div>
 
           </li>
-        </ul>
+        </ul>--%>
    
     </form>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
