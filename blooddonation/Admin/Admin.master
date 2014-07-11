@@ -67,7 +67,7 @@
  <li class="list-group-item"><a href="UserManagement.aspx">User Management </a></li>
 <li class="list-group-item"><a href="EventVerify.aspx">Event Verify</a></li>
   <li class="list-group-item">Advance Blood requests</li>
-  <li class="list-group-item">Settings</li>
+  <li class="list-group-item"><a href="WebSettings.aspx">Settings</a></li>
 </ul>
   
   </div>
