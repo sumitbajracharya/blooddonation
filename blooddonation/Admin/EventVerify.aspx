@@ -31,6 +31,8 @@
 </div>
 
 
+<div id="divEventContent" style="min-width:400px; padding-left:4px;" >
+
 <table  style="min-width:300px; margin-right: 0px;" >
 
 <tr>
@@ -79,8 +81,8 @@
 
 </table>
 
+</div>
 
-<div id="divEventContent" style="min-width:400px; padding-left:4px;" >
 
 
 </asp:Content>

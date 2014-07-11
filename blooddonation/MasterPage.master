@@ -30,22 +30,24 @@
   <!-- Main Logo 225px x 224px -->
       <asp:Image ID="Image1" ImageUrl="~/Assets/Images/logo.png" runat="server" CssClass="img-responsive" /></div>
          <!--Login/Register-->
-          
+      <div class="form-group" style="position:absolute; right:120px;">
          <ul class="nav pull-right"> 
-          <li class="drop down">
+          <li class="dropdown">
             <a class="dropdown-toggle" href="#" style="margin-right:15px" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
             <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
                           <!-- Login form here -->
-              <form action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
+             
                     <asp:TextBox ID="txtUsername" data-stopPropagation="true"  placeholder="Username" CssClass="form-control " runat="server"></asp:TextBox>
                     <asp:TextBox ID="txtPassword" CssClass="form-control" placeholder="Password" runat="server"></asp:TextBox>
                     <asp:HyperLink ID="forgetPassword" runat="server">Forget your password?</asp:HyperLink>
                     <asp:Button ID="btnLogin" CssClass="btn" runat="server" Text="Login" />      
-              </form>
+            
             </div>
 
           </li>
         </ul>
+
+        </div>
          <!--End Login/Register-->
          
       <!-- header banner width 700 x 200 -->
@@ -73,9 +75,9 @@
     <ul class="nav navbar-nav navbar-left">
     <li><a href="Home.aspx">Home</a></li>
     <li><a href="">Blood Center</a></li>
-    <li><a href="">Request Blood </a></li>
-    <li><a href="">Contact Us</a></li>
-    <li><a href="">Why To Donate</a></li>
+    <li><a href="AdvanceAndEmergencyBloodRequest.aspx">Request Blood </a></li>
+    <li><a href="ContactUs.aspx">Contact Us</a></li>
+    <li><a href="WhyToDonate.aspx">Why To Donate</a></li>
     </ul>
     </div>
     </div>

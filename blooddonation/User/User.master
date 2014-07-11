@@ -53,12 +53,25 @@
     </button>
     <div class="collapse navbar-collapse navHeaderCollapse">
     <ul class="nav navbar-nav navbar-left">
+<<<<<<< HEAD
     <li><a href="../Home.aspx">Home</a></li>
     <li><a href="BloodCenterDetails.aspx">Blood Center</a></li>
     <li><a href="">Request Blood </a></li>
     <li><a href="">Contact Us</a></li>
     <li><a href="../WhyToDonate.aspx">Why To Donate</a></li>
+=======
+    <li><a href="<a href="../Home.aspx">Home</a></li>
+    <li><a href="<a href="BloodCenterDetails.aspx">Blood Center</a></li>
+    <li><a href="">Request Blood </a></li>
+    <li><a href="">Contact Us</a></li>
+    <li><a href="<a href="../WhyToDonate.aspx">Why To Donate</a></li>
+>>>>>>> 0b7d9507cde2a2645459c7374d49e93ac61bac6e
     </ul>
+        <asp:Panel ID="pnllink" runat="server">
+           
+            <a href="../Admin/DashBoard.aspx">use as admin</a>"
+        </asp:Panel>
+        
     </div>
     </div>
     </div>
