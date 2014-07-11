@@ -58,7 +58,7 @@
             </div>
           </li>
         </ul>
-        <%--<ul class="nav pull-right">
+        <ul class="nav pull-right">
           <li><a href="/users/sign_up">Sign Up</a></li>
           <li class="divider-horizontal"></li>
           <li class="drop down">
@@ -74,7 +74,7 @@
             </div>
 
           </li>
-        </ul>--%>
+        </ul>
    
     </form>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
