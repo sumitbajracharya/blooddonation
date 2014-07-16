@@ -21,7 +21,7 @@
             <tr>
                 <td class="col-sm-3">Full Name</td>
                 <td>
-                    <asp:TextBox ID="TextBox1"  placeholder="FullName" cssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="FullName" cssClass="form-control" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -101,7 +101,7 @@
             <tr>
                 <td>Purpose</td>
                 <td>
-                    <asp:TextBox ID="txtPurpose" runat="server" cssClass="form-control" placeholder="Enter Purpose"></asp:TextBox>
+                    <asp:TextBox ID="txtPurpose" runat="server" cssClass="form-control" ></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -142,7 +142,7 @@
                 </HeaderTemplate>
                 <ItemTemplate>
                     <tr>
-                        <td><%#Eval("Request Date") %></td>
+                        <td><%#Eval("RequestDate") %></td>
                         <td>Heart Surgery</td>
                         <td>5</td>
                     </tr>
@@ -181,4 +181,3 @@
 
 </div>
 </asp:Content>
-
