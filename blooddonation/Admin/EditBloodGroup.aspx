@@ -4,10 +4,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-  <!-- Contents-->
+    <!-- Contents-->
 <asp:TextBox ID="txtBloodGroup" runat="server" cssClass="form-control pull-left" Width="40%"></asp:TextBox>
-    <asp:Button runat="server" ID="btnAdd"  CssClass="btn btn-default" Text="Add" />
-
+    <asp:Button runat="server" ID="btnAdd"  CssClass="btn btn-default" Text="Add" OnClick="btnAdd_Click"  />
+        <asp:Label ID="lblMessage" runat="server"></asp:Label>
     <br /><br /><br /><br />
 
     <asp:GridView ID="gdvBloodGroup" runat="server">

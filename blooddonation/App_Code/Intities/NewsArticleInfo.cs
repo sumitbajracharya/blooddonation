@@ -17,4 +17,5 @@ public class NewsArticleInfo
     public int NewsId { get; set; }
     public string Heading { get; set; }
     public string Description { get; set; }
+    public string ImageName { get; set; }
 }

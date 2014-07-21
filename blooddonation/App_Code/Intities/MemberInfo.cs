@@ -27,11 +27,12 @@ public class MemberInfo
     public DateTime LastDonationDate { get; set; }
     public string BestTime { get; set; }
     public int MobileNo { get; set; }
+    public int PhoneNo { get; set; }
     public string Email { get; set; }
     public string BloodDonationCardSnapshot { get; set; }
     public bool DonorStatus { get; set; }
     public bool AccountStatus { get; set; }
-    public int RollId { get; set; }
+    public int RoleId { get; set; }
     public string ProfilePicture { get; set; }
 
 }

@@ -12,14 +12,8 @@
 <tr><td>Last Name</td><td><asp:TextBox ID="Txtlname" cssClass="form-control" runat="server"></asp:TextBox></td></tr>
 <tr><td>Blood Group</td><td><asp:DropDownList ID="DropDownListbg" cssClass="btn btn-default" runat="server" Height="74px" 
                 Width="74px">
-                <asp:ListItem>A+</asp:ListItem>
-                <asp:ListItem>A-</asp:ListItem>
-                <asp:ListItem>B+</asp:ListItem>
-                <asp:ListItem>B-</asp:ListItem>
-                <asp:ListItem>AB+</asp:ListItem>
-                <asp:ListItem>AB-</asp:ListItem>
-                <asp:ListItem>O+</asp:ListItem>
-                <asp:ListItem>O-</asp:ListItem>
+
+                
             </asp:DropDownList></td></tr>
 <tr><td>Email Id</td><td><asp:TextBox ID="Texteid" cssClass="form-control" runat="server"></asp:TextBox></td></tr>
 <tr><td>Mobile Number</td><td> <asp:TextBox ID="Textmobile" cssClass="form-control" runat="server"></asp:TextBox></td></tr>
