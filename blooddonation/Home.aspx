@@ -12,7 +12,7 @@
 <div class="row">
   
   
-   <div class="col-md-12">
+   <div class="col-md-12 col-xs-12">
        <table class="table table-bordered">
            <tr>
                <th colspan="2">ADVANCE BLOOD REQUEST</th>
