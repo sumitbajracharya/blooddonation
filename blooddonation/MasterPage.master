@@ -55,7 +55,7 @@
 
  </div>
          <!--End Login/Register-->
-        <asp:Image ID="Image4" height="200" Width="850" ImageUrl="~/Assets/Images/header.jpg" runat="server" CssClass="img-responsive" />
+        <asp:Image ID="Image4" ImageUrl="~/Assets/Images/header.jpg" runat="server" CssClass="img-responsive" />
       
   </div>
 </div>
@@ -77,7 +77,7 @@
     <div class="collapse navbar-collapse navHeaderCollapse">
     <ul class="nav navbar-nav navbar-left">
     <li><a href="Home.aspx">Home</a></li>
-    <li><a href="">Blood Center</a></li>
+    <li><a href="BloodCenterDetails.aspx">Blood Center</a></li>
     <li><a href="AdvanceAndEmergencyBloodRequest.aspx">Request Blood </a></li>
     <li><a href="ContactUs.aspx">Contact Us</a></li>
     <li><a href="WhyToDonate.aspx">Why To Donate</a></li>
@@ -182,26 +182,29 @@
 
 
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-3 col-xs-12">
         <h3>Current Blood Request</h3>
   
   
 
-      <table class="table table-hover">
-          <asp:Repeater ID="Repeater1" runat="server">
+   <div class="row">
+  
+          <asp:Repeater ID="rptCurrectBloodRequest" runat="server">
               <HeaderTemplate>
 
               </HeaderTemplate>
               <ItemTemplate>
-                  <tr>
-                    <td><%#Eval("Name") %></td>
-                    <td><%#Eval("Location") %></td>
-                    <td><%#Eval("Phone no") %></td>
-            </tr>
+       <div class="col-md-4"><%#Eval("Name") %>as</div>     
+       <div class="col-md-4"><%#Eval("Location") %>as</div> 
+       <div class="col-md-4"><%#Eval("Phone no") %>as</div>       
+                    
+                    
+                          
+            
               </ItemTemplate>
           </asp:Repeater>
             
-      </table>
+    </div>
 
       
   
