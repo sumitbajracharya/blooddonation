@@ -37,12 +37,6 @@ public class BLLUser
                 throw ex;
             }
         }
-        SqlParameter[] param=new SqlParameter[]
-        {
-            
-            
-        };
-
+       
         
-      }
 }

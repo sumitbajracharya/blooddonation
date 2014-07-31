@@ -19,6 +19,7 @@ public partial class Registration : System.Web.UI.Page
     protected void btnsubmit_Click(object sender, EventArgs e)
     {
         MembershipCreateStatus _status;
+        Membership
 
         var user = Membership.CreateUser(TxtUserName.Text, TxtPassword.Text,TxtEmail.Text, null, null, false, out _status);
         switch (_status)

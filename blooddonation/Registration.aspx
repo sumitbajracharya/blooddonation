@@ -7,11 +7,16 @@
 
 <table class="table table-bordered">
 
-<tr><td colspan="2"><center><b>Registration</b><br /><asp:Label ID="lblResult" Text="hello " runat="server" ForeColor="Red"></asp:Label></center></td></tr>
+<tr><td colspan="2"><center><b>Registration</b><br /><asp:Label ID="lblResult" Text=" " runat="server" ForeColor="Red"></asp:Label></center></td></tr>
 <tr><td class="col-sm-3">First Name</td><td><asp:TextBox ID="TxtFirstName" cssClass="form-control" runat="server"></asp:TextBox></td></tr>
 <tr><td>Last Name</td><td><asp:TextBox ID="TxtLastName" cssClass="form-control" runat="server"></asp:TextBox></td></tr>
 <tr><td>Blood Group</td><td><asp:DropDownList ID="Ddlbloodgroup" cssClass="btn btn-default" runat="server" Height="74px" 
                 Width="74px">
+    <asp:ListItem></asp:ListItem>
+    <asp:ListItem>A +ve</asp:ListItem>
+    <asp:ListItem>A -ve</asp:ListItem>
+    <asp:ListItem>B +ve</asp:ListItem>
+    <asp:ListItem>B -ve</asp:ListItem>
 
                 
             </asp:DropDownList></td></tr>
