@@ -34,5 +34,4 @@ public class MemberInfo
     public bool AccountStatus { get; set; }
     public int RoleId { get; set; }
     public string ProfilePicture { get; set; }
-
 }
