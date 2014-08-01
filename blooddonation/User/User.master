@@ -57,7 +57,7 @@
     <li><a href="BloodCenterDetails.aspx">Blood Center</a></li>
     <li><a href="">Request Blood </a></li>
     <li><a href="">Contact Us</a></li>
-    <li><a href="WhyToDonate.aspx">Why To Donate</a></li>
+    <li><a href="../WhyToDonate.aspx">Why To Donate</a></li>
     <li><a href="">Profile</a></li>
     </ul>
     </div>
