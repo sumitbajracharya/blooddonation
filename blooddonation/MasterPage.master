@@ -148,7 +148,7 @@
        <!--  Caption Here -->
       </div>
     </div>
-  <!-- some text here--></some>
+  <!-- some text here-->
   </div>
 
   <!-- Controls -->
@@ -170,18 +170,16 @@
 
 <div class="row">
   <div class="col-md-12 col-xs-12">
-      <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-default">
-          <asp:ListItem>Blood Group</asp:ListItem>
-          <asp:ListItem>A</asp:ListItem>
-          <asp:ListItem>B</asp:ListItem>
+      <asp:DropDownList ID="ddl_bloodgroup" runat="server" CssClass="btn btn-default">
+          
       </asp:DropDownList>
-      <asp:DropDownList ID="DropDownList2" runat="server" CssClass="btn btn-default">
-          <asp:ListItem>Choose Location</asp:ListItem>
-          <asp:ListItem>Baneswor</asp:ListItem>
-          <asp:ListItem>Basantapur</asp:ListItem>
-          <asp:ListItem>Koteswor</asp:ListItem>
+      <asp:DropDownList ID="ddl_location" runat="server" CssClass="btn btn-default">
+          
       </asp:DropDownList>
-      <button type="button" class="btn btn-info">Search</button>
+      <asp:Button ID="btn_search" runat="server" Text="Search" Font-Bold="True" 
+                        onclick="btn_search_Click" class="btn btn-info"/>
+      
+
   </div>
   
 </div>
