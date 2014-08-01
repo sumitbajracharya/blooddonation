@@ -26,13 +26,13 @@
     
       
      <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-3 col-sm-12 col-xs-12">
   <!-- Main Logo 225px x 224px -->
       <asp:Image ID="Image1" ImageUrl="~/Assets/Images/logo.png" runat="server" CssClass="img-responsive" /></div>
        
          
       <!-- header banner width 700 x 200 -->
-  <div class="col-md-9">
+  <div class="col-md-9 col-sm-12 col-xs-12">
     <!--Login/Register-->
       <div class="form-group" style="position:absolute; right:20px;">
          <ul class="nav pull-right"> 
@@ -55,7 +55,8 @@
 
  </div>
          <!--End Login/Register-->
-        <asp:Image ID="Image4" height="200" Width="850" ImageUrl="~/Assets/Images/header.jpg" runat="server" CssClass="img-responsive" />
+
+        <asp:Image ID="Image4" ImageUrl="~/Assets/Images/header.jpg" runat="server" CssClass="img-rounded img-responsive" />
       
   </div>
 </div>
@@ -65,27 +66,36 @@
 
  <!-- Start Navigation -->
  <br />
-   <div class = "navbar navbar-default navbar-static-top">
-    <div class="container">
   
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     
-    <button class ="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    </button>
-    <div class="collapse navbar-collapse navHeaderCollapse">
-    <ul class="nav navbar-nav navbar-left">
-    <li><a href="Home.aspx">Home</a></li>
-    <li><a href="">Blood Center</a></li>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="Home.aspx">Home</a></li>
+    <li><a href="BloodCenterDetails.aspx">Blood Center</a></li>
     <li><a href="AdvanceAndEmergencyBloodRequest.aspx">Request Blood </a></li>
     <li><a href="ContactUs.aspx">Contact Us</a></li>
     <li><a href="WhyToDonate.aspx">Why To Donate</a></li>
-    </ul>
-    </div>
-    </div>
-    </div>
-
+          </ul>
+        </li>
+      </ul>
+      
+    
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
  <!-- End Navigation -->
 
  <!-- Start Slider -->
@@ -93,7 +103,7 @@
  <!-- Slide Image should be height 315px and width 1140px -->
 
 <div class="row">
- <div class="col-md-12">
+ <div class="col-md-12 col-xs-12">
       
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -108,7 +118,7 @@
   <div class="carousel-inner">
     <div class="item active">
      <%--<img src="Assets/Images/Slider/u28_normal.jpg" alt="1" class="img-responsive" />--%>
-        <asp:Image ID="Image2" runat="server" ImageUrl="~/Assets/Images/Slider/slider3.jpg" />
+        <asp:Image ID="Image2" runat="server" ImageUrl="~/Assets/Images/Slider/slider3.jpg" CssClass="img-responsive" />
          <div class="carousel-caption">
           
        <!--  Caption Here -->
@@ -117,7 +127,7 @@
 
      <div class="item">
      <%-- <img src="Assets/Images/Slider/u32_normal.jpg" alt="1" class="img-responsive" />--%>
-     <asp:Image ID="Image6" runat="server" ImageUrl="~/Assets/Images/Slider/slider1.jpg" />
+     <asp:Image ID="Image6" runat="server" ImageUrl="~/Assets/Images/Slider/slider1.jpg" CssClass="img-responsive" />
       <div class="carousel-caption">
        <!--  Caption Here -->
       </div>
@@ -125,7 +135,7 @@
 
       <div class="item">
      <%-- <img src="Assets/Images/Slider/u32_normal.jpg" alt="1" class="img-responsive" />--%>
-     <asp:Image ID="Image5" runat="server" ImageUrl="~/Assets/Images/Slider/slider4.jpg" />
+     <asp:Image ID="Image5" runat="server" ImageUrl="~/Assets/Images/Slider/slider4.jpg" CssClass="img-responsive" />
       <div class="carousel-caption">
        <!--  Caption Here -->
       </div>
@@ -133,7 +143,7 @@
 
     <div class="item">
    <%-- <img src="Assets/Images/Slider/u30_normal.jpg" alt="1" class="img-responsive" />--%>
-     <asp:Image ID="Image3" runat="server" ImageUrl="~/Assets/Images/Slider/slider2.jpg" />
+     <asp:Image ID="Image3" runat="server" ImageUrl="~/Assets/Images/Slider/slider2.jpg" CssClass="img-responsive" />
       <div class="carousel-caption">
        <!--  Caption Here -->
       </div>
@@ -142,12 +152,12 @@
   </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
+ 
+ <a class="carousel-control left" href="#carousel-example-generic" data-slide="prev">
+ <span class="icon-prev"></span></a>
+  <a class="carousel-control right" href="#carousel-example-generic" data-slide="next">
+ <span class="icon-next"></span>
+ </a>
 </div>
   </div> 
 </div>
@@ -159,6 +169,7 @@
 
 
 <div class="row">
+<<<<<<< HEAD
   <div class="col-md-12">
                     <asp:DropDownList ID="ddl_bloodgroup" runat="server">
                     </asp:DropDownList>
@@ -201,6 +212,21 @@
                         </td>
                     </tr>
       </table>
+=======
+  <div class="col-md-12 col-xs-12">
+      <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-default">
+          <asp:ListItem>Blood Group</asp:ListItem>
+          <asp:ListItem>A</asp:ListItem>
+          <asp:ListItem>B</asp:ListItem>
+      </asp:DropDownList>
+      <asp:DropDownList ID="DropDownList2" runat="server" CssClass="btn btn-default">
+          <asp:ListItem>Choose Location</asp:ListItem>
+          <asp:ListItem>Baneswor</asp:ListItem>
+          <asp:ListItem>Basantapur</asp:ListItem>
+          <asp:ListItem>Koteswor</asp:ListItem>
+      </asp:DropDownList>
+      <button type="button" class="btn btn-info">Search</button>
+>>>>>>> 8891ae5114fa38d29f0a6fd245857afb28cf39ff
   </div>
   
 </div>
@@ -211,26 +237,29 @@
 
 
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-3 col-xs-12">
         <h3>Current Blood Request</h3>
   
   
 
-      <table class="table table-hover">
-          <asp:Repeater ID="Repeater1" runat="server">
+   <div class="row">
+  
+          <asp:Repeater ID="rptCurrectBloodRequest" runat="server">
               <HeaderTemplate>
 
               </HeaderTemplate>
               <ItemTemplate>
-                  <tr>
-                    <td><%#Eval("Name") %></td>
-                    <td><%#Eval("Location") %></td>
-                    <td><%#Eval("Phone no") %></td>
-            </tr>
+       <div class="col-md-4 col-xs-4"><%#Eval("Name") %>as</div>     
+       <div class="col-md-4 col-xs-4"><%#Eval("Location") %>as</div> 
+       <div class="col-md-4 col-xs-4"><%#Eval("Phone no") %>as</div>       
+                    
+                    
+                          
+            
               </ItemTemplate>
           </asp:Repeater>
             
-      </table>
+    </div>
 
       
   
@@ -238,7 +267,7 @@
   
   
   </div>
-    <div class="col-md-6">
+    <div class="col-md-6 col-xs-12">
 
   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
@@ -247,7 +276,7 @@
        </div>
 
          <!-- Start Event -->
-  <div class="col-md-3">
+  <div class="col-md-3 col-xs-12">
   
   <h3 class="text-center">Events</h3>
     
