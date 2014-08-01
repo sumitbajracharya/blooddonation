@@ -19,8 +19,7 @@ public partial class Registration : System.Web.UI.Page
     protected void btnsubmit_Click(object sender, EventArgs e)
     {
         MembershipCreateStatus _status;
-        Membership
-
+        
         var user = Membership.CreateUser(TxtUserName.Text, TxtPassword.Text,TxtEmail.Text, null, null, false, out _status);
         switch (_status)
         {
@@ -28,7 +27,8 @@ public partial class Registration : System.Web.UI.Page
 
                 Roles.AddUserToRole(TxtUserName.Text, "Members");
                 CreateMembers();
-                lblResult.Text = "User CreatedUser Succesfully Created";
+                Session["UserName"] = TxtUserName.Text;
+                Response.Redirect("~/User/Registration_2.aspx");
                 break;
             case MembershipCreateStatus.DuplicateUserName:
                 lblResult.Text = "The username already exists";
