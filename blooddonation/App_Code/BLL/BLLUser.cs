@@ -16,31 +16,27 @@ public class BLLUser
 		// TODO: Add constructor logic here
 		//
 	}
-    public void CreateUser (MemberInfo _User)
+    public  static void CreateUser (MemberInfo _User)
     {
-        SqlParameter[] param=new SqlParameter[]
-        {
-            
-            new SqlParameter("@firstname",_User.FirstName),
-            new SqlParameter("@lastname",_User.LastName),
-            new SqlParameter("@username",_User.UserName),
-            new SqlParameter("@password",_User.Password),
-            new SqlParameter("@permanentaddress",_User.PermanentAddress),
-            new SqlParameter("@currentaddress",_User.CurrentAddress),
-            new SqlParameter("@dob",_User.DOB),
-            new SqlParameter("@bloodgroupid",_User.BloodGroupId),
-            new SqlParameter("@gender",_User.Gender),
-            new SqlParameter("@lastdonationdate",_User.LastDonationDate),
-            new SqlParameter("@besttime",_User.BestTime),
-            new SqlParameter("@mobilenumber",_User.MobileNo),
-            new SqlParameter("@phonenumber",_User.PhoneNo),
-            new SqlParameter("@email",_User.Email),
-            new SqlParameter("@blooddonationcardsnapshot",_User.BloodDonationCardSnapshot),
-            new SqlParameter("@accountstatus",_User.AccountStatus),
-            new SqlParameter("@roleid",_User.RoleId),
-            new SqlParameter("@profilepicture",_User.ProfilePicture)
-        };
-
-        ConnectionHelper.ExecuteProcedure("insert into TblMembers", param);
-      }
+        string sp = "Usp_Member_Create";
+            SqlConnection con = ConnectionHelper.GetConnection();
+            SqlCommand cmd = new SqlCommand(sp, con);
+            cmd.Parameters.Add(new SqlParameter("@firstname",_User.FirstName));
+            cmd.Parameters.Add(new SqlParameter("@lastname",_User.LastName));
+            cmd.Parameters.Add(new SqlParameter("@username",_User.UserName));
+            cmd.Parameters.Add(new SqlParameter("@bloodgroupid",_User.BloodGroupId));
+            cmd.Parameters.Add(new SqlParameter("@mobilenumber",_User.MobileNo));
+            cmd.Parameters.Add(new SqlParameter("@email",_User.Email));
+            cmd.CommandType = CommandType.StoredProcedure;
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+       
+        
 }

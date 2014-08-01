@@ -14,11 +14,11 @@ public class MemberInfo
 		// TODO: Add constructor logic here
 		//
 	}
+    public string UserId { get; set; }
     public int MemberId { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string UserName { get; set; }
-    public string Password { get; set; }
     public string PermanentAddress { get; set; }
     public string CurrentAddress { get; set; }
     public DateTime DOB { get; set; }
@@ -26,13 +26,12 @@ public class MemberInfo
     public string Gender { get; set; }
     public DateTime LastDonationDate { get; set; }
     public string BestTime { get; set; }
-    public int MobileNo { get; set; }
-    public int PhoneNo { get; set; }
+    public string MobileNo { get; set; }
+    public string PhoneNo { get; set; }
     public string Email { get; set; }
     public string BloodDonationCardSnapshot { get; set; }
     public bool DonorStatus { get; set; }
     public bool AccountStatus { get; set; }
     public int RoleId { get; set; }
     public string ProfilePicture { get; set; }
-
 }
