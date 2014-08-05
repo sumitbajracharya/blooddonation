@@ -21,19 +21,19 @@
             <tr>
                 <td class="col-sm-3">Full Name</td>
                 <td>
-                    <asp:TextBox ID="FullName" cssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtABRFullName" cssClass="form-control" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Age</td>
                 <td>
-                    <asp:TextBox ID="TextBox2" cssClass="form-control" runat="server" Width="50px"></asp:TextBox>
+                    <asp:TextBox ID="txtABRAge" cssClass="form-control" runat="server" Width="50px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Blood Group</td>
                 <td>
-                    <asp:DropDownList ID="DropDownList1" runat="server" cssClass="form-control" Width="50%">
+                    <asp:DropDownList ID="ddlABRBloodGroup" runat="server" cssClass="form-control" Width="50%">
                         <asp:ListItem>A+ve</asp:ListItem>
                         <asp:ListItem>A-ve</asp:ListItem>
                         <asp:ListItem>B+ve</asp:ListItem>
@@ -55,14 +55,14 @@
                 <td>Location</td>
                 <td>
                     
-                    <asp:DropDownList ID="DropDownList2" runat="server" cssClass="form-control" Width="50%">
+                    <asp:DropDownList ID="ddlABRDistrict" runat="server" cssClass="form-control" Width="50%">
                       
                         
                         
                         <asp:ListItem>Kathmandu</asp:ListItem>
                     </asp:DropDownList>
                     <br />
-                    <asp:DropDownList ID="DropDownList3" runat="server" cssClass="form-control" Width="50%">
+                    <asp:DropDownList ID="ddlABRLocation" runat="server" cssClass="form-control" Width="50%">
                         <asp:ListItem>New Road</asp:ListItem>
                     </asp:DropDownList>
                 </td>
@@ -95,20 +95,20 @@
             <tr>
                 <td>Phone no.</td>
                 <td>
-                    <asp:TextBox ID="TextBox3" runat="server" cssClass="form-control"  Width="115px" ></asp:TextBox>
+                    <asp:TextBox ID="txtABRPhoneno" runat="server" cssClass="form-control"  Width="115px" ></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Purpose</td>
                 <td>
-                    <asp:TextBox ID="txtPurpose" runat="server" cssClass="form-control" ></asp:TextBox>
+                    <asp:TextBox ID="txtABRPurpose" runat="server" cssClass="form-control" ></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>Hospital Paper</td>
                 <td>
-                  <asp:Image ID="imgHospitalpaprer" runat="server" Height="223px" Width="281px" />
-                    <asp:FileUpload ID="fupImage" runat="server" cssClass="btn btn-default" />
+                  <asp:Image ID="imgABRHospitalpaprer" runat="server" Height="223px" Width="281px" />
+                    <asp:FileUpload ID="fupABRImage" runat="server" cssClass="btn btn-default" />
                     <br />
                   
                 </td>
@@ -116,14 +116,14 @@
             <tr>
                 <td>Message</td>
                 <td>
-                    <asp:TextBox ID="TextBox4" runat="server" cssClass="form-control" TextMode="MultiLine"></asp:TextBox>
+                    <asp:TextBox ID="txtABRMessageBox" runat="server" cssClass="form-control" TextMode="MultiLine"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 
                 <td colspan="2" align="center">
-                    <asp:Button ID="Button1" runat="server" Text="Submit" CssClass="btn btn-default" />
-                    <asp:Button ID="Button2" runat="server" Text="Cancel" CssClass="btn btn-default" />
+                    <asp:Button ID="btnABRSubmit" runat="server" Text="Submit" CssClass="btn btn-default" />
+                    <asp:Button ID="btnABRCancel" runat="server" Text="Cancel" CssClass="btn btn-default" />
                 </td>
             </tr>
         </table>
