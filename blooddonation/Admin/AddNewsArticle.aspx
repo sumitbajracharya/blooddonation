@@ -20,7 +20,10 @@
     </tr>
 
     <tr>
-    <td colspan='2'><center> <asp:Button ID="btnAdd" runat="server" CssClass="btn btn-default" Text="Add" /> &nbsp;&nbsp;&nbsp; <asp:Button ID="btnCancel" CssClass="btn btn-default" runat="server" Text="Cancel" /></center></td>
+    <td colspan='2'><center> <asp:Button ID="btnAdd" runat="server" CssClass="btn btn-default" Text="Add" OnClick="btnAdd_Click" /> &nbsp;&nbsp;&nbsp; <asp:Button ID="btnCancel" CssClass="btn btn-default" runat="server" Text="Cancel" />
+        <br />
+        <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
+        </center></td>
     </tr>
     </table>
 </asp:Content>

@@ -17,6 +17,7 @@
                 <td>Blood Center</td>
                 <td>
                     <asp:Button ID="btnEditBloodCenter" runat="server" Text="EDIT" cssClass="btn btn-default" OnClick="btnEditBloodCenter_Click"/>
+                     <asp:Button ID="btnAddBloodCenter" runat="server" Text="ADD" cssClass="btn btn-default" OnClick="btnAddBloodCenter_Click" />
                 </td>
             </tr>
             <tr>

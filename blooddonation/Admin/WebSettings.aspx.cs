@@ -31,4 +31,8 @@ public partial class Admin_WebSettings : System.Web.UI.Page
     {
         Response.Redirect("EditNewsArticle.aspx");
     }
+    protected void btnAddBloodCenter_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("AddBloodCenter.aspx");
+    }
 }

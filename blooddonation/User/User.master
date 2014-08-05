@@ -33,6 +33,10 @@
       <asp:Image ID="Image1" ImageUrl="~/Assets/Images/logo.png" runat="server" CssClass="img-responsive" /></div>
       <!-- header banner width 700 x 200 -->
   <div class="col-md-9">  <asp:Image ID="Image4" height="200" Width="850" ImageUrl="~/Assets/Images/header.jpg" runat="server" CssClass="img-responsive" />
+      
+  <br /> <asp:Label ID="LblUser" runat="server" Text=" "></asp:Label><br />
+  <asp:LinkButton ID="lnbLogout" runat="server" onclick="lnbLogout_Click">Logout</asp:LinkButton>
+
   
   </div>
 </div>
@@ -57,7 +61,7 @@
     <li><a href="BloodCenterDetails.aspx">Blood Center</a></li>
     <li><a href="">Request Blood </a></li>
     <li><a href="">Contact Us</a></li>
-    <li><a href="WhyToDonate.aspx">Why To Donate</a></li>
+    <li><a href="../WhyToDonate.aspx">Why To Donate</a></li>
     <li><a href="">Profile</a></li>
     </ul>
     </div>
