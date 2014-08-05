@@ -1,0 +1,11 @@
+(X)=solved
+
+0.Super admin form
+1.sms form
+2.code generator
+3.emergency blood request will stay on display only for 2 days.
+4.evant published will be removed from display after 7 days of the event date
+5.(X)form to fill up deail informations about member after signing up
+6.seperate add event form and edit event form
+7.add navugation bar in member master page
+8.add profile picture and username and logout button in Admin and User Masterpage
