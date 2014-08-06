@@ -23,6 +23,12 @@
                     <asp:TextBox ID="TextBox1"  placeholder="FullName" cssClass="form-control" runat="server"></asp:TextBox>
                 </td>
             </tr>
+         <tr>
+                <td class="col-sm-3">Patient Name</td>
+                <td>
+                    <asp:TextBox ID="txtPatientName"  placeholder="FullName" cssClass="form-control" runat="server"></asp:TextBox>
+                </td>
+            </tr>
             <tr>
                 <td>Age</td>
                 <td>
@@ -48,6 +54,12 @@
                 <td>Quantity</td>
                 <td>
                     <asp:TextBox ID="txtQuantity" cssClass="form-control" runat="server" Width="60px"></asp:TextBox>
+                </td>
+            </tr>
+         <tr>
+                <td>Hospital</td>
+                <td>
+                    <asp:TextBox ID="txtHospitalName" cssClass="form-control" runat="server" Width="60px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
