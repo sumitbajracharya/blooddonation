@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-<<<<<<< HEAD
-=======
 using System.Data;
 using System.Data.SqlClient;
->>>>>>> bf3016715f843e49906851759c10c27601557f63
 using System.Linq;
 using System.Web;
 
@@ -13,14 +10,7 @@ using System.Web;
 /// </summary>
 public class BLLUser
 {
-<<<<<<< HEAD
-	public BLLUser()
-	{
-		//
-		// TODO: Add constructor logic here
-		//
-	}
-=======
+	
     public BLLUser()
     {
         //
@@ -105,5 +95,5 @@ public class BLLUser
         }
         return lstMembers;
     }
->>>>>>> bf3016715f843e49906851759c10c27601557f63
+
 }
