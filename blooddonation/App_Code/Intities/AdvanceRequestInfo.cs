@@ -16,7 +16,7 @@ public class AdvanceRequestInfo
 	}
     public int RequestId { get; set; }
     public string SeekerName { get; set; }
-    public decimal MobileNumber { get; set; }
+    public string MobileNo { get; set; }
     public string PatientName { get; set; }
     public int LocationId { get; set; }
     public int BloodGroupId { get; set; }
@@ -24,8 +24,11 @@ public class AdvanceRequestInfo
     public string HospitalName { get; set; }
     public string HospitalPaper { get; set; }
     public DateTime Date { get; set; }
-    public int Time { get; set; }
+    public DateTime Time { get; set; }
     public int Age { get; set; }
     public string Purpose { get; set; }
+   
     public string Message { get; set; }
+
+    //public int District { get; set; }
 }
