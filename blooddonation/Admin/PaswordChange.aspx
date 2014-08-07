@@ -14,7 +14,7 @@
             <tr>
                 <td>Old Password</td>
                 <td>
-                    <asp:TextBox ID="TxtOldPassword" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtOldPassword" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
