@@ -26,34 +26,21 @@ public partial class MasterPage : System.Web.UI.MasterPage
 
     public void dataload()
     {
-        
-        using (SqlConnection con = ConnectionHelper.GetConnection())
-        {
-            string query = "Select BloodGroup from TblBloodGroup";
-
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            DataSet ds = new DataSet();
-            da.Fill(ds, "tbl_fill");
-
-            ddl_bloodgroup.DataSource = ds.Tables["tbl_fill"];
+            ddl_bloodgroup.DataSource = BloodGroupAndLocation.BloodGroup();
             ddl_bloodgroup.DataTextField = "BloodGroup";
             ddl_bloodgroup.DataBind();
             ddl_bloodgroup.Items.Insert(0,"Blood Type");
 
-            SqlDataAdapter daa= new SqlDataAdapter("select LocationName from TblLocation",con);
-            DataSet dss = new DataSet();
-            daa.Fill(dss,"tbl_locationnn");
-            ddl_location.DataSource = dss;
+                        
+            ddl_location.DataSource = BloodGroupAndLocation.Location();
             ddl_location.DataTextField = "LocationName";
             ddl_location.DataBind();
             ddl_location.Items.Insert(0, "Choose Location");
 
             //gv_search.DataSource = ds;
             //gv_search.DataBind();
-          
-        }
-   
-    }
+   }
+
     protected void btn_search_Click(object sender, EventArgs e)
     {
         int BloodId = ddl_bloodgroup.SelectedIndex;
