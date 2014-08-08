@@ -125,25 +125,25 @@ public class BLLUser
         using (SqlDataReader _reader = cmd.ExecuteReader())
         {
             _reader.Read();
-                        _member.MemberId = int.Parse(_reader["DonarID"].ToString()),
-                        _member.FirstName = _reader["FirstName"].ToString(),
-                        _member.LastName = _reader["LastName"].ToString(),
-                        _member.UserName = _reader["UserName"].ToString(),
-                        _member.PermanentAddress = _reader[""].ToString(),
-                        _member.CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString()),
-                        _member.DOB = Convert.ToDateTime(_reader["DOB"]),
-                        _member.BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString()),
-                        _member.Gender = _reader["Gender"].ToString(),
-                        _member.LastDonationDate = Convert.ToDateTime(_reader["LastDonationDate"]),
-                        _member.BestTime = _reader["BestTime"].ToString(),
-                        _member.MobileNo = _reader["MobileNumber"].ToString(),
-                        _member.PhoneNo = _reader["PhoneNumber"].ToString(),
-                        _member.Email = _reader["Email"].ToString(),
-                        _member.BloodDonationCardSnapshot = _reader["BloodDonationCardSnapshots"].ToString(),
-                        _member.DonorStatus = bool.Parse(_reader["DonorStatus"].ToString()),
-                        _member.AccountStatus = bool.Parse(_reader["AccountStatus"].ToString()),
-                        _member.RoleId = bool.Parse(_reader["RoleID"].ToString()),
-                        _member.ProfilePicture = _reader["ProfilePicture"].ToString(),
+                        _member.MemberId = int.Parse(_reader["DonarID"].ToString());
+                        _member.FirstName = _reader["FirstName"].ToString();
+                        _member.LastName = _reader["LastName"].ToString();
+                        _member.UserName = _reader["UserName"].ToString();
+                        _member.PermanentAddress = _reader[""].ToString();
+                        _member.CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString());
+                        _member.DOB = Convert.ToDateTime(_reader["DOB"]);
+                        _member.BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString());
+                        _member.Gender = _reader["Gender"].ToString();
+                        _member.LastDonationDate = Convert.ToDateTime(_reader["LastDonationDate"]);
+                        _member.BestTime = _reader["BestTime"].ToString();
+                        _member.MobileNo = _reader["MobileNumber"].ToString();
+                        _member.PhoneNo = _reader["PhoneNumber"].ToString();
+                        _member.Email = _reader["Email"].ToString();
+                        _member.BloodDonationCardSnapshot = _reader["BloodDonationCardSnapshots"].ToString();
+                        _member.DonorStatus = bool.Parse(_reader["DonorStatus"].ToString());
+                        _member.AccountStatus = bool.Parse(_reader["AccountStatus"].ToString());
+                        _member.RoleId = bool.Parse(_reader["RoleID"].ToString());
+                        _member.ProfilePicture = _reader["ProfilePicture"].ToString();
         }
         return _member;
     }
