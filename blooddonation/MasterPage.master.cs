@@ -55,6 +55,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
         {
             FormsAuthentication.RedirectFromLoginPage(txtUsername.Text, false);
             Session["UserName"] = txtUsername.Text;
+            Response.Redirect("/user/UserProfile.aspx");
         }
     }
     
