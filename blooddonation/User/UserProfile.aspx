@@ -8,7 +8,7 @@
     <table class="table table-bordered">
     
     <tr>
-    <td rowspan='4'><asp:Label ID="lblProfilePicture" runat="server" Text=" "></asp:Label></td>
+    <td rowspan='4'> <asp:ImageButton ID="ImgProfilePicture" runat="server" Width="197px" /></td>
     <td>Name:</td>
     <td><asp:Label ID="lblName" runat="server" Text=" "></asp:Label></td>
     </tr>

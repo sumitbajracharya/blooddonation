@@ -24,10 +24,10 @@ public partial class User_Registration_2 : System.Web.UI.Page
         _member.UserName = Session["UserName"].ToString();
 
          _member.ProfilePicture = fuProfilePicture.FileName;
-         fuProfilePicture.PostedFile.SaveAs(Server.MapPath("../Assets/Images/users/" + _member.ProfilePicture));
+         fuProfilePicture.PostedFile.SaveAs(Server.MapPath("../Assets/Images/UserImage/ProfilePicture/" + _member.ProfilePicture));
          
         _member.BloodDonationCardSnapshot = fuBloodGroupCard.FileName;
-         fuBloodGroupCard.PostedFile.SaveAs(Server.MapPath("../Assets/Images/Cards/" + _member.BloodDonationCardSnapshot));
+        fuBloodGroupCard.PostedFile.SaveAs(Server.MapPath("../Assets/Images/UserImage/DonarCards/" + _member.BloodDonationCardSnapshot));
 
 
         BLLUser.CreateUser2(_member);

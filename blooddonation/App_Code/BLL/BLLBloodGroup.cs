@@ -40,5 +40,22 @@ public class BLLBloodGroup
         }
     }
 
+    // Get Blood Group Name By ID
+    public static String GetBloodGroupByID(int BloodID)
+    {
+        BloodGroupInfo Blood = new BloodGroupInfo();
+        string query = "select * from TblBloodGroup where (BloodGroupID = " + BloodID + ")";
+        SqlConnection con = ConnectionHelper.GetConnection();
+        SqlCommand cmd = new SqlCommand(query, con);
+
+        using (SqlDataReader _reader = cmd.ExecuteReader())
+        {
+            _reader.Read();
+            Blood.BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString());
+            Blood.BloodGroup = _reader["BloodGroup"].ToString()
+        }
+        return Blood.BloodGroup;
+    }
+
 
 }

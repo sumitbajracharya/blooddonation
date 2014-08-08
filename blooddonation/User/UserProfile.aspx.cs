@@ -14,18 +14,16 @@ public partial class User_UserProfile : System.Web.UI.Page
         {
             string name = Session["UserName"].ToString();
 
-            string query = "select * from TblMembers where UserName=" + name;
-            SqlConnection Con = ConnectionHelper.GetConnection();
+            MemberInfo Member = BLLUser.GetMemberByUserName(name);
 
-            SqlCommand cmd = new SqlCommand(query, Con);
-            SqlDataReader reader = cmd.ExecuteReader();
-
-            MemberInfo _member = new MemberInfo();
-        
-
-
-
-
+            ImgProfilePicture.ImageUrl = string.Format("../Assets/Images/UserImage/ProfilePicture/" + Member.ProfilePicture);
+            lblName.Text = string.Format(Member.FirstName + " " + Member.LastName);
+            lblAdderss.Text = Member.PermanentAddress;
+            lblBestTime.Text = Member.BestTime;
+            lblBloodGroup.Text = BLLBloodGroup.GetBloodGroupByID(Member.BloodGroupId);
+            lblDOB.Text = (Member.DOB).ToString();
+            lblGender.Text= Member.Gender;
+            lblLastDonationdate.Text = (Member.LastDonationDate).ToString();
         }
     }
 }
