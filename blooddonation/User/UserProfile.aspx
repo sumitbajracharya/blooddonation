@@ -8,64 +8,39 @@
     <table class="table table-bordered">
     
     <tr>
-    <td rowspan='4'><img src='<%#Eval("ProfilePicture")%>'></td>
+    <td rowspan='4'><asp:Label ID="lblProfilePicture" runat="server" Text=" "></asp:Label></td>
     <td>Name:</td>
-    <td><%#Eval("Name")%></td>
+    <td><asp:Label ID="lblName" runat="server" Text=" "></asp:Label></td>
     </tr>
 
     <tr>
     <td>Gender:</td>
-    <td><%#Eval("Gender")%></td>
+    <td><asp:Label ID="lblGender" runat="server" Text=" "></asp:Label></td>
     </tr>
 
     <tr>
     <td>Adderss:</td>
-    <td><%#Eval("Address")%></td>
+    <td><asp:Label ID="lblAdderss" runat="server" Text=" "></asp:Label></td>
     </tr>
 
     <tr>
     <td>Blood Group:</td>
-    <td><%#Eval("BloodGroup")%></td>
+    <td><asp:Label ID="lblBloodGroup" runat="server" Text=" "></asp:Label></td>
     </tr>
 
     <tr>
     <td>Date of Birth:</td>
-    <td colspan='2'><%#Eval("DateOfBirth")%></td>
+    <td colspan='2'><asp:Label ID="lblDOB" runat="server" Text=" "></asp:Label></td>
     </tr>
 
     <tr>
     <td>Last Donation date:</td>
-    <td colspan='2'><%#Eval("LastDonationDate")%></td>
-    </tr>
-
-    <tr>
-    <td>Occupation:</td>
-    <td colspan='2'><%#Eval("Occupation")%></td>
-    </tr>
-
-    <tr>
-    <td>Recent Medication:</td>
-    <td colspan='2'><%#Eval("RecentMedication")%></td>
-    </tr>
-
-    <tr>
-    <td>Heridatory Disease:</td>
-    <td colspan='2'><%#Eval("HeridotaryDisease")%></td>
-    </tr>
-
-    <tr>
-    <td>Weight:</td>
-    <td colspan='2'><%#Eval("Weight")%></td>
-    </tr>
-
-    <tr>
-    <td>Habbit:</td>
-    <td colspan='2'><%#Eval("Habbits")%></td>
+    <td colspan='2'><asp:Label ID="lblLastDonationdate" runat="server" Text=" "></asp:Label></td>
     </tr>
 
     <tr>
     <td>Best Avaliability:</td>
-    <td colspan='2'><%#Eval("BestAvalibility")%></td>
+    <td colspan='2'><asp:Label ID="lblBestTime" runat="server" Text=" "></asp:Label></td>
     </tr>
 
     </table>

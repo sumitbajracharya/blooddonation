@@ -15,16 +15,19 @@ public partial class User_Registration_2 : System.Web.UI.Page
     {
         MemberInfo _member = new MemberInfo();
         _member.PermanentAddress = txtPermanentAddress.Text;
-        _member.CurrentAddress = txtCurrentAddress.Text;
+        _member.CurrentAddress = ddlCurrentAddress.SelectedIndex;
         _member.BestTime = ddlBestTimeToContact.SelectedValue;
-        _member.DOB=;
-        _member.LastDonationDate=;
+        _member.DOB= Convert.ToDateTime(txtDay+"/"+txtMonth+"/"+txtYear);
+        _member.LastDonationDate = Convert.ToDateTime(txtLastDonatedDay + "/" + txtLastDonatedMonth + "/" + txtLastDonatedYear);
         _member.MobileNo= txtPhoneNumber.Text;
-        _member.ProfilePicture= fuProfilePicture.FileName;
-        fuProfilePicture.PostedFile.SaveAs(Server.MapPath("../Assets/Images/users/" + _member.ProfilePicture));
-         _member.BloodDonationCardSnapshot= fuBloodGroupCard.FileName; 
-         fuBloodGroupCard.PostedFile.SaveAs(Server.MapPath("../Assets/Images/Cards/" + _member.BloodDonationCardSnapshot));
+        _member.Gender = rdbGender.SelectedValue;
+        _member.UserName = Session["UserName"].ToString();
 
+         _member.ProfilePicture = fuProfilePicture.FileName;
+         fuProfilePicture.PostedFile.SaveAs(Server.MapPath("../Assets/Images/users/" + _member.ProfilePicture));
+         
+        _member.BloodDonationCardSnapshot = fuBloodGroupCard.FileName;
+         fuBloodGroupCard.PostedFile.SaveAs(Server.MapPath("../Assets/Images/Cards/" + _member.BloodDonationCardSnapshot));
 
 
         BLLUser.CreateUser2(_member);

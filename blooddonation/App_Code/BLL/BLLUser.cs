@@ -17,6 +17,8 @@ public class BLLUser
         // TODO: Add constructor logic here
         //
     }
+
+    // create user from first page
     public static void CreateUser(MemberInfo _User)
     {
         string sp = "Usp_Member_Create";
@@ -40,6 +42,33 @@ public class BLLUser
     }
 
 
+    // create user from second regestration page page
+    public static void CreateUser2(MemberInfo _User)
+    {
+        string sp = "Usp_Member_CreateUpdate";
+        SqlConnection con = ConnectionHelper.GetConnection();
+        SqlCommand cmd = new SqlCommand(sp, con);
+        cmd.Parameters.Add(new SqlParameter("@username", _User.UserName));
+        cmd.Parameters.Add(new SqlParameter("@PermanentAddress", _User.PermanentAddress));
+        cmd.Parameters.Add(new SqlParameter("@DOB", _User.DOB));
+        cmd.Parameters.Add(new SqlParameter("@PhoneNumber", _User.PhoneNo));
+        cmd.Parameters.Add(new SqlParameter("@CurrentAddress", _User.CurrentAddress));
+        cmd.Parameters.Add(new SqlParameter("@Gender", _User.Gender));
+        cmd.Parameters.Add(new SqlParameter("@LastDonationDate", _User.LastDonationDate));
+        cmd.Parameters.Add(new SqlParameter("@BestTime", _User.BestTime));
+        cmd.Parameters.Add(new SqlParameter("@BloodDonationCardSnapshots", _User.BloodDonationCardSnapshot));
+        cmd.Parameters.Add(new SqlParameter("@ProfilePicture", _User.ProfilePicture));
+        cmd.CommandType = CommandType.StoredProcedure;
+        try
+        {
+            cmd.ExecuteNonQuery();
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+
 
     // get all users Info
     public static List<MemberInfo> GetAllMembers()
@@ -59,13 +88,13 @@ public class BLLUser
                         FirstName = _reader["FirstName"].ToString(),
                         LastName = _reader["LastName"].ToString(),
                         UserName = _reader["UserName"].ToString(),
-                        PermanentAddress = int.Parse(_reader["PermanentAddress"].ToString()),
+                        PermanentAddress = _reader[""].ToString(),
                         CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString()),
                         DOB = Convert.ToDateTime(_reader["DOB"]),
                         BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString()),
                         Gender = _reader["Gender"].ToString(),
                         LastDonationDate = Convert.ToDateTime(_reader["LastDonationDate"]),
-                        BestTime = Convert.ToDateTime(_reader["BestTime"].ToString()),
+                        BestTime = _reader["BestTime"].ToString(),
                         MobileNo = _reader["MobileNumber"].ToString(),
                         PhoneNo = _reader["PhoneNumber"].ToString(),
                         Email = _reader["Email"].ToString(),

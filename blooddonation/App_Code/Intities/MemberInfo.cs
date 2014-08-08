@@ -18,13 +18,13 @@ public class MemberInfo
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string UserName { get; set; }
-    public int PermanentAddress { get; set; }
+    public string PermanentAddress { get; set; }
     public int CurrentAddress { get; set; }
     public DateTime DOB { get; set; }
     public int BloodGroupId { get; set; }
     public string Gender { get; set; }
     public DateTime LastDonationDate { get; set; }
-    public DateTime BestTime { get; set; }
+    public string BestTime { get; set; }
     public string MobileNo { get; set; }
     public string PhoneNo { get; set; }
     public string Email { get; set; }
