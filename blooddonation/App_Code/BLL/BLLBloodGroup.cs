@@ -52,7 +52,7 @@ public class BLLBloodGroup
         {
             _reader.Read();
             Blood.BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString());
-            Blood.BloodGroup = _reader["BloodGroup"].ToString()
+            Blood.BloodGroup = _reader["BloodGroup"].ToString();
         }
         return Blood.BloodGroup;
     }
