@@ -9,55 +9,103 @@ using System.Web.UI.WebControls;
 
 public partial class AdvanceAndEmergencyBloodRequest : System.Web.UI.Page
 {
-    
+    AdvanceRequestInfo _AdvanceRequest = new AdvanceRequestInfo();
+    EmergencyBloodRequest _EmergencyRequest = new EmergencyBloodRequest();
     protected void Page_Load(object sender, EventArgs e)
     {
 
         using (SqlConnection con = ConnectionHelper.GetConnection())
         {
-            string querry = "select BloodGroup from TblBloodGroup";
-            string query = "select LocationName from TblLocation";
-            SqlDataAdapter da = new SqlDataAdapter(query, con);
-            DataSet dss = new DataSet();
+            
 
-            da.Fill(dss, "tbl_locationnn");
+            
 
-            ddlLocationA.DataSource = dss;
+            ddlLocationA.DataSource = BloodGroupAndLocation.Location();
             ddlLocationA.DataTextField = "LocationName";
             ddlLocationA.DataBind();
             ddlLocationA.Items.Insert(0, "Select Location");
 
-            SqlDataAdapter dab = new SqlDataAdapter(querry, con);
-            DataSet dsa = new DataSet();
+            ddlLocationE.DataSource = BloodGroupAndLocation.Location();
+            ddlLocationE.DataTextField = "LocationName";
+            ddlLocationE.DataBind();
+            ddlLocationE.Items.Insert(0, "Select Location");
+            ddlLocationE.DataValueField = "LocationID";
 
-            dab.Fill(dsa, "tblBlood");
+            
 
-            ddlBloodGroupA.DataSource = dsa;
+            ddlBloodGroupA.DataSource = BloodGroupAndLocation.BloodGroup();
             ddlBloodGroupA.DataTextField = "BloodGroup";
+            
             ddlBloodGroupA.DataBind();
             ddlBloodGroupA.Items.Insert(0, "Select Blood Group");
 
+            ddlBloodgroupE.DataSource = BloodGroupAndLocation.BloodGroup();
+            ddlBloodgroupE.DataTextField = "BloodGroup";
+            
+            ddlBloodgroupE.DataBind();
+            ddlBloodgroupE.Items.Insert(0, "Select Blood Group");
+            
+            
         }
 
 
     }
     protected void btnSubmitA_Click(object sender, EventArgs e)
     {
-        AdvanceRequestInfo _AdvanceRequest = new AdvanceRequestInfo();
+       
 
         _AdvanceRequest.SeekerName= txtFullNameA.Text;
         _AdvanceRequest.HospitalName = txtHospitalNameA.Text;
         _AdvanceRequest.HospitalPaper = fupImageA.FileName;
-        _AdvanceRequest.LocationId = int.Parse(Request.QueryString["Location"]);
+        _AdvanceRequest.LocationId = ddlLocationA.SelectedIndex;
+        _AdvanceRequest.BloodGroupId = ddlBloodGroupA.SelectedIndex;
+
+        
+
         _AdvanceRequest.Message = txtMessageA.Text;
-        _AdvanceRequest.MobileNo = txtPhoneNoA.Text;
+        _AdvanceRequest.PhoneNo = txtPhoneNoA.Text;
         _AdvanceRequest.PatientName = txtPatientNameA.Text;
         _AdvanceRequest.Purpose = txtPurposeA.Text;
         _AdvanceRequest.Quantity = Convert.ToInt32(txtQuantityA.Text);
         _AdvanceRequest.Time = DateTime.Now;
         _AdvanceRequest.Date = Convert.ToDateTime(txtDateA.Text.ToString());
+        _AdvanceRequest.Age = Convert.ToInt32(txtAgeA.Text);
+
+        BLLAdvanceBloodRequest.AddAdvanceBloodRequest(_AdvanceRequest);
+    }
+    protected void btnCancelA_Click(object sender, EventArgs e)
+    {
+
+    }
+    protected void btnSubmitE_Click(object sender, EventArgs e)
+    {
+        
+
+        _EmergencyRequest.FullName = txtFullNameE.Text;
+        _EmergencyRequest.Age = Convert.ToInt32(txtAgeE.Text);
+        _EmergencyRequest.LocationId = ddlLocationE.SelectedIndex.ToString();
+        //_EmergencyRequest.BloodGroupId = ddlBloodgroupE.SelectedIndex;
+
+        _AdvanceRequest.BloodGroupId = Convert.ToInt32(ddlBloodgroupE.Items.FindByText("BloodGroup"));
+
+        _EmergencyRequest.PhoneNo = txtPhoneNumberE.Text;
+        _EmergencyRequest.Message = txtMessageE.Text;
+        _EmergencyRequest.DistrictId =ddlDistrictE.SelectedIndex;
+
+        
+            BLLEmergencyBloodRequest.AddEmergencyBloodRequest(_EmergencyRequest);
+     
+        
+        
 
        
-        AdvanceBloodRequest.AddAdvanceBloodRequest(_AdvanceRequest);
+    }
+    protected void btnCancelE_Click(object sender, EventArgs e)
+    {
+        
+    }
+    public void Clear()
+    {
+       
     }
 }

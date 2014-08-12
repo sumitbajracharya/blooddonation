@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="AdvanceAndEmergencyBloodRequest.aspx.cs" Inherits="AdvanceAndEmergencyBloodRequest" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" EnableViewState="true" AutoEventWireup="true" CodeFile="AdvanceAndEmergencyBloodRequest.aspx.cs" Inherits="AdvanceAndEmergencyBloodRequest" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -66,9 +66,9 @@
                         <asp:ListItem>Kathmandu</asp:ListItem>
                     </asp:DropDownList>
                     <br />
-                    <asp:DropDownList ID="ddlLocationsA" runat="server" cssClass="form-control" Width="50%">
+                    <%--<asp:DropDownList ID="ddlLocationsA" runat="server" cssClass="form-control" Width="50%">
                         <asp:ListItem>New Road</asp:ListItem>
-                    </asp:DropDownList>
+                    </asp:DropDownList>--%>
                 </td>
             </tr>
             <tr>
@@ -127,7 +127,7 @@ ErrorMessage="Error" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1
                 
                 <td colspan="2" align="center">
                     <asp:Button ID="btnSubmitA" runat="server" Text="Submit" CssClass="btn btn-default" OnClick="btnSubmitA_Click" />
-                    <asp:Button ID="btnCancelA" runat="server" Text="Cancel" CssClass="btn btn-default" />
+                    <asp:Button ID="btnCancelA" runat="server" Text="Cancel" CssClass="btn btn-default" OnClick="btnCancelA_Click" />
                 </td>
             </tr>
         </table>
@@ -153,14 +153,7 @@ ErrorMessage="Error" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1
                 <td>Blood Group</td>
                 <td>
                     <asp:DropDownList ID="ddlBloodgroupE" runat="server">
-                        <asp:ListItem>A+ve</asp:ListItem>
-                        <asp:ListItem>A-ve</asp:ListItem>
-                        <asp:ListItem>B+ve</asp:ListItem>
-                        <asp:ListItem>B-ve</asp:ListItem>
-                        <asp:ListItem>AB+ve</asp:ListItem>
-                        <asp:ListItem>AB-ve</asp:ListItem>
-                        <asp:ListItem>O+ve</asp:ListItem>
-                        <asp:ListItem>O-ve</asp:ListItem>
+                        
                     </asp:DropDownList>
                 </td>
             </tr>
@@ -191,8 +184,8 @@ ErrorMessage="Error" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1
            <tr>
                 
                 <td colspan="2" align="center">
-                    <asp:Button ID="btnSubmitE" runat="server" Text="Submit" CssClass="btn btn-default" />
-                    <asp:Button ID="btnCancelE" runat="server" Text="Cancel" CssClass="btn btn-default" />
+                    <asp:Button ID="btnSubmitE" runat="server" Text="Submit" CssClass="btn btn-default" OnClick="btnSubmitE_Click" />
+                    <asp:Button ID="btnCancelE" runat="server" Text="Cancel" CssClass="btn btn-default" OnClick="btnCancelE_Click" />
                 </td>
             </tr>
         </table>
