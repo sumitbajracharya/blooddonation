@@ -17,6 +17,33 @@ public class BLLLocation
 		//
 	}
 
+    // get all district Info
+    public static List<LocationInfo> GetAllLocation()
+    {
+        using (SqlConnection con = ConnectionHelper.GetConnection())
+        {
+            string Sp = "Usp_get_AllLocations";
+            SqlCommand cmd = new SqlCommand(Sp, con);
+            List<LocationInfo> lstlocations = new List<LocationInfo>();
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            using (SqlDataReader _reader = cmd.ExecuteReader())
+            {
+                while (_reader.Read())
+                {
+                    lstlocations.Add(new LocationInfo
+                    {
+                        LocationId = int.Parse(_reader["LocationID"].ToString()),
+                        LocationName = _reader["LocationName"].ToString(),
+                        DistrictId = int.Parse(_reader["DistrictID"].ToString()),
+
+                    });
+                }
+            }
+            return lstlocations;
+        }
+
+    }
     public static int CreateLocation(LocationInfo _Location)
     {
         try
@@ -37,6 +64,56 @@ public class BLLLocation
         }
         catch (Exception ex)
         {
+            throw ex;
+        }
+    }
+
+    public static int UpdateLocation(LocationInfo _Location)
+    {
+        try
+        {
+            using (SqlConnection con = ConnectionHelper.GetConnection())
+            {
+                using (SqlCommand cmd = con.CreateCommand())
+                {
+                    cmd.CommandText = "Usp_Location_Update";
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@LocationName", _Location.LocationName);//melako chaina
+                    cmd.Parameters.AddWithValue("@DistrictID", _Location.DistrictId);
+
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            
+            throw ex;
+        }
+    }
+
+    public static int DeleteLocation(LocationInfo _Location)
+    {
+        try
+        {
+            using (SqlConnection con = ConnectionHelper.GetConnection())
+            {
+                using (SqlCommand cmd = con.CreateCommand())
+                {
+                    cmd.CommandText = "Usp_Location_Delete";
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@LocationName", _Location.LocationName); //mela ko chaina
+                    cmd.Parameters.AddWithValue("@DistrictID", _Location.DistrictId);
+
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            
             throw ex;
         }
     }

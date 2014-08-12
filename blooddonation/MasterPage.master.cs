@@ -32,11 +32,16 @@ public partial class MasterPage : System.Web.UI.MasterPage
             ddl_bloodgroup.DataBind();
             ddl_bloodgroup.Items.Insert(0,"Blood Type");
 
-                        
-            ddl_location.DataSource = BloodGroupAndLocation.Location();
+
+            ddl_location.DataSource = BLLLocation.GetAllLocation();
             ddl_location.DataTextField = "LocationName";
             ddl_location.DataBind();
             ddl_location.Items.Insert(0, "Choose Location");
+   
+            //ddl_location.DataSource = BloodGroupAndLocation.Location();
+            //ddl_location.DataTextField = "LocationName";
+            //ddl_location.DataBind();
+            //ddl_location.Items.Insert(0, "Choose Location");
 
             //gv_search.DataSource = ds;
             //gv_search.DataBind();

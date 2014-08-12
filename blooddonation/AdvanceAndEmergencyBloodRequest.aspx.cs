@@ -58,6 +58,6 @@ public partial class AdvanceAndEmergencyBloodRequest : System.Web.UI.Page
         _AdvanceRequest.Date = Convert.ToDateTime(txtDateA.Text.ToString());
 
        
-        AdvanceBloodRequest.AddAdvanceBloodRequest(_AdvanceRequest);
+        //AdvanceBloodRequest.AddAdvanceBloodRequest(_AdvanceRequest);
     }
 }

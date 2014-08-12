@@ -28,7 +28,7 @@
      <div class="row">
   <div class="col-md-3 col-sm-12 col-xs-12">
   <!-- Main Logo 225px x 224px -->
-      <asp:Image ID="Image1" ImageUrl="~/Assets/Images/logo.png" runat="server" CssClass="img-responsive" /></div>
+      <a href="Home.aspx"><asp:Image ID="Image1" ImageUrl="~/Assets/Images/logo.png" runat="server" CssClass="img-responsive" /></a></div>
        
          
       <!-- header banner width 700 x 200 -->
@@ -56,7 +56,7 @@
  </div>
          <!--End Login/Register-->
 
-        <asp:Image ID="Image4" ImageUrl="~/Assets/Images/header.jpg" runat="server" CssClass="img-rounded img-responsive" />
+        <a href="Home.aspx"><asp:Image ID="Image4" ImageUrl="~/Assets/Images/header.jpg" runat="server" CssClass="img-rounded img-responsive" /></a>
       
   </div>
 </div>
