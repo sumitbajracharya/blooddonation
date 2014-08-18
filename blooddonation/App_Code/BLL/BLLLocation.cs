@@ -17,7 +17,7 @@ public class BLLLocation
 		//
 	}
 
-    public DataTable GetAllLocation()
+    public DataTable GetAllLocation1()
     {
         return ConnectionHelper.GetTable("SELECT LocationID,LocationName FROM TblLocation", null);
     }

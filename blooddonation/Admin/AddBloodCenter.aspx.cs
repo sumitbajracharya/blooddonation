@@ -31,7 +31,7 @@ public partial class Admin_AddBloodCenter : System.Web.UI.Page
     public void LoadLocation()
     {
 
-        DataTable dt = bllocation.GetAllLocation();
+        DataTable dt = bllocation.GetAllLocation1();
         if (dt.Rows.Count > 0)
         {
             ddlLocation.DataSource = dt;
@@ -71,5 +71,6 @@ public partial class Admin_AddBloodCenter : System.Web.UI.Page
             lblMessage.Text = ex.Message;
         }
     }
+
    
 }
