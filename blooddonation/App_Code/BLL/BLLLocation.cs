@@ -17,6 +17,11 @@ public class BLLLocation
 		//
 	}
 
+    public DataTable GetAllLocation()
+    {
+        return ConnectionHelper.GetTable("SELECT LocationID,LocationName FROM TblLocation", null);
+    }
+
     // get all district Info
     public static List<LocationInfo> GetAllLocation()
     {

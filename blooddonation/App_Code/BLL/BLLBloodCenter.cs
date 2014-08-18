@@ -31,4 +31,9 @@ public class BLLBloodCenter
 
     }
 
+    public DataTable GetBloodCenterList()
+    {
+        return ConnectionHelper.GetTable("SELECT TblBloodCenter.Name, TblLocation.LocationName, TblBloodCenter.CenterID FROM TblLocation INNER JOIN TblBloodCenter ON TblLocation.LocationID = TblBloodCenter.LocationID order by CenterID", null);
+    }
+
 }

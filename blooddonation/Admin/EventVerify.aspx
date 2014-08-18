@@ -22,7 +22,7 @@
      <ItemTemplate>
           <tr>
                <td><%#Eval("Date")%> </td>
-               <td><%#Eval("ProgramName")%> </td>
+               <td><a href='EventVerify.aspx?EventId=<%#Eval("EventId")%>'><%#Eval("EventTitle")%></a></td>
           </tr>  
       </ItemTemplate>
   </asp:Repeater>
