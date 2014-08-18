@@ -26,7 +26,7 @@
      <ItemTemplate>
           <tr>
                <td><%#Eval("CenterID")%> </td>
-               <td><%#Eval("CenterName")%> /td>
+               <td><%#Eval("CenterName")%> </td>
           </tr>  
       </ItemTemplate>
   </asp:Repeater>

@@ -11,4 +11,14 @@ public partial class Admin_EditBloodCenter : System.Web.UI.Page
     {
 
     }
+    public void dataload()
+    {
+        ddlLocation1.DataSource = BloodGroupAndLocation.Location();
+        ddlLocation1.DataTextField = "LocationName";
+        ddlLocation1.DataBind();
+        ddlLocation1.Items.Insert(0, "Choose Location");
+
+        //gv_search.DataSource = ds;
+        //gv_search.DataBind();
+    }
 }

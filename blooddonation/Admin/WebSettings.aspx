@@ -11,6 +11,7 @@
                 <td class="col-sm-3">Location</td>
                 <td>
                     <asp:Button ID="btnEditLocation" runat="server" Text="EDIT" cssClass="btn btn-default" OnClick="btnEditLocation_Click"/>
+                     <asp:Button ID="btnAddLocaton" runat="server" cssClass="btn btn-default" OnClick="btnAddLocaton_Click" Text="ADD" />
                 </td>
             </tr>
             <tr>

@@ -6,60 +6,45 @@ using System.Linq;
 using System.Web;
 
 /// <summary>
-/// Summary description for BLLLocation
+/// Summary description for BLLDistrict
 /// </summary>
-public class BLLLocation
+public class BLLDistrict
 {
-	public BLLLocation()
+	public BLLDistrict()
 	{
 		//
 		// TODO: Add constructor logic here
 		//
 	}
-
     // get all district Info
-    public static List<LocationInfo> GetAllLocation()
+    public static List<DistrictInfo> GetAllDistrict()
     {
         using (SqlConnection con = ConnectionHelper.GetConnection())
         {
-            string Sp = "Usp_get_AllLocations";
+            string Sp = "Usp_get_AllDistricts";
             SqlCommand cmd = new SqlCommand(Sp, con);
-            List<LocationInfo> lstlocations = new List<LocationInfo>();
+            List<DistrictInfo> lstdistricts = new List<DistrictInfo>();
             cmd.CommandType = CommandType.StoredProcedure;
-
+            
             using (SqlDataReader _reader = cmd.ExecuteReader())
             {
                 while (_reader.Read())
                 {
-                    lstlocations.Add(new LocationInfo
+                    lstdistricts.Add(new DistrictInfo
                     {
-                        LocationId = int.Parse(_reader["LocationID"].ToString()),
-                        LocationName = _reader["LocationName"].ToString(),
                         DistrictId = int.Parse(_reader["DistrictID"].ToString()),
-
+                        DistrictName = _reader["DistrictName"].ToString(),
+                        
                     });
                 }
             }
-            return lstlocations;
+            return lstdistricts;
         }
-
+       
     }
 
-    //get location by district id
-    public static List<LocationInfo> GetLocationByDistrictID(int DistrictID)
-    {
-        List<LocationInfo> lstLocation = new List<LocationInfo>();
-        foreach (LocationInfo _Location in GetAllLocation())
-        {
-            if (_Location.DistrictId == DistrictID)
-            {
-                lstLocation.Add(_Location);
-            }
-        }
-        return lstLocation;
-    }
-
-    public static int CreateLocation(LocationInfo _Location)
+    //add new district
+    public static int CreateDistrict(DistrictInfo _District)
     {
         try
         {
@@ -67,11 +52,11 @@ public class BLLLocation
             {
                 using (SqlCommand cmd = con.CreateCommand())
                 {
-                    cmd.CommandText = "Usp_Location_Create";
+                    cmd.CommandText = "Usp_District_Create";
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    cmd.Parameters.AddWithValue("@LocationName", _Location.LocationName);
-                    cmd.Parameters.AddWithValue("@DistrictID", _Location.DistrictId);
+                    cmd.Parameters.AddWithValue("@DistrictnName", _District.DistrictName);
+                   
 
                     return cmd.ExecuteNonQuery();
                 }
@@ -83,7 +68,9 @@ public class BLLLocation
         }
     }
 
-    public static int UpdateLocation(LocationInfo _Location)
+
+    //update districts
+    public static int UpdateDistrict(DistrictInfo _District)
     {
         try
         {
@@ -91,24 +78,25 @@ public class BLLLocation
             {
                 using (SqlCommand cmd = con.CreateCommand())
                 {
-                    cmd.CommandText = "Usp_Location_Update";//stored procedure banako chaina
+                    cmd.CommandText = "Usp_District_Update";
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    cmd.Parameters.AddWithValue("@LocationName", _Location.LocationName);//melako chaina
-                    cmd.Parameters.AddWithValue("@DistrictID", _Location.DistrictId);
-
+                    cmd.Parameters.AddWithValue("@DistrictName", _District.DistrictName);//melako chaina
+                    
                     return cmd.ExecuteNonQuery();
                 }
             }
         }
         catch (Exception ex)
         {
-            
+
             throw ex;
         }
     }
 
-    public static int DeleteLocation(LocationInfo _Location)
+
+    //delete district
+    public static int DeleteDistrict(DistrictInfo _District)
     {
         try
         {
@@ -116,21 +104,19 @@ public class BLLLocation
             {
                 using (SqlCommand cmd = con.CreateCommand())
                 {
-                    cmd.CommandText = "Usp_Location_Delete";//stored procedure banako chaina
+                    cmd.CommandText = "Usp_District_Delete";
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    cmd.Parameters.AddWithValue("@LocationName", _Location.LocationName); //mela ko chaina
-                    cmd.Parameters.AddWithValue("@DistrictID", _Location.DistrictId);
-
+                    cmd.Parameters.AddWithValue("@DistrictName", _District.DistrictName); //mela ko chaina
+                   
                     return cmd.ExecuteNonQuery();
                 }
             }
         }
         catch (Exception ex)
         {
-            
+
             throw ex;
         }
     }
-   
 }
