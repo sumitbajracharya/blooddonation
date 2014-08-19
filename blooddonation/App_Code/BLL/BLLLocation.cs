@@ -17,7 +17,10 @@ public class BLLLocation
 		//
 	}
 
-   
+    public DataTable GetAllLocation1()
+    {
+        return ConnectionHelper.GetTable("SELECT LocationID,LocationName FROM TblLocation", null);
+    }
 
     // get all district Info
     public static List<LocationInfo> GetAllLocation()
@@ -46,21 +49,6 @@ public class BLLLocation
         }
 
     }
-
-    //get location by district id
-    public static List<LocationInfo> GetLocationByDistrictID(int DistrictID)
-    {
-        List<LocationInfo> lstLocation = new List<LocationInfo>();
-        foreach (LocationInfo _Location in BLLLocation.GetAllLocation())
-        {
-            if (_Location.DistrictId == DistrictID)
-            {
-                lstLocation.Add(_Location);
-            }
-        }
-        return lstLocation;
-    }
-
     public static int CreateLocation(LocationInfo _Location)
     {
         try
@@ -93,7 +81,7 @@ public class BLLLocation
             {
                 using (SqlCommand cmd = con.CreateCommand())
                 {
-                    cmd.CommandText = "Usp_Location_Update";//stored procedure banako chaina
+                    cmd.CommandText = "Usp_Location_Update";
                     cmd.CommandType = CommandType.StoredProcedure;
 
                     cmd.Parameters.AddWithValue("@LocationName", _Location.LocationName);//melako chaina
@@ -118,7 +106,7 @@ public class BLLLocation
             {
                 using (SqlCommand cmd = con.CreateCommand())
                 {
-                    cmd.CommandText = "Usp_Location_Delete";//stored procedure banako chaina
+                    cmd.CommandText = "Usp_Location_Delete";
                     cmd.CommandType = CommandType.StoredProcedure;
 
                     cmd.Parameters.AddWithValue("@LocationName", _Location.LocationName); //mela ko chaina

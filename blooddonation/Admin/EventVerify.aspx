@@ -14,7 +14,7 @@
  
  <table class="table table-bordered">
 <tr>
-<th>Date.</th>
+<th>Date</th>
 <th>Program</th>
 </tr>
 
@@ -22,7 +22,8 @@
      <ItemTemplate>
           <tr>
                <td><%#Eval("Date")%> </td>
-               <td><a href='EventVerify.aspx?EventId=<%#Eval("EventId")%>'><%#Eval("EventTitle")%></a></td>
+              
+               <td><asp:LinkButton ID="lnkbtnEvent" runat="server" CommandArgument='<%#Eval("EventID")  %>' OnClick="lnkbtnEvent_click"><%#Eval("EventTitle")%></asp:LinkButton></td>
           </tr>  
       </ItemTemplate>
   </asp:Repeater>
@@ -39,7 +40,7 @@
 
 
 <tr>
-<td class="col-sm-3">Event Title</td>
+<td class="col-md-2 col-sm-2 col-xs-2">Event Title</td>
 <td ><asp:Label ID="lblEventTitle" runat="server"></asp:Label></td>
 </tr>
 
@@ -50,7 +51,8 @@
 
 <tr>
 <td>Time </td>
-<td  ><%#Eval("TimeStart")%> to <%#Eval("TimeEnd")%></td>
+<td  >
+    <asp:Label ID="lblTime" runat="server" Text=""></asp:Label></td>
 </tr>
 
 <tr>
@@ -76,11 +78,17 @@
 <tr>
 <td>Event Images </td>
 <td > 
-    <asp:Image ID="Image1" ImageUrl='<%#Eval("EventImage")%>' CssClass="img-responsive" runat="server" /></td>
+    <asp:Image ID="imgEvent" CssClass="img-thumbnail" runat="server" /></td>
 </tr>
 
 <tr>
-<td colspan='2' align="center" ><asp:Button ID="btnAllow"  CssClass="btn btn-default" runat="server" Text="Allow" /><asp:Button ID="btnDiscard" CssClass="btn btn-default" runat="server" Text="Discard" /></td>
+<td colspan='2' align="center" ><asp:Button ID="btnAllow"  
+        CssClass="btn btn-default" runat="server" Text="Allow" 
+        onclick="btnAllow_Click" /><asp:Button ID="btnDiscard" CssClass="btn btn-default" runat="server" Text="Discard" />
+        
+        <br />
+    <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
+        </td>
 </tr>
 
 </table>

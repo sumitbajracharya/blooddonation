@@ -5,32 +5,33 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 
- <table class="table table-bordered">
+  <table class="table table-bordered">
             <tr>
                 <td colspan="2">
-                    <asp:Image ID="Image2" runat="server" ImageUrl='<%#Eval("Image") %>' CssClass="img-responsive" />
+                    <asp:Image ID="imgEvent" runat="server" CssClass="img-thumbnail" />
                   
                 </td>
             </tr>
             <tr>
-                <td class="col-sm-3">Date</td>
-                <td><%#Eval("Date") %></td>
+                <td>Date</td>
+                <td>
+                    <asp:Label ID="lblDate" runat="server" Text=""></asp:Label></td>
             </tr>
             <tr>
                 <td>Time</td>
-                <td><%#Eval("Time")%></td>
+                <td> <asp:Label ID="lblTime" runat="server" Text=""></asp:Label></td>
             </tr>
             <tr>
                 <td>Venue</td>
-                <td><%#Eval("Venue") %></td>
+                <td> <asp:Label ID="lblVenue" runat="server" Text=""></asp:Label></td>
             </tr>
             <tr>
                 <td>Posted By</td>
-                <td><%#Eval("PostedBy") %></td>
+                <td> <asp:Label ID="lblPostedBy" runat="server" Text=""></asp:Label></td>
             </tr>
             <tr>
                 <td>Description</td>
-                <td><%#Eval("Description") %></td>
+                <td> <asp:Label ID="lblDescription" runat="server" Text=""></asp:Label></td>
             </tr>
         </table>
 </asp:Content>

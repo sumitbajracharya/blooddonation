@@ -31,7 +31,7 @@ public partial class Admin_AddBloodCenter : System.Web.UI.Page
     public void LoadLocation()
     {
 
-        DataTable dt = bllocation.GetAllLocation();
+        DataTable dt = bllocation.GetAllLocation1();
         if (dt.Rows.Count > 0)
         {
             ddlLocation.DataSource = dt;
@@ -49,19 +49,19 @@ public partial class Admin_AddBloodCenter : System.Web.UI.Page
         _bloodcenter.Name = txtCenterName.Text;
         _bloodcenter.LocationId = Convert.ToInt32(ddlLocation.Text);
         _bloodcenter.PhoneNumber = Convert.ToInt32(txtNumber.Text); ;
-        //_bloodcenter.MapCoordinates = txtMapCoordinates.Text;
+        _bloodcenter.MapCoordinates = txtMapCoordinates.Text;
 
 
         _bloodcenter.Image = "bloodcenter" + fupImage.FileName;
         fupImage.PostedFile.SaveAs(Server.MapPath("~/Assets/Images/BloodCenter/" + _bloodcenter.Image));
 
-        _bloodcenter.Details = TxtDeatails.Text;
+        _bloodcenter.Details = TxtDetails.Text;
         try
         {
             int Result = BLLBloodCenter.CreateBloodCenter(_bloodcenter);
             if (Result == 1)
             {
-                lblMessage.Text = "News has been successfully added ";
+                lblMessage.Text = "Blood Center has been successfully added ";
             }
 
         }
@@ -71,5 +71,6 @@ public partial class Admin_AddBloodCenter : System.Web.UI.Page
             lblMessage.Text = ex.Message;
         }
     }
+
    
 }

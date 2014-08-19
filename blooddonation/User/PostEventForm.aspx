@@ -32,15 +32,16 @@
             <tr>
                 <td>Time</td>
                 <td>
-                    <asp:TextBox ID="txtStartingTime" runat="server" cssClass="form-control pull-left" Width="30%"></asp:TextBox>
-                    <asp:DropDownList ID="ddlStartingAmPm" runat="server" Width="10%" cssClass="form-control pull-left">
+                    <asp:TextBox ID="txtStartingTime" runat="server" cssClass="form-control pull-left" Width="20%" Text="h:m"></asp:TextBox>
+                    <asp:DropDownList ID="ddlStartingAmPm" runat="server" Width="15%" cssClass="form-control pull-left">
                         <asp:ListItem Selected="True">am</asp:ListItem>
                         <asp:ListItem>pm</asp:ListItem>
-                    </asp:DropDownList>
-<asp:Label ID="lblTo" runat="server" Text=" To " CssClass="pull-left"></asp:Label>                   
- <asp:TextBox ID="txtEndingTime" runat="server" cssClass="form-control pull-left" Width="30%"></asp:TextBox>
-                    <asp:DropDownList ID="ddlEndingAmPm" runat="server"  Width="10%" cssClass="form-control pull-left">
-                        <asp:ListItem>am</asp:ListItem>
+                    </asp:DropDownList> &nbsp;&nbsp; 
+                    <asp:Label ID="lblTo" runat="server" Text="To" cssClass="pull-left"></asp:Label>
+                    &nbsp;&nbsp;
+                       <asp:TextBox ID="txtEndingTime" runat="server" cssClass="form-control pull-left" Width="20%" Text="h:m"></asp:TextBox>
+                    <asp:DropDownList ID="ddlEndingTimeAmPm" runat="server" Width="15%" cssClass="form-control pull-left">
+                        <asp:ListItem Selected="True">am</asp:ListItem>
                         <asp:ListItem>pm</asp:ListItem>
                     </asp:DropDownList>
                 </td>
