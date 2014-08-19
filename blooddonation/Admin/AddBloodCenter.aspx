@@ -38,8 +38,13 @@
             <tr>
                 <td colspan='2'>
                
-                <asp:Button ID="btnAdd" cssClass="btn btn-default" runat="server" Text="Add Center" /> &nbsp;
-                 <asp:Button ID="Cancel" cssClass="btn btn-default" runat="server" Text="Cancel" />  </td>
+                <asp:Button ID="btnAdd" cssClass="btn btn-default" runat="server" Text="Add Center" 
+                        onclick="btnAdd_Click" /> &nbsp;
+                 <asp:Button ID="Cancel" cssClass="btn btn-default" runat="server" Text="Cancel" /> 
+                    
+                 <br />
+                 <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
+                  </td>
                         
             </tr>
         </table>

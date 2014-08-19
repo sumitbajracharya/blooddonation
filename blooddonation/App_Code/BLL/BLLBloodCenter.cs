@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Data;
 
 /// <summary>
 /// Summary description for BLLBloodCenter
@@ -15,7 +16,7 @@ public class BLLBloodCenter
 		// TODO: Add constructor logic here
 		//
 	}
-    public static void CreateBloodCenter(BloodCenterInfo _BloodCenter)
+    public static int CreateBloodCenter(BloodCenterInfo _BloodCenter)
     {
 
         SqlParameter[] param = new SqlParameter[]
@@ -27,8 +28,13 @@ public class BLLBloodCenter
          new SqlParameter("@image",_BloodCenter.Image),
          new SqlParameter("@details",_BloodCenter.Details)
      };
-        ConnectionHelper.ExecuteProcedure("insert into TblBloodCenter", param);
+        return ConnectionHelper.ExecuteProcedure("insert into TblBloodCenter", param);
 
+    }
+
+    public DataTable GetBloodCenterList()
+    {
+        return ConnectionHelper.GetTable("SELECT TblBloodCenter.Name, TblLocation.LocationName, TblBloodCenter.CenterID FROM TblLocation INNER JOIN TblBloodCenter ON TblLocation.LocationID = TblBloodCenter.LocationID order by CenterID", null);
     }
 
 }
