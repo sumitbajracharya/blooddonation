@@ -243,17 +243,13 @@
         </a>
       </h4>
     </div>
-    <div id="collapseOne" class="panel-collapse collapse in">
       <div class="panel-body">
-      Blood donation campain in Bhugol Park<br />
-
-Blood donation campain in <br />
-
-Blood donation campain in Koteswor<br /><br />
-
-
+          <asp:Repeater ID="rptEvent" runat="server">
+          <ItemTemplate>
+     <a href='EventDetails.aspx?EventId=<%# Eval("EventID") %>'><%# Eval("EventTitle") %></a>  in <%# Eval("Venue") %><br />
+      </ItemTemplate>
+      </asp:Repeater>
       </div>
-    </div>
   </div>
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -296,7 +292,9 @@ Blood donation campain in Koteswor<br /><br />
     </div>
   </div>
 </div>
-<div class="text-right">  <asp:Button ID="btnPostEvent" runat="server" CssClass="btn btn-default dropdown-toggle" Text="Post Event" /></div>
+<div class="text-right">  <asp:Button ID="btnPostEvent" runat="server" 
+        CssClass="btn btn-default dropdown-toggle" Text="Post Event" 
+        onclick="btnPostEvent_Click" /></div>
 </div>
 
     

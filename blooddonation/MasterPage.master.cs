@@ -21,6 +21,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
         if (!IsPostBack)
         {
             dataload();
+            EventLoad();
         }
 
     }
@@ -63,7 +64,24 @@ public partial class MasterPage : System.Web.UI.MasterPage
             Response.Redirect("/user/UserProfile.aspx");
         }
     }
-    
+    BLLEvent ble = new BLLEvent();
+    protected void EventLoad()
+    {
+        {
+            DataTable dt = ble.GetEvent_Today();
+            if (dt.Rows.Count > 0)
+            {
+                rptEvent.DataSource = dt;
+                rptEvent.DataBind();
+            }
+        }
+    }
+    protected void btnPostEvent_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("User/PostEventForm.aspx");
+        //Server.Transfer("~/User/PostEventForm.aspx", true);
+    }
+  
 }
 
     
