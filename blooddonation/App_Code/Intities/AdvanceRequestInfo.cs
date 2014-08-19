@@ -16,7 +16,7 @@ public class AdvanceRequestInfo
 	}
     public int RequestId { get; set; }
     public string SeekerName { get; set; }
-    public string MobileNo { get; set; }
+    public string PhoneNo { get; set; }
     public string PatientName { get; set; }
     public int LocationId { get; set; }
     public int BloodGroupId { get; set; }

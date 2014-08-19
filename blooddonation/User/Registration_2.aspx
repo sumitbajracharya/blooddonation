@@ -13,7 +13,12 @@
             </tr>
             <tr>
                 <td>Date of Birth</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:TextBox ID="txtDay" hight="34px" width="20%" txt="Day" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtMonth" hight="34px" width="20%" txt="Month"  runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtYear" hight="34px" width="40%" txt="Year"  runat="server"></asp:TextBox>
+                                
+                </td>
             </tr>
             <tr>
                 <td>Gender</td>
@@ -33,12 +38,18 @@
             <tr>
                 <td>Current Address</td>
                 <td>
-                    <asp:TextBox ID="txtCurrentAddress" cssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:DropDownList ID="ddlCurrentAddress" cssClass="form-control" runat="server">
+                    </asp:DropDownList>
                 </td>
             </tr>
             <tr>
                 <td>Last Donation Date</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:TextBox ID="txtLastDonatedDay" hight="34px" width="20%" txt="Day" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtLastDonatedMonth" hight="34px" width="20%" txt="Month"  runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtLastDonatedYear" hight="34px" width="40%" txt="Year"  runat="server"></asp:TextBox>
+                                
+                </td>
             </tr>
             <tr>
                 <td>Best Time To Contact</td>

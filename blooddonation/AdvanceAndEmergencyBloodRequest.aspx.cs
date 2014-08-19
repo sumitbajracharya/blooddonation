@@ -107,5 +107,9 @@ public partial class AdvanceAndEmergencyBloodRequest : System.Web.UI.Page
     public void Clear()
     {
        
+<<<<<<< HEAD
+=======
+        //AdvanceBloodRequest.AddAdvanceBloodRequest(_AdvanceRequest);
+>>>>>>> 9f15e3ff93823269908a07090e37c9d5b37ef104
     }
 }

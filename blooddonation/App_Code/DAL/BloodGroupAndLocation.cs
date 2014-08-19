@@ -20,7 +20,7 @@ public class BloodGroupAndLocation
     {
         using (SqlConnection con = ConnectionHelper.GetConnection())
         {
-            SqlDataAdapter daa = new SqlDataAdapter("select LocationName from TblLocation", con);
+            SqlDataAdapter daa = new SqlDataAdapter("select * from TblLocation", con);
             DataSet dss = new DataSet();
             daa.Fill(dss, "tbl_locationnn");
 
@@ -33,7 +33,7 @@ public class BloodGroupAndLocation
     { 
         using (SqlConnection con= ConnectionHelper.GetConnection())
         {
-            string query = "Select BloodGroup from TblBloodGroup";
+            string query = "Select * from TblBloodGroup";
 
             SqlDataAdapter da = new SqlDataAdapter(query, con);
             DataSet ds = new DataSet();
