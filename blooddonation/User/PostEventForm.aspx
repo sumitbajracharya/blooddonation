@@ -1,11 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/User.master" AutoEventWireup="true" CodeFile="PostEventForm.aspx.cs" Inherits="User_PostEventForm" %>
 
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     
     <div>
-    
+        
         <table class="table table-bordered">
             <tr>
                 <th colspan="2">Event Form</th>
@@ -21,6 +23,10 @@
                 <td>
                     <asp:TextBox ID="txtEventDate" runat="server" cssClass="form-control"></asp:TextBox>
                     
+                    <cc1:CalendarExtender ID="txtEventDate_CalendarExtender" runat="server" 
+                        TargetControlID="txtEventDate">
+                    </cc1:CalendarExtender>
+                    
                 </td>
             </tr>
             <tr>
@@ -28,10 +34,11 @@
                 <td>
                     <asp:TextBox ID="txtStartingTime" runat="server" cssClass="form-control pull-left" Width="30%"></asp:TextBox>
                     <asp:DropDownList ID="ddlStartingAmPm" runat="server" Width="10%" cssClass="form-control pull-left">
-                        <asp:ListItem>am</asp:ListItem>
+                        <asp:ListItem Selected="True">am</asp:ListItem>
                         <asp:ListItem>pm</asp:ListItem>
                     </asp:DropDownList>
-<asp:Label ID="lblTo" runat="server" Text=" To " CssClass="pull-left"></asp:Label>                    <asp:TextBox ID="txtEndingTime" runat="server" cssClass="form-control pull-left" Width="30%"></asp:TextBox>
+<asp:Label ID="lblTo" runat="server" Text=" To " CssClass="pull-left"></asp:Label>                   
+ <asp:TextBox ID="txtEndingTime" runat="server" cssClass="form-control pull-left" Width="30%"></asp:TextBox>
                     <asp:DropDownList ID="ddlEndingAmPm" runat="server"  Width="10%" cssClass="form-control pull-left">
                         <asp:ListItem>am</asp:ListItem>
                         <asp:ListItem>pm</asp:ListItem>
@@ -67,14 +74,16 @@
                 <td>
                     <asp:FileUpload ID="fupImage" runat="server" cssClass="btn btn-default" />
                     <br />
-                    <asp:Image ID="Image" runat="server" Height="190px" Width="310px" />
+                    <asp:Image ID="imgEvent" runat="server" Height="190px" Width="310px" />
                 </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" cssClass="btn btn-default"/>
+                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" 
+                        cssClass="btn btn-default" onclick="btnSubmit_Click"/>
                     <asp:Button ID="btnCancel" runat="server" Text="Cancel" cssClass="btn btn-default"/>
+                    <asp:Label ID="lblMessage" runat="server" Text="Label"></asp:Label>
                 </td>
             </tr>
         </table>

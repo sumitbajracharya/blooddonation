@@ -17,6 +17,8 @@ public class BLLLocation
 		//
 	}
 
+   
+
     // get all district Info
     public static List<LocationInfo> GetAllLocation()
     {
@@ -49,7 +51,7 @@ public class BLLLocation
     public static List<LocationInfo> GetLocationByDistrictID(int DistrictID)
     {
         List<LocationInfo> lstLocation = new List<LocationInfo>();
-        foreach (LocationInfo _Location in GetAllLocation())
+        foreach (LocationInfo _Location in BLLLocation.GetAllLocation())
         {
             if (_Location.DistrictId == DistrictID)
             {

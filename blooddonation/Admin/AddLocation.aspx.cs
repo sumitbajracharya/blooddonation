@@ -21,8 +21,8 @@ public partial class Admin_AddLocation : System.Web.UI.Page
     {
         LocationInfo _location = new LocationInfo();
         _location.LocationName = txtLocationName.Text;
-        _location.DistrictId = ddlDistrict.SelectedIndex;
-        //_location.DistrictId = Convert.ToInt32(ddlDistrict.SelectedValue);
+        //_location.DistrictId = int.Parse(ddlDistrict.DataValueField);
+        _location.DistrictId = int.Parse(ddlDistrict.SelectedValue);
 
         try
         {

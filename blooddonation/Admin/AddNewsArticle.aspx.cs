@@ -21,7 +21,7 @@ public partial class Admin_AddNewsArticle : System.Web.UI.Page
         _news.Heading=txtNewsTitle.Text;
         _news.Description = txtNewsBody.Text;
         _news.ImageName = "news"+fupNewsImage.FileName;
-        fupNewsImage.PostedFile.SaveAs(Server.MapPath("~/Assets/Imgae/NewsImage/"+ _news.ImageName));
+        fupNewsImage.PostedFile.SaveAs(Server.MapPath("~/Assets/Images/NewsImage/"+ _news.ImageName));
        
         try
         {
