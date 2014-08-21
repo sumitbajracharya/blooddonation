@@ -122,5 +122,24 @@ public class BLLLocation
             throw ex;
         }
     }
+
+    //public static List<LocationInfo> GetAllLocationByDistrictID(int _DistrictID)
+    //{
+    //    using (SqlConnection con = ConnectionHelper.GetConnection())
+    //    {
+    //      using(SqlCommand cmd=con.CreateCommand())
+    //      {
+    //          cmd.CommandText = "Usp_get_AllLocations_By_DistrictID";
+    //          cmd.CommandType = CommandType.StoredProcedure;
+
+    //          cmd.Parameters.AddWithValue("@DistrictID", _DistrictID);
+    //      } 
+            
+    //        return lstlocations;
+    //    }
+
+    //}
+
+
    
 }

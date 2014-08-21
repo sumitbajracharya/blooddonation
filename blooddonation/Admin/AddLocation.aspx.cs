@@ -9,8 +9,10 @@ public partial class Admin_AddLocation : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+       
         //dropedown of district connected with database
         ddlDistrict.DataSource = BLLDistrict.GetAllDistrict();
+
         ddlDistrict.DataTextField = "DistrictName";
         ddlDistrict.DataValueField = "DistrictID";
         ddlDistrict.DataBind();
@@ -21,8 +23,8 @@ public partial class Admin_AddLocation : System.Web.UI.Page
     {
         LocationInfo _location = new LocationInfo();
         _location.LocationName = txtLocationName.Text;
-        //_location.DistrictId = int.Parse(ddlDistrict.DataValueField);
-        _location.DistrictId = int.Parse(ddlDistrict.SelectedValue);
+        //_location.DistrictId = Convert.ToInt32(txtLocationName.Text);
+        _location.DistrictId = Convert.ToInt32(ddlDistrict.SelectedValue);
 
         try
         {

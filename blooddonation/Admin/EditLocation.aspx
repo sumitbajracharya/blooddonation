@@ -8,7 +8,7 @@
 
     <asp:DropDownList ID="ddlDistrict" cssClass="form-control" Width="40%" runat="server">
     </asp:DropDownList>
-    <asp:Button ID="btnSearch" CssClass="btn btn-default" runat="server" Text="Search" OnClick="btnSearch_Click" />
+    <asp:Button ID="btnSearch" CssClass="btn btn-default" runat="server" Text="Search" OnClick="btnSearch_Click"  />
 
     
 

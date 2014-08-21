@@ -23,20 +23,11 @@ public partial class Admin_EditLocation : System.Web.UI.Page
         gdvLocation.DataBind();
 
     }
-    // to show location with the district id
+     //to show location with the district id
     protected void btnSearch_Click(object sender, EventArgs e)
     {
-        int DistrictID = ddlDistrict.SelectedIndex;
-        if (ddlDistrict.Text != null)
-        {
-            int _DistrictId = int.Parse(Request.QueryString["DistrictId"]);
-            LoadList(_DistrictId);
-        }
-        
+    
     }
-    protected void LoadList(int _DistrictId)
-    {
-        gdvLocation.DataSource = BLLLocation.GetLocationByDistrictID(int DistrictID);//mileko chaina
-        gdvLocation.DataBind();
-    }
+
+    
 }
