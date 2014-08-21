@@ -11,6 +11,9 @@ public partial class User_PostEventForm : System.Web.UI.Page
     {
 
     }
+
+    // Userid Pass garnu parxa
+
     protected void btnSubmit_Click(object sender, EventArgs e)
     {
         EventInfo _event = new EventInfo();
@@ -21,7 +24,7 @@ public partial class User_PostEventForm : System.Web.UI.Page
         _event.Venue = txtVenue.Text;
         _event.PostedBy = txtPosetedBy.Text;
         _event.Description = txtDescription.Text;
-        //_event.Status = txtLocationName.Text;
+        //_event.UserID = ""; 
         //_event.Image = fupImage.Text;
         //_event.IssueDate = txtLocationName.Text;
         if (fupImage.HasFile)
