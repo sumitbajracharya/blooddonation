@@ -51,7 +51,7 @@
         <tr>
             <td>Contact no.</td>
             <td>
-                <asp:TextBox ID="txtContactNo" runat="server" cssClass="form-control"></asp:TextBox>
+                <asp:TextBox ID="txtContactNumber" runat="server" cssClass="form-control"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -65,7 +65,7 @@
             <td>
                 <asp:FileUpload ID="fupImage" runat="server" cssClass="btn btn-default" />
                 <br />
-                <asp:Image ID="Image" runat="server" Height="190px" Width="310px" />
+                <asp:Image ID="imgEvent" runat="server" Height="190px" Width="310px" />
             </td>
         </tr>
         <tr>

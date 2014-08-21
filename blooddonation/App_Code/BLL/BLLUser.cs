@@ -73,11 +73,53 @@ public class BLLUser
     // get all users Info
     public static List<MemberInfo> GetAllMembers()
     {
+        List<MemberInfo> lstmembers = new List<MemberInfo>();
         using (SqlConnection con = ConnectionHelper.GetConnection())
         {
-            string Sp = "Usp_get_DonersByLnBG";
+            string Sp = "usp_get_allmember";
+            SqlCommand cmd = new SqlCommand(Sp, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            using (SqlDataReader _reader = cmd.ExecuteReader())
+            {
+                while (_reader.Read())
+                    {
+                        lstmembers.Add(new MemberInfo
+                        {
+                            MemberId = int.Parse(_reader["DonarID"].ToString()),
+                            FirstName = _reader["FirstName"].ToString(),
+                            LastName = _reader["LastName"].ToString(),
+                            UserName = _reader["UserName"].ToString(),
+                            PermanentAddress = _reader["PermanentAddress"].ToString(),
+                            CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString()),
+                            DOB = Convert.ToDateTime(_reader["DOB"]),
+                            BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString()),
+                            Gender = _reader["Gender"].ToString(),
+                            LastDonationDate = Convert.ToDateTime(_reader["LastDonationDate"]),
+                            BestTime = _reader["BestTime"].ToString(),
+                            MobileNo = _reader["MobileNumber"].ToString(),
+                            PhoneNo = _reader["PhoneNumber"].ToString(),
+                            Email = _reader["Email"].ToString(),
+                            BloodDonationCardSnapshot = _reader["BloodDonationCardSnapshots"].ToString(),
+                            DonorStatus = bool.Parse(_reader["DonorStatus"].ToString()),
+                            AccountStatus = bool.Parse(_reader["AccountStatus"].ToString()),
+                            RoleId = bool.Parse(_reader["RoleID"].ToString()),
+                            ProfilePicture = _reader["ProfilePicture"].ToString(),
+                        });
+                    }
+                }
+            }
+            return (lstmembers);
+        }        
+    
+
+    public static List<MemberInfo> GetDeactiveMembers()
+    {
+        using (SqlConnection con = ConnectionHelper.GetConnection())
+        {
+            string Sp = "Usp_GetDeactiveMemeber";
             SqlCommand cmd = new SqlCommand(Sp, con);
             List<MemberInfo> lstmembers = new List<MemberInfo>();
+            cmd.CommandType = CommandType.StoredProcedure;
             using (SqlDataReader _reader = cmd.ExecuteReader())
             {
                 while (_reader.Read())
@@ -107,7 +149,7 @@ public class BLLUser
                 }
             }
             return (lstmembers);
-        }        
+        }
     }
 
     public static MemberInfo GetMemberByUserName(string UserName)
@@ -122,7 +164,7 @@ public class BLLUser
 
         SqlCommand cmd = new SqlCommand(sp, Con);
         cmd.Parameters.Add(new SqlParameter("@username", UserName));
-
+        cmd.CommandType = CommandType.StoredProcedure;
         using (SqlDataReader _reader = cmd.ExecuteReader())
         {
             _reader.Read();
@@ -164,45 +206,83 @@ public class BLLUser
 
         SqlCommand cmd = new SqlCommand(sp, Con);
         cmd.Parameters.Add(new SqlParameter("@userid", UserID));
-
+        cmd.CommandType = CommandType.StoredProcedure;
         using (SqlDataReader _reader = cmd.ExecuteReader())
         {
-            _reader.Read();
-                        _member.MemberId = int.Parse(_reader["DonarID"].ToString());
-                        _member.FirstName = _reader["FirstName"].ToString();
-                        _member.LastName = _reader["LastName"].ToString();
-                        _member.UserName = _reader["UserName"].ToString();
-                        _member.PermanentAddress = _reader[""].ToString();
-                        _member.CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString());
-                        _member.DOB = Convert.ToDateTime(_reader["DOB"]);
-                        _member.BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString());
-                        _member.Gender = _reader["Gender"].ToString();
-                        _member.LastDonationDate = Convert.ToDateTime(_reader["LastDonationDate"]);
-                        _member.BestTime = _reader["BestTime"].ToString();
-                        _member.MobileNo = _reader["MobileNumber"].ToString();
-                        _member.PhoneNo = _reader["PhoneNumber"].ToString();
-                        _member.Email = _reader["Email"].ToString();
-                        _member.BloodDonationCardSnapshot = _reader["BloodDonationCardSnapshots"].ToString();
-                        _member.DonorStatus = bool.Parse(_reader["DonorStatus"].ToString());
-                        _member.AccountStatus = bool.Parse(_reader["AccountStatus"].ToString());
-                        _member.RoleId = bool.Parse(_reader["RoleID"].ToString());
-                        _member.ProfilePicture = _reader["ProfilePicture"].ToString();
+             _reader.Read();
+             _member.MemberId = int.Parse(_reader["DonarID"].ToString());
+             _member.FirstName = _reader["FirstName"].ToString();
+             _member.LastName = _reader["LastName"].ToString();
+             _member.UserName = _reader["UserName"].ToString();
+            _member.PermanentAddress = _reader[""].ToString();
+            _member.CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString());
+            _member.DOB = Convert.ToDateTime(_reader["DOB"]);
+            _member.BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString());
+            _member.Gender = _reader["Gender"].ToString();
+            _member.LastDonationDate = Convert.ToDateTime(_reader["LastDonationDate"]);
+            _member.BestTime = _reader["BestTime"].ToString();
+            _member.MobileNo = _reader["MobileNumber"].ToString();
+            _member.PhoneNo = _reader["PhoneNumber"].ToString();
+            _member.Email = _reader["Email"].ToString();
+            _member.BloodDonationCardSnapshot = _reader["BloodDonationCardSnapshots"].ToString();
+            _member.DonorStatus = bool.Parse(_reader["DonorStatus"].ToString());
+            _member.AccountStatus = bool.Parse(_reader["AccountStatus"].ToString());
+            _member.RoleId = bool.Parse(_reader["RoleID"].ToString());
+            _member.ProfilePicture = _reader["ProfilePicture"].ToString();
         }
         return _member;
     }
 
     //get users by Location and blood Group
-    public static List<MemberInfo> GetDonarByLocationAndBloodGroup(int LocationID, int BloodGroupID )
+    public static DataTable GetDonarByLocationAndBloodGroup(int LocationID, int BloodGroupID )
     {
-        List<MemberInfo> lstMembers = new List<MemberInfo>();
-        foreach (MemberInfo _Member in GetAllMembers())
+        //List<MemberInfo> lstMembers = new List<MemberInfo>();
+        String sp = "Usp_GetMemeberbyLocationBloodGroup";
+
+
+        SqlConnection Con = ConnectionHelper.GetConnection();
+
+        SqlCommand cmd = new SqlCommand(sp, Con);
+        cmd.Parameters.Add(new SqlParameter("@Location", LocationID));
+        cmd.Parameters.Add(new SqlParameter("@BloodGroup", BloodGroupID));
+        cmd.CommandType = CommandType.StoredProcedure;
+
+        DataTable dt = new DataTable();
+        SqlDataAdapter da = new SqlDataAdapter(cmd);
+        da.Fill(dt);
+
+        /*
+        using (SqlDataReader _reader = cmd.ExecuteReader())
         {
-            if (_Member.BloodGroupId == BloodGroupID && _Member.CurrentAddress == LocationID)
+            while (_reader.Read())
             {
-                lstMembers.Add(_Member);
+                lstMembers.Add(new MemberInfo
+                {
+                    MemberId = int.Parse(_reader["DonarID"].ToString()),
+                    FirstName = _reader["FirstName"].ToString(),
+                    LastName = _reader["LastName"].ToString(),
+                    UserName = _reader["UserName"].ToString(),
+                    PermanentAddress = _reader["PermanentAddress"].ToString(),
+                    CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString()),
+                    DOB = Convert.ToDateTime(_reader["DOB"]),
+                    BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString()),
+                    Gender = _reader["Gender"].ToString(),
+                    LastDonationDate = Convert.ToDateTime(_reader["LastDonationDate"]),
+                    BestTime = _reader["BestTime"].ToString(),
+                    MobileNo = _reader["MobileNumber"].ToString(),
+                    PhoneNo = _reader["PhoneNumber"].ToString(),
+                    Email = _reader["Email"].ToString(),
+                    BloodDonationCardSnapshot = _reader["BloodDonationCardSnapshots"].ToString(),
+                    DonorStatus = bool.Parse(_reader["DonorStatus"].ToString()),
+                    AccountStatus = bool.Parse(_reader["AccountStatus"].ToString()),
+                    RoleId = bool.Parse(_reader["RoleID"].ToString()),
+                    ProfilePicture = _reader["ProfilePicture"].ToString(),
+                });
             }
-        }
-        return lstMembers;
+        }*/
+        return dt;
     }
+
+
 
 }

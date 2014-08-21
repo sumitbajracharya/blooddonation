@@ -52,7 +52,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         int BloodId = ddl_bloodgroup.SelectedIndex;
         int LocationID = ddl_location.SelectedIndex;
-        Response.Redirect("DonarList.aspx?Location=" + LocationID + "&Bloodgroup=" + BloodId);
+        Response.Redirect("DonarList.aspx?Location=" + LocationID+"&BloodGroup=" + BloodId);
     }
 
     protected void btn_Login_Click(object sender, EventArgs e)
