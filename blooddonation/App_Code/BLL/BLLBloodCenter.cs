@@ -16,7 +16,7 @@ public class BLLBloodCenter
 		// TODO: Add constructor logic here
 		//
 	}
-
+   
     public static DataTable GetCenter_ByCenterId(int CenterId)
     {
         SqlParameter[] param = new SqlParameter[]
@@ -26,6 +26,8 @@ public class BLLBloodCenter
 
         return ConnectionHelper.GetTable("SELECT TblLocation.LocationName, TblBloodCenter.* FROM  TblBloodCenter INNER JOIN TblLocation ON TblBloodCenter.LocationID = TblLocation.LocationID where CenterId=@centerId", param);
     }
+
+  
 
 
     public static int CreateBloodCenter(BloodCenterInfo _BloodCenter)
