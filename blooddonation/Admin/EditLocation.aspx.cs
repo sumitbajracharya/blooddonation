@@ -14,32 +14,29 @@ public partial class Admin_EditLocation : System.Web.UI.Page
         ddlDistrict.DataTextField = "DistrictName";
         ddlDistrict.DataBind();
         ddlDistrict.Items.Insert(0, "Choose district");
+               
+    }
+    public void LoadGrid()
+    {
 
         gdvLocation.DataSource = BLLLocation.GetAllLocation();
-        
         gdvLocation.DataBind();
 
-       
     }
-    protected void btnAdd_Click(object sender, EventArgs e)
+    // to show location with the district id
+    protected void btnSearch_Click(object sender, EventArgs e)
     {
-        LocationInfo _location = new LocationInfo();
-        _location.LocationName = txtLocationName.Text;
-        _location.DistrictId = ddlDistrict.SelectedIndex;
-       
-        try
+        int DistrictID = ddlDistrict.SelectedIndex;
+        if (ddlDistrict.Text != null)
         {
-            int Result = BLLLocation.CreateLocation(_location);
-            if (Result == 1)
-            {
-                lblMessage.Text = "location has been successfully added ";
-            }
-
+            int _DistrictId = int.Parse(Request.QueryString["DistrictId"]);
+            LoadList(_DistrictId);
         }
-        catch (Exception ex)
-        {
-
-            lblMessage.Text = ex.Message;
-        }
+        
+    }
+    protected void LoadList(int _DistrictId)
+    {
+        gdvLocation.DataSource = BLLLocation.GetLocationByDistrictID(int DistrictID);//mileko chaina
+        gdvLocation.DataBind();
     }
 }
