@@ -34,9 +34,9 @@
       <!-- header banner width 700 x 200 -->
   <div class="col-md-9">  <asp:Image ID="Image4" height="200" Width="850" ImageUrl="~/Assets/Images/header.jpg" runat="server" CssClass="img-responsive" />
       
-  <br /> <asp:Label ID="LblUser" runat="server" Text=" "></asp:Label><br />
+  <div style="position:absolute; padding-right:10px;"> <asp:Label ID="LblUser" runat="server" Text=" "></asp:Label>
   <asp:LinkButton ID="lnbLogout" runat="server" onclick="lnbLogout_Click">Logout</asp:LinkButton>
-
+  </div>
   
   </div>
 </div>
@@ -104,6 +104,7 @@
   <li class="list-group-item"><a href="DashBoard.aspx">Dash Board</a></li>
  <li class="list-group-item"><a href="UserProfile.aspx">Profile </a></li>
 <li class="list-group-item"><a href="AdvanceBloodRequestForm.aspx"> Blood Requests</a></li>
+<li class="list-group-item"><a href="EventList.aspx"> Event</a></li>
   
 </ul>
   
