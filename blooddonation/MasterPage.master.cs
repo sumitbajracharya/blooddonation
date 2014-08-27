@@ -18,15 +18,23 @@ public partial class MasterPage : System.Web.UI.MasterPage
         
     protected void Page_Load(object sender, EventArgs e)
     {
-        ddl_bloodgroup.DataSource = BLLDistrict.GetAllDistrict();
-        ddl_bloodgroup.DataTextField = "DistrictName";
+        if (!IsPostBack)
+        {
+
+
+            ddl_bloodgroup.DataSource = BLLBloodGroup.GetAllBloodGroup();
+        ddl_bloodgroup.DataTextField = "BloodGroup";
+        ddl_bloodgroup.DataValueField = "BloodGroupID";
         ddl_bloodgroup.DataBind();
         ddl_bloodgroup.Items.Insert(0, "Choose district");
 
         ddl_location.DataSource = BLLLocation.GetAllLocation();
-        ddl_location.DataTextField = "Location";
+        ddl_location.DataTextField = "LocationName";
+        ddl_location.DataValueField = "LocationID";
         ddl_location.DataBind();
         ddl_location.Items.Insert(0, "Select Location");
+
+        }
 
     }
 

@@ -7,7 +7,7 @@
     <asp:Label ID="LblMessage" runat="server" Text=" "></asp:Label>
 
 
-    <%--<asp:Repeater ID="rptrDonorList" runat="server">
+    <asp:Repeater ID="rptrDonorList" runat="server">
         
         <ItemTemplate>
         <table class="table table-bordered">
@@ -53,7 +53,7 @@
             </tr>
         </table>
             </ItemTemplate>
-    </asp:Repeater>--%>
+    </asp:Repeater>
 
 
 </asp:Content>
