@@ -50,14 +50,16 @@ public partial class Registration : System.Web.UI.Page
     }
     public void dataload()
     {
-        ddl_bloodgroup.DataSource = BloodGroupAndLocation.BloodGroup();
+        ddl_bloodgroup.DataSource = BLLBloodGroup.GetAllBloodGroup();
         ddl_bloodgroup.DataTextField = "BloodGroup";
+        ddl_bloodgroup.DataValueField= "BloodGroupID";
         ddl_bloodgroup.DataBind();
         ddl_bloodgroup.Items.Insert(0, "Blood Type");
 
 
         ddl_location.DataSource = BLLLocation.GetAllLocation();
         ddl_location.DataTextField = "LocationName";
+        ddl_location.DataValueField = "LocationID";
         ddl_location.DataBind();
         ddl_location.Items.Insert(0, "Choose Location");
 
@@ -76,11 +78,9 @@ public partial class Registration : System.Web.UI.Page
         _member.FullName = TxtFirstName.Text;
         _member.MobileNo = Txtmobile.Text;
         _member.Email = TxtEmail.Text;
-        _member.BloodGroupId = ddl_bloodgroup.SelectedIndex;
-        _member.CurrentAddress = ddl_location.SelectedIndex;
-
+        _member.BloodGroupId = int.Parse(ddl_bloodgroup.SelectedItem.Value);
+        _member.CurrentAddress = int.Parse(ddl_location.SelectedItem.Value);
 
         BLLUser.CreateUser(_member);
-
     }
 }
