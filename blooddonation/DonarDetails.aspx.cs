@@ -16,13 +16,13 @@ public partial class DonarDetails : System.Web.UI.Page
             MemberInfo Member = BLLUser.GetMemberByUserID(_Donar);
 
             ImgProfilePicture.ImageUrl = string.Format("../Assets/Images/UserImage/ProfilePicture/" + Member.ProfilePicture);
-            LblName.Text = string.Format(Member.FirstName + " " + Member.LastName);
-            LblAddress.Text = Member.PermanentAddress;
+            LblName.Text = Member.FullName;
+           
             LblBestTime.Text = Member.BestTime;
             LblBloodGroup.Text = BLLBloodGroup.GetBloodGroupByID(Member.BloodGroupId);
             LblDOB.Text = (Member.DOB).ToString();
             LblGender.Text = Member.Gender;
-            LblLastDonationdate.Text = (Member.LastDonationDate).ToString();
+          
             
         }
     }

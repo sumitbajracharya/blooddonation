@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,25 +8,27 @@ using System.Web.Security;
 
 public partial class Registration : System.Web.UI.Page
 {
-   
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+        if (!IsPostBack)
+        {
+            dataload();
+           
+        }
     }
-
 
     protected void btnsubmit_Click(object sender, EventArgs e)
     {
         MembershipCreateStatus _status;
-        
-        var user = Membership.CreateUser(TxtUserName.Text, TxtPassword.Text,TxtEmail.Text, null, null, false, out _status);
+
+        var user = Membership.CreateUser(Txtmobile.Text, TxtPassword.Text, TxtEmail.Text, null, null, false, out _status);
         switch (_status)
         {
             case MembershipCreateStatus.Success:
 
-                Roles.AddUserToRole(TxtUserName.Text, "Members");
+                Roles.AddUserToRole(Txtmobile.Text, "Members");
                 CreateMembers();
-                Session["UserName"] = TxtUserName.Text;
+                Session["UserName"] = Txtmobile.Text;
                 Response.Redirect("~/User/Registration_2.aspx");
                 break;
             case MembershipCreateStatus.DuplicateUserName:
@@ -47,16 +48,37 @@ public partial class Registration : System.Web.UI.Page
                 break;
         }
     }
+    public void dataload()
+    {
+        ddl_bloodgroup.DataSource = BloodGroupAndLocation.BloodGroup();
+        ddl_bloodgroup.DataTextField = "BloodGroup";
+        ddl_bloodgroup.DataBind();
+        ddl_bloodgroup.Items.Insert(0, "Blood Type");
+
+
+        ddl_location.DataSource = BLLLocation.GetAllLocation();
+        ddl_location.DataTextField = "LocationName";
+        ddl_location.DataBind();
+        ddl_location.Items.Insert(0, "Choose Location");
+
+        //ddl_location.DataSource = BloodGroupAndLocation.Location();
+        //ddl_location.DataTextField = "LocationName";
+        //ddl_location.DataBind();
+        //ddl_location.Items.Insert(0, "Choose Location");
+
+        //gv_search.DataSource = ds;
+        //gv_search.DataBind();
+    }
 
     protected void CreateMembers()
     {
         MemberInfo _member = new MemberInfo();
-        _member.FirstName = TxtFirstName.Text;
-        _member.LastName = TxtLastName.Text;
+        _member.FullName = TxtFirstName.Text;
         _member.MobileNo = Txtmobile.Text;
         _member.Email = TxtEmail.Text;
-        _member.BloodGroupId = Ddlbloodgroup.SelectedIndex;
-        _member.UserName = TxtUserName.Text;
+        _member.BloodGroupId = ddl_bloodgroup.SelectedIndex;
+        _member.CurrentAddress = ddl_location.SelectedIndex;
+
 
         BLLUser.CreateUser(_member);
 

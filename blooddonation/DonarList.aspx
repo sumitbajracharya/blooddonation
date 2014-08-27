@@ -3,11 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<br />
+<br/>
     <asp:Label ID="LblMessage" runat="server" Text=" "></asp:Label>
 
 
-    <asp:Repeater ID="rptrDonorList" runat="server">
+    <%--<asp:Repeater ID="rptrDonorList" runat="server">
         
         <ItemTemplate>
         <table class="table table-bordered">
@@ -15,20 +15,27 @@
                 <td rowspan="7">
                     <asp:Image ID="Image1" runat="server" Height="122px" Width="148px" />
                 </td>
-                <td class="col-sm-3">Name</td>
-                <td><%#Eval("FirstName") %> <%#Eval("LastName") %></td>
+                <td>Name</td>
+                <td><%#Eval("FullName") %></td>
+            </tr>
+            <tr>
+                <td>Blood Group</td>
+                <td><%#Eval("BloodGroupID") %></td>
+                
+            </tr>
+             <tr>
+                <td>Mobile number</td>
+                <td><%#Eval("BloodGroupID") %></td>
+                
             </tr>
             <tr>
                 <td>Gender</td>
                 <td><%#Eval("Gender") %></td>
             </tr>
+            
             <tr>
                 <td>Age</td>
                 <td><%#Eval("Age") %></td>
-            </tr>
-            <tr>
-                <td>Blood Group</td>
-                <td><%#Eval("BloodGroupID") %></td>
             </tr>
             <tr>
                 <td>Location</td>
@@ -46,7 +53,7 @@
             </tr>
         </table>
             </ItemTemplate>
-    </asp:Repeater>
+    </asp:Repeater>--%>
 
 
 </asp:Content>

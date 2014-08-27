@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="AdvanceAndEmergencyBloodRequest.aspx.cs" Inherits="AdvanceAndEmergencyBloodRequest" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <br />

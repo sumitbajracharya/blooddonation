@@ -13,7 +13,7 @@
   
   
    <div class="col-md-12 col-xs-12">
-       <table class="table table-bordered">
+       <%--<table class="table table-bordered">
            <tr>
                <th colspan="2">ADVANCE BLOOD REQUEST</th>
            </tr>
@@ -27,25 +27,11 @@
    
                </td>
            </tr>
-           <asp:Repeater ID="Repeater5" runat="server">
-             <ItemTemplate>
-             <tr>
-               <td>
-                   
-                    <h6><a href="" <%#Eval("Date") %>></a></h6>
-         
-
-               </td>
-               <td>
-                   <h6><a href="" <%#Eval("Program") %>></a></h6>
-               </td>
-             </tr>
-             </ItemTemplate>
-           </asp:Repeater>
+          
        </table>
        
  
- 
+ --%>
       
   
  

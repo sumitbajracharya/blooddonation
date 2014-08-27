@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <p align="right"><a href=EditUser.aspx >Edit </a> </p>
+     <p align="right"><a href="EditUser.aspx" >Edit </a> </p>
 
     <table class="table table-bordered">
     

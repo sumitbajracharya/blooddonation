@@ -17,13 +17,13 @@ public partial class User_UserProfile : System.Web.UI.Page
             MemberInfo Member = BLLUser.GetMemberByUserName(name);
 
             ImgProfilePicture.ImageUrl = string.Format("../Assets/Images/UserImage/ProfilePicture/" + Member.ProfilePicture);
-            lblName.Text = string.Format(Member.FirstName + " " + Member.LastName);
-            lblAdderss.Text = Member.PermanentAddress;
+            lblName.Text = string.Format(Member.FullName);
+           
             lblBestTime.Text = Member.BestTime;
             lblBloodGroup.Text = BLLBloodGroup.GetBloodGroupByID(Member.BloodGroupId);
             lblDOB.Text = (Member.DOB).ToString();
             lblGender.Text= Member.Gender;
-            lblLastDonationdate.Text = (Member.LastDonationDate).ToString();
+            
         }
     }
 }

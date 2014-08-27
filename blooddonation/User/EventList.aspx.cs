@@ -12,12 +12,13 @@ public partial class User_EventList : System.Web.UI.Page
     {
 
     }
-
+    /*
     BLLEvent ble = new BLLEvent();
+    
     public void LoadEventList()
     {
         
-        DataTable dt = BLLEvent.GetEvent_ByUserId();
+      DataTable dt = BLLEvent.GetEvent_ByUserId();
         if (dt.Rows.Count > 0)
         {
             //KamanaSlideImage.DataSource = dt;
@@ -27,4 +28,5 @@ public partial class User_EventList : System.Web.UI.Page
             rptrEvents.DataBind();
         }
     }
+     * */
 }

@@ -14,7 +14,7 @@ public partial class Admin_AddLocation : System.Web.UI.Page
         ddlDistrict.DataSource = BLLDistrict.GetAllDistrict();
 
         ddlDistrict.DataTextField = "DistrictName";
-        ddlDistrict.DataValueField = "DistrictID";
+        ddlDistrict.DataValueField = "DistrictId";
         ddlDistrict.DataBind();
         ddlDistrict.Items.Insert(0, "Choose district");
 
@@ -24,7 +24,7 @@ public partial class Admin_AddLocation : System.Web.UI.Page
         LocationInfo _location = new LocationInfo();
         _location.LocationName = txtLocationName.Text;
         //_location.DistrictId = Convert.ToInt32(txtLocationName.Text);
-        _location.DistrictId = Convert.ToInt32(ddlDistrict.SelectedValue);
+        _location.DistrictId = Convert.ToInt32(ddlDistrict.SelectedIndex);
 
         try
         {

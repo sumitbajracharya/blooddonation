@@ -16,7 +16,7 @@
           <tr>
                <td><%#Eval("Date")%> </td>
               
-               <td><asp:LinkButton ID="lnkbtnEvent" runat="server" CommandArgument='<%#Eval("EventID")  %>' OnClick="lnkbtnEvent_click"><%#Eval("EventTitle")%></asp:LinkButton></td>
+               <td><asp:LinkButton ID="lnkbtnEvent" runat="server" CommandArgument='<%#Eval("EventID")  %>' ><%#Eval("EventTitle")%></asp:LinkButton></td>
           </tr>  
       </ItemTemplate>
   </asp:Repeater>
