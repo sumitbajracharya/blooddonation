@@ -9,11 +9,17 @@ public partial class Admin_EditLocation : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+
         //dropedown of district connected with database
+        if (! IsPostBack)
+        {
+        
         ddlDistrict.DataSource = BLLDistrict.GetAllDistrict();
         ddlDistrict.DataTextField = "DistrictName";
+        ddlDistrict.DataValueField = "DistrictID";
         ddlDistrict.DataBind();
         ddlDistrict.Items.Insert(0, "Choose district");
+        }
                
     }
     public void LoadGrid()
@@ -23,6 +29,8 @@ public partial class Admin_EditLocation : System.Web.UI.Page
         gdvLocation.DataBind();
 
     }
+
+
      //to show location with the district id
     protected void btnSearch_Click(object sender, EventArgs e)
     {
