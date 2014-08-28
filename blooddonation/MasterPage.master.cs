@@ -28,11 +28,11 @@ public partial class MasterPage : System.Web.UI.MasterPage
         ddl_bloodgroup.DataBind();
         ddl_bloodgroup.Items.Insert(0, "Choose district");
 
-        ddl_location.DataSource = BLLLocation.GetAllLocation();
-        ddl_location.DataTextField = "LocationName";
-        ddl_location.DataValueField = "LocationID";
+        ddl_location.DataSource = BLLDistrict.GetAllDistrict();
+        ddl_location.DataTextField = "DistrictName";
+        ddl_location.DataValueField = "DistrictID";
         ddl_location.DataBind();
-        ddl_location.Items.Insert(0, "Select Location");
+        ddl_location.Items.Insert(0, "Select District");
 
         }
 
@@ -43,8 +43,8 @@ public partial class MasterPage : System.Web.UI.MasterPage
     protected void btn_search_Click(object sender, EventArgs e)
     {
         int BloodId = ddl_bloodgroup.SelectedIndex;
-        int LocationID = ddl_location.SelectedIndex;
-        Response.Redirect("DonarList.aspx?Location=" + LocationID+"&BloodGroup=" + BloodId);
+        int DistrictID = ddl_location.SelectedIndex;
+        Response.Redirect("DonarList.aspx?District=" + DistrictID+"&BloodGroup=" + BloodId);
     }
 
     

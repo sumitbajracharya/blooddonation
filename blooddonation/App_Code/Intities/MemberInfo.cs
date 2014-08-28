@@ -27,4 +27,5 @@ public class MemberInfo
     public bool AccountStatus { get; set; }
     public bool RoleId { get; set; }
     public string ProfilePicture { get; set; }
+    public string DistrictID { get; set; }
 }

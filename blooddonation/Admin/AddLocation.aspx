@@ -39,7 +39,7 @@
     <%--Grid View Starts--%>
     <asp:GridView ID="gdvLocation" runat="server" AutoGenerateColumns="False" 
         BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" 
-        CellPadding="3" GridLines="Horizontal">
+        CellPadding="3" GridLines="Horizontal" Width="100%">
         <AlternatingRowStyle BackColor="#F7F7F7" />
         <Columns>
             <asp:TemplateField HeaderText="SNo."> 

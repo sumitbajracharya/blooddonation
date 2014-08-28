@@ -11,23 +11,23 @@ public partial class DonarList : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Request.QueryString["Location"] != null)
+        if (Request.QueryString["District"] != null)
         {
 
-            int _location = int.Parse(Request.QueryString["Location"]);
+            int _districtid = int.Parse(Request.QueryString["District"]);
             int _Bloodgroup = int.Parse(Request.QueryString["BloodGroup"]);
             
-            LoadList(_location, _Bloodgroup);
+            LoadList(_districtid, _Bloodgroup);
 
         }
         
     }
 
-    protected void LoadList(int Location, int BloodGroup)
+    protected void LoadList(int District, int BloodGroup)
     {
         try
         {
-            rptrDonorList.DataSource = BLLUser.GetDonarByLocationAndBloodGroup(Location, BloodGroup);
+            rptrDonorList.DataSource = BLLUser.GetDonorByDistrictAndBloodGroup(District, BloodGroup);
             rptrDonorList.DataBind();
         }
         catch(Exception ex)

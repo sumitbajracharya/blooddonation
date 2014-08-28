@@ -231,6 +231,26 @@ public class BLLUser
         return _member;
     }
 
+
+    //get all members by DistrictID and BloodGroup ID
+    public static DataTable GetDonorByDistrictAndBloodGroup(int DistrictID, int BloodGroupID)
+    {
+        String sp = "Usp_GetMemeberbyDistrictBloodGroup";
+        SqlConnection Con = ConnectionHelper.GetConnection();
+        SqlCommand cmd = new SqlCommand(sp, Con);
+        cmd.Parameters.Add(new SqlParameter("@DistrictID", DistrictID));
+        cmd.Parameters.Add(new SqlParameter("@BloodGroup", BloodGroupID));
+        cmd.CommandType = CommandType.StoredProcedure;
+
+        DataTable dt = new DataTable();
+        SqlDataAdapter da = new SqlDataAdapter(cmd);
+        da.Fill(dt);
+
+        return dt;
+    }
+
+
+
     //get users by Location and blood Group
     public static DataTable GetDonarByLocationAndBloodGroup(int LocationID, int BloodGroupID )
     {
