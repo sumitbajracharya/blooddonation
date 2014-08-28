@@ -17,6 +17,22 @@ public class BLLLocation
 		//
 	}
 
+    public static string GetLocationByID(int id)
+    {
+        LocationInfo Location = new LocationInfo();
+        string query = "select * from TblLocation where (LocationID = " + id + ")";
+        SqlConnection con = ConnectionHelper.GetConnection();
+        SqlCommand cmd = new SqlCommand(query, con);
+
+        using (SqlDataReader _reader = cmd.ExecuteReader())
+        {
+            _reader.Read();
+           Location.LocationId = int.Parse(_reader["LocationID"].ToString());
+           Location.LocationName = _reader["LocationName"].ToString();
+        }
+        return Location.LocationName;
+    }
+
     public DataTable GetAllLocation1()
     {
         return ConnectionHelper.GetTable("SELECT LocationID,LocationName FROM TblLocation", null);
