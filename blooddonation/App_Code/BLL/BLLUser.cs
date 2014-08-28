@@ -153,16 +153,29 @@ public class BLLUser
             _member.MemberId = int.Parse(_reader["DonarID"].ToString());
             _member.FullName = _reader["FullName"].ToString();
             _member.CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString());
-            _member.DOB = Convert.ToDateTime(_reader["DOB"]);
+            if (_reader["DOB"] != null)
+            {
+                _member.DOB = Convert.ToDateTime(_reader["DOB"]);
+            }
             _member.BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString());
-            _member.Gender = _reader["Gender"].ToString();
-            _member.BestTime = _reader["BestTime"].ToString();
+            if (_reader["Gender"] != null)
+            {
+                _member.Gender = _reader["Gender"].ToString();
+            }
+            if (_reader["BestTime"] != null)
+            {
+                _member.BestTime = _reader["BestTime"].ToString();
+            }
             _member.MobileNo = _reader["MobileNumber"].ToString();
-            _member.PhoneNo = _reader["PhoneNumber"].ToString();
+            if (_reader["PhoneNumber"] != null)
+            {
+                _member.PhoneNo = _reader["PhoneNumber"].ToString();
+            }
             _member.Email = _reader["Email"].ToString();
-            _member.AccountStatus = bool.Parse(_reader["AccountStatus"].ToString());
-            _member.RoleId = bool.Parse(_reader["RoleID"].ToString());
-            _member.ProfilePicture = _reader["ProfilePicture"].ToString();
+            if (_reader["ProfilePicture"] != null)
+            {
+                _member.ProfilePicture = _reader["ProfilePicture"].ToString();
+            }
         }
         return _member;
     }

@@ -23,7 +23,9 @@ public partial class User_UserProfile : System.Web.UI.Page
             lblBloodGroup.Text = BLLBloodGroup.GetBloodGroupByID(Member.BloodGroupId);
             lblDOB.Text = (Member.DOB).ToString();
             lblGender.Text= Member.Gender;
-            
+            LblMobile.Text = Member.MobileNo;
+            lblEmail.Text = Member.Email;
+            lblPhone.Text = Member.PhoneNo;
         }
     }
 }
