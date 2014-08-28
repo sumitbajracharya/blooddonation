@@ -104,7 +104,7 @@
   <!-- Start Main Container  Home Page -->
 
 
-<div class="row">
+<%--<div class="row">
    <div class="col-md-3">
  <ul class="list-group">
   <li class="list-group-item"><a href="DashBoard.aspx">Dash Board</a></li>
@@ -117,7 +117,7 @@
   </div>
 
 
-  <div class="col-md-6"> 
+  <div class="col-md-6"> --%>
 
   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
@@ -126,7 +126,7 @@
        </div>
 
          <!-- Start Event -->
-  <div class="col-md-3">
+<%--  <div class="col-md-3">
   <h3 class="text-center"style="margin-top:0px; ">Events</h3>
   
      <div class="panel-group" id="accordion">
@@ -201,7 +201,7 @@ Blood donation campain in Koteswor<br /><br />
 
  <!-- End Event -->
 </div>
-
+--%>
 
  <!-- End Main Container  Home Page -->
 

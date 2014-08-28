@@ -193,12 +193,12 @@ public class BLLUser
             if (_reader["Gender"] != DBNull.Value)
                 _member.Gender = _reader["Gender"].ToString();
             else
-                _member.Gender = "Not Avilable";
+                _member.Gender = "No Information Avilable";
 
             if (_reader["BestTime"] != DBNull.Value)
                 _member.BestTime = _reader["BestTime"].ToString();
             else
-                _member.BestTime = "Not Avilable";
+                _member.BestTime = "No Information Avilable";
             
             
             _member.MobileNo = _reader["MobileNumber"].ToString();
@@ -206,7 +206,7 @@ public class BLLUser
             if (_reader["PhoneNumber"] != DBNull.Value)
                 _member.PhoneNo = _reader["PhoneNumber"].ToString();
             else
-                _member.PhoneNo = "Not Avilable";
+                _member.PhoneNo = "No Information Avilable";
             
             
             _member.Email = _reader["Email"].ToString();
