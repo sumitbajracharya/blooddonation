@@ -156,14 +156,14 @@ public class BLLUser
             _member.FullName = _reader["FullName"].ToString();
             
             _member.CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString());
-            
-            if (_reader["DOB"] != null)
+
+            if (_reader["DOB"] != DBNull.Value)
             {
                 _member.DOB = Convert.ToDateTime(_reader["DOB"]);
             }
             
             _member.BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString());
-            
+
             if (_reader["Gender"] != null)
                 _member.Gender = _reader["Gender"].ToString();
             else
