@@ -35,7 +35,7 @@
       
   
  
-      <table class="table table-bordered">
+      <%--<table class="table table-bordered">
 
           <tr>
               <th colspan="2">BLOOD CENTERS</th>
@@ -55,7 +55,7 @@
                     </tr>
               </ItemTemplate>
           </asp:Repeater>
-      </table>
+      </table>--%>
  
   
   

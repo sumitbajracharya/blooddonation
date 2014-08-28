@@ -45,12 +45,7 @@
                 <td>Last Donated Date</td>
                 <td><%#Eval("LastDonationDate") %></td>
             </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>
-                    <asp:Button ID="btnSendRequest"  CssClass="btn btn-default" runat="server" Text="Send Request" />
-                </td>
-            </tr>
+            
         </table>
             </ItemTemplate>
     </asp:Repeater>
