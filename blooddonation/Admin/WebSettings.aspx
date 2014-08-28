@@ -10,35 +10,36 @@
             <tr>
                 <td class="col-sm-3">Location</td>
                 <td>
-                    <asp:Button ID="btnEditLocation" runat="server" Text="EDIT" cssClass="btn btn-default" OnClick="btnEditLocation_Click"/>
-                     <asp:Button ID="btnAddLocaton" runat="server" cssClass="btn btn-default" OnClick="btnAddLocaton_Click" Text="ADD" />
+                    <asp:Button ID="btnEditLocation" runat="server" Text="EDIT LOCATION" cssClass="btn btn-default" OnClick="btnEditLocation_Click"/>
+                     <asp:Button ID="btnAddLocaton" runat="server" cssClass="btn btn-default" OnClick="btnAddLocaton_Click" Text="ADD NEW LOCATION" />
                 </td>
             </tr>
-            <tr>
+            <%--<tr>
                 <td>Blood Center</td>
                 <td>
                     <asp:Button ID="btnEditBloodCenter" runat="server" Text="EDIT" cssClass="btn btn-default" OnClick="btnEditBloodCenter_Click"/>
                      <asp:Button ID="btnAddBloodCenter" runat="server" Text="ADD" cssClass="btn btn-default" OnClick="btnAddBloodCenter_Click" />
                 </td>
-            </tr>
+            </tr>--%>
             <tr>
                 <td>Blood Group</td>
                 <td>
                     <asp:Button ID="btnEditBloodGroup" runat="server" Text="EDIT" cssClass="btn btn-default" OnClick="btnEditBloodGroup_Click"/>
                 </td>
             </tr>
-            <tr>
+            <%--<tr>
                 <td>Slider Image </td>
                 <td>
                     <asp:Button ID="btnEditImageToTheSlider" runat="server" Text="EDIT" cssClass="btn btn-default" OnClick="btnEditImageToTheSlider_Click"/>
                 </td>
-            </tr>
-            <tr>
+            </tr>--%>
+            <%--<tr>
                 <td>News Artical</td>
                 <td>
                     <asp:Button ID="btnEditNewsArtical" runat="server" Text="EDIT" cssClass="btn btn-default" OnClick="btnEditNewsArtical_Click"/>
                 </td>
-            </tr>
+            </tr>--%>
         </table>
+
 </asp:Content>
 

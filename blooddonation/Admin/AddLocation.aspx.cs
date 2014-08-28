@@ -9,14 +9,26 @@ public partial class Admin_AddLocation : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-       
+        if (!IsPostBack)
+        {
+            
+        
         //dropedown of district connected with database
-        ddlDistrict.DataSource = BLLDistrict.GetAllDistrict();
+            ddlDistrict.DataSource = BLLDistrict.GetAllDistrict();
 
-        ddlDistrict.DataTextField = "DistrictName";
-        ddlDistrict.DataValueField = "DistrictId";
-        ddlDistrict.DataBind();
-        ddlDistrict.Items.Insert(0, "Choose district");
+            ddlDistrict.DataTextField = "DistrictName";
+            ddlDistrict.DataValueField = "DistrictId";
+            ddlDistrict.DataBind();
+            ddlDistrict.Items.Insert(0, "Choose district");
+
+        //drope down of district END
+
+        //GridView Starts
+            gdvLocation.DataSource = BLLLocation.GetAllLocation();
+            gdvLocation.DataBind();
+        //GridVies ENDS
+
+        }
 
     }
     protected void btnAdd_Click(object sender, EventArgs e)
