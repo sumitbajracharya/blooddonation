@@ -16,7 +16,7 @@ public class MemberInfo
 	}
     public int MemberId { get; set; }
     public string FullName { get; set; }
-    public int CurrentAddress { get; set; }
+    public string CurrentAddress { get; set; }
     public DateTime DOB { get; set; }
     public int BloodGroupId { get; set; }
     public string Gender { get; set; }
@@ -27,5 +27,5 @@ public class MemberInfo
     public bool AccountStatus { get; set; }
     public bool RoleId { get; set; }
     public string ProfilePicture { get; set; }
-    public string DistrictID { get; set; }
+    public int DistrictID { get; set; }
 }

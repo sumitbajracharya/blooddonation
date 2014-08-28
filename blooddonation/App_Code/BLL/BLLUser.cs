@@ -29,6 +29,7 @@ public class BLLUser
         cmd.Parameters.Add(new SqlParameter("@mobilenumber", _User.MobileNo));
         cmd.Parameters.Add(new SqlParameter("@email", _User.Email));
         cmd.Parameters.Add(new SqlParameter("@currentaddress", _User.CurrentAddress));
+        cmd.Parameters.Add(new SqlParameter("@currentdistrict", _User.DistrictID));
         cmd.CommandType = CommandType.StoredProcedure;
         try
         {
@@ -83,7 +84,7 @@ public class BLLUser
                     {
                         MemberId = int.Parse(_reader["DonarID"].ToString()),
                         FullName = _reader["FullName"].ToString(),
-                        CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString()),
+                        CurrentAddress = _reader["CurrentAddress"].ToString(),
                         DOB = Convert.ToDateTime(_reader["DOB"]),
                         BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString()),
                         Gender = _reader["Gender"].ToString(),
@@ -118,7 +119,7 @@ public class BLLUser
                     {
                         MemberId = int.Parse(_reader["DonarID"].ToString()),
                         FullName = _reader["FirstName"].ToString(),
-                        CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString()),
+                        CurrentAddress =_reader["CurrentAddress"].ToString(),
                         DOB = Convert.ToDateTime(_reader["DOB"]),
                         BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString()),
                         Gender = _reader["Gender"].ToString(),
@@ -155,7 +156,7 @@ public class BLLUser
             
             _member.FullName = _reader["FullName"].ToString();
             
-            _member.CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString());
+            _member.CurrentAddress = _reader["CurrentAddress"].ToString();
 
             if (_reader["DOB"] != DBNull.Value)
             {
@@ -217,7 +218,8 @@ public class BLLUser
             _reader.Read();
             _member.MemberId = int.Parse(_reader["DonarID"].ToString());
             _member.FullName = _reader["FirstName"].ToString();
-            _member.CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString());
+            _member.CurrentAddress = _reader["CurrentAddress"].ToString();
+            _member.DistrictID = int.Parse(_reader["CurrentDistrict"].ToString());
             _member.DOB = Convert.ToDateTime(_reader["DOB"]);
             _member.BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString());
             _member.Gender = _reader["Gender"].ToString();
@@ -252,48 +254,26 @@ public class BLLUser
 
 
     //get users by Location and blood Group
-    public static DataTable GetDonarByLocationAndBloodGroup(int LocationID, int BloodGroupID )
-    {
-        //List<MemberInfo> lstMembers = new List<MemberInfo>();
-        String sp = "Usp_GetMemeberbyLocationBloodGroup";
+    //public static DataTable GetDonarByLocationAndBloodGroup(int LocationID, int BloodGroupID )
+    //{
+        
+    //    String sp = "Usp_GetMemeberbyLocationBloodGroup";
 
 
-        SqlConnection Con = ConnectionHelper.GetConnection();
+    //    SqlConnection Con = ConnectionHelper.GetConnection();
 
-        SqlCommand cmd = new SqlCommand(sp, Con);
-        cmd.Parameters.Add(new SqlParameter("@Location", LocationID));
-        cmd.Parameters.Add(new SqlParameter("@BloodGroup", BloodGroupID));
-        cmd.CommandType = CommandType.StoredProcedure;
+    //    SqlCommand cmd = new SqlCommand(sp, Con);
+    //    cmd.Parameters.Add(new SqlParameter("@Location", LocationID));
+    //    cmd.Parameters.Add(new SqlParameter("@BloodGroup", BloodGroupID));
+    //    cmd.CommandType = CommandType.StoredProcedure;
 
-        DataTable dt = new DataTable();
-        SqlDataAdapter da = new SqlDataAdapter(cmd);
-        da.Fill(dt);
+    //    DataTable dt = new DataTable();
+    //    SqlDataAdapter da = new SqlDataAdapter(cmd);
+    //    da.Fill(dt);
 
-        /*
-        using (SqlDataReader _reader = cmd.ExecuteReader())
-        {
-            while (_reader.Read())
-            {
-                lstMembers.Add(new MemberInfo
-                {
-                    MemberId = int.Parse(_reader["DonarID"].ToString()),
-                    FullName = _reader["FirstName"].ToString(),
-                    CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString()),
-                    DOB = Convert.ToDateTime(_reader["DOB"]),
-                    BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString()),
-                    Gender = _reader["Gender"].ToString(),
-                    BestTime = _reader["BestTime"].ToString(),
-                    MobileNo = _reader["MobileNumber"].ToString(),
-                    PhoneNo = _reader["PhoneNumber"].ToString(),
-                    Email = _reader["Email"].ToString(),
-                    AccountStatus = bool.Parse(_reader["AccountStatus"].ToString()),
-                    RoleId = bool.Parse(_reader["RoleID"].ToString()),
-                    ProfilePicture = _reader["ProfilePicture"].ToString(),
-                });
-            }
-        }*/
-        return dt;
-    }
+       
+    //    return dt;
+    //}
 
 
 

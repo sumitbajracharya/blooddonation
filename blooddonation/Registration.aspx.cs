@@ -29,7 +29,7 @@ public partial class Registration : System.Web.UI.Page
                 Roles.AddUserToRole(Txtmobile.Text,"Members");
                 CreateMembers();
                 Session["UserName"] = Txtmobile.Text;
-                Response.Redirect("~/User/Registration_2.aspx");
+                Response.Redirect("~/User/UserProfile.aspx");
                 break;
             case MembershipCreateStatus.DuplicateUserName:
                 lblResult.Text = "The username already exists";
@@ -57,11 +57,11 @@ public partial class Registration : System.Web.UI.Page
         ddl_bloodgroup.Items.Insert(0, "Blood Type");
 
 
-        ddl_location.DataSource = BLLLocation.GetAllLocation();
-        ddl_location.DataTextField = "LocationName";
-        ddl_location.DataValueField = "LocationID";
-        ddl_location.DataBind();
-        ddl_location.Items.Insert(0, "Choose Location");
+        ddl_district.DataSource = BLLDistrict.GetAllDistrict();
+        ddl_district.DataTextField = "DistrictName";
+        ddl_district.DataValueField = "DistrictID";
+        ddl_district.DataBind();
+        ddl_district.Items.Insert(0, "Choose District");
 
         //ddl_location.DataSource = BloodGroupAndLocation.Location();
         //ddl_location.DataTextField = "LocationName";
@@ -79,8 +79,9 @@ public partial class Registration : System.Web.UI.Page
         _member.FullName = TxtFirstName.Text;
         _member.MobileNo = Txtmobile.Text;
         _member.Email = TxtEmail.Text;
+        _member.CurrentAddress = txtLocation.Text;
         _member.BloodGroupId = int.Parse(ddl_bloodgroup.SelectedItem.Value);
-        _member.CurrentAddress = int.Parse(ddl_location.SelectedItem.Value);
+        _member.DistrictID = int.Parse(ddl_district.SelectedItem.Value);
 
         BLLUser.CreateUser(_member);
     }
