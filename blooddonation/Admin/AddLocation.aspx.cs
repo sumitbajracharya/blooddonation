@@ -24,7 +24,7 @@ public partial class Admin_AddLocation : System.Web.UI.Page
         //drope down of district END
 
         //GridView Starts
-            gdvLocation.DataSource = BLLLocation.GetAllLocation();
+            gdvLocation.DataSource = BLLLocation.GetAllLocationWithDistrictName();
             gdvLocation.DataBind();
         //GridVies ENDS
 
