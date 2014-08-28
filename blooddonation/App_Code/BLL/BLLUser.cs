@@ -156,36 +156,38 @@ public class BLLUser
             _member.FullName = _reader["FullName"].ToString();
             
             _member.CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString());
-            
-            if (_reader["DOB"] != null)
+
+            if (_reader["DOB"] != DBNull.Value)
             {
                 _member.DOB = Convert.ToDateTime(_reader["DOB"]);
             }
+            else
+                _member.DOB = DateTime.Now;
             
             _member.BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString());
-            
-            if (_reader["Gender"] != null)
+
+            if (_reader["Gender"] != DBNull.Value)
                 _member.Gender = _reader["Gender"].ToString();
             else
                 _member.Gender = "Not Avilable";
-            
-            if (_reader["BestTime"] != null)
+
+            if (_reader["BestTime"] != DBNull.Value)
                 _member.BestTime = _reader["BestTime"].ToString();
             else
                 _member.BestTime = "Not Avilable";
             
             
             _member.MobileNo = _reader["MobileNumber"].ToString();
-            
-            if (_reader["PhoneNumber"] != null)
+
+            if (_reader["PhoneNumber"] != DBNull.Value)
                 _member.PhoneNo = _reader["PhoneNumber"].ToString();
             else
                 _member.PhoneNo = "Not Avilable";
             
             
             _member.Email = _reader["Email"].ToString();
-            
-            if (_reader["ProfilePicture"] != null)
+
+            if (_reader["ProfilePicture"] != DBNull.Value)
                 _member.ProfilePicture = _reader["ProfilePicture"].ToString();
             else
                 _member.ProfilePicture = "NotAvailable.jpg";
