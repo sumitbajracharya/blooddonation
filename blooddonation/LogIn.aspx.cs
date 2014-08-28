@@ -14,13 +14,35 @@ public partial class LogIn : System.Web.UI.Page
     }
     protected void btn_Login_Click(object sender, EventArgs e)
     {
-       
-            if (Membership.ValidateUser(txtUsername.Text, txtPassword.Text))
+        try
+        {
+            if (Membership.GetUser(txtUsername.Text).IsApproved == true)
             {
-                FormsAuthentication.RedirectFromLoginPage(txtUsername.Text, false);
-                Session["UserName"] = txtUsername.Text;
-              Response.Redirect("/user/UserProfile.aspx");
-           }
-        
+                login();
+            }
+            else if (Membership.GetUser(txtUsername.Text).IsApproved == false)
+            {
+                lblMessage.Text = "User Not Activated";
+            }
+        }
+        catch (System.NullReferenceException)
+        {
+            lblMessage.Text = "Invalid UserName";
+        }
+    }
+
+    protected void login()
+    {
+       if (Membership.ValidateUser(txtUsername.Text, txtPassword.Text+"A!#"))
+       {
+           FormsAuthentication.RedirectFromLoginPage(txtUsername.Text, false);
+           Session["UserName"] = txtUsername.Text;
+           Response.Redirect("~/User/UserProfile.aspx");
+       }
+        else
+        {
+            lblMessage.Text = "Invalid Password";
+        }
+
     }
 }
