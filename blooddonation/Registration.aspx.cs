@@ -26,7 +26,7 @@ public partial class Registration : System.Web.UI.Page
         {
             case MembershipCreateStatus.Success:
 
-                Roles.AddUserToRole(Txtmobile.Text, "Members");
+                Roles.AddUserToRole(Txtmobile.Text,"Members");
                 CreateMembers();
                 Session["UserName"] = Txtmobile.Text;
                 Response.Redirect("~/User/Registration_2.aspx");
@@ -70,6 +70,7 @@ public partial class Registration : System.Web.UI.Page
 
         //gv_search.DataSource = ds;
         //gv_search.DataBind();
+        
     }
 
     protected void CreateMembers()
