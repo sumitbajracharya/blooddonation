@@ -21,7 +21,10 @@ public partial class User_UserProfile : System.Web.UI.Page
            
             lblBestTime.Text = Member.BestTime;
             lblBloodGroup.Text = BLLBloodGroup.GetBloodGroupByID(Member.BloodGroupId);
-            lblDOB.Text = (Member.DOB).ToString();
+            if(Member.DOB.Date==DateTime.Now.Date)
+                lblDOB.Text = "Not Avilable";
+            else
+                lblDOB.Text = (Member.DOB).ToString();
             lblGender.Text= Member.Gender;
             LblMobile.Text = Member.MobileNo;
             lblEmail.Text = Member.Email;

@@ -161,10 +161,12 @@ public class BLLUser
             {
                 _member.DOB = Convert.ToDateTime(_reader["DOB"]);
             }
+            else
+                _member.DOB = DateTime.Now;
             
             _member.BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString());
 
-            if (_reader["Gender"] != null)
+            if (_reader["Gender"] != DBNull.Value)
                 _member.Gender = _reader["Gender"].ToString();
             else
                 _member.Gender = "Not Avilable";
