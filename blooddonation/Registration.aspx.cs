@@ -21,7 +21,7 @@ public partial class Registration : System.Web.UI.Page
     {
         MembershipCreateStatus _status;
 
-        var user = Membership.CreateUser(Txtmobile.Text, TxtPassword.Text, TxtEmail.Text, null, null, false, out _status);
+        var user = Membership.CreateUser(Txtmobile.Text, TxtPassword.Text+"A!#", TxtEmail.Text, null, null, true, out _status);
         switch (_status)
         {
             case MembershipCreateStatus.Success:

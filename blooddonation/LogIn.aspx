@@ -13,8 +13,9 @@
     <form id="form1" runat="server">
     <div>
        <asp:TextBox ID="txtUsername" text="Username" CssClass="form-control" runat="server"></asp:TextBox>
-                    <asp:TextBox ID="txtPassword" CssClass="form-control" text="Password" runat="server" TextMode="Password"></asp:TextBox>
-                   <h6><a href="#">Forget your password?</a></h6> 
+                    <asp:TextBox ID="txtPassword" CssClass="form-control" text="Password" runat="server"></asp:TextBox>
+                   <h6><a href="#">Forget your password?</a></h6>
+                   <asp:Label ID="lblMessage" runat="server" Text="" ForeColor="Red"></asp:Label>   
                     <asp:Button ID="btnLogin" CssClass="btn btn-default pull-right" runat="server" Text="LogIn" onclick="btn_Login_Click"/>  
     </div>
     </form>
