@@ -42,6 +42,29 @@ public class BLLUser
     }
 
 
+    // get user name from phone number
+    public static string GetFullNameByNumber(string Mobile)
+    {
+
+        MemberInfo _member = new MemberInfo();
+
+        String sp = "Usp_GetMemeberbyMobile";
+
+
+        SqlConnection Con = ConnectionHelper.GetConnection();
+
+        SqlCommand cmd = new SqlCommand(sp, Con);
+        cmd.Parameters.Add(new SqlParameter("@mobile", Mobile));
+        cmd.CommandType = CommandType.StoredProcedure;
+        using (SqlDataReader _reader = cmd.ExecuteReader())
+        {
+            _reader.Read();
+
+            _member.FullName = _reader["FullName"].ToString();
+        }
+        return _member.FullName;
+    }
+
     // create user from second regestration page page
     public static void CreateUser2(MemberInfo _User)
     {
