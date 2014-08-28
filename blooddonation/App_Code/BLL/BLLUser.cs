@@ -150,32 +150,46 @@ public class BLLUser
         using (SqlDataReader _reader = cmd.ExecuteReader())
         {
             _reader.Read();
+            
             _member.MemberId = int.Parse(_reader["DonarID"].ToString());
+            
             _member.FullName = _reader["FullName"].ToString();
+            
             _member.CurrentAddress = int.Parse(_reader["CurrentAddress"].ToString());
+            
             if (_reader["DOB"] != null)
             {
                 _member.DOB = Convert.ToDateTime(_reader["DOB"]);
             }
+            
             _member.BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString());
+            
             if (_reader["Gender"] != null)
-            {
                 _member.Gender = _reader["Gender"].ToString();
-            }
+            else
+                _member.Gender = "Not Avilable";
+            
             if (_reader["BestTime"] != null)
-            {
                 _member.BestTime = _reader["BestTime"].ToString();
-            }
+            else
+                _member.BestTime = "Not Avilable";
+            
+            
             _member.MobileNo = _reader["MobileNumber"].ToString();
+            
             if (_reader["PhoneNumber"] != null)
-            {
                 _member.PhoneNo = _reader["PhoneNumber"].ToString();
-            }
+            else
+                _member.PhoneNo = "Not Avilable";
+            
+            
             _member.Email = _reader["Email"].ToString();
+            
             if (_reader["ProfilePicture"] != null)
-            {
                 _member.ProfilePicture = _reader["ProfilePicture"].ToString();
-            }
+            else
+                _member.ProfilePicture = "NotAvailable.jpg";
+            
         }
         return _member;
     }
