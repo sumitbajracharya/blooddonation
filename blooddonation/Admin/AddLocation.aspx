@@ -49,7 +49,7 @@
                 </ItemTemplate>
 
             </asp:TemplateField>
-            <asp:BoundField DataField="DistrictID" HeaderText="District" />
+            <asp:BoundField DataField="DistrictName" HeaderText="District" />
             <asp:BoundField DataField="LocationName" HeaderText="Location" />
         </Columns>
         <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
