@@ -109,7 +109,7 @@ public class BLLUser
         }        
     
 
-    public static DataTable GetMemeberWithBloodGroupNameAndDistrictName()
+    public static DataTable GetAllMemeberWithBloodGroupNameAndDistrictName()
     {
         DataTable dt = new DataTable();
         using (SqlConnection con = ConnectionHelper.GetConnection())

@@ -29,7 +29,7 @@ public partial class DonarList : System.Web.UI.Page
         {
             try
             {
-                gdvDonorList.DataSource = BLLUser.GetMemeberWithBloodGroupNameAndDistrictName();
+                gdvDonorList.DataSource = BLLUser.GetAllMemeberWithBloodGroupNameAndDistrictName();
                 gdvDonorList.DataBind(); 
             }
             catch (Exception ex)
