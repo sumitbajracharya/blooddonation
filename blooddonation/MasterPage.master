@@ -112,7 +112,7 @@
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <button type="button" class="close"  aria-hidden="true">&times;</button>
             <h4 class="modal-title" id="myModalLabel">Sign In</h4>
           </div>
           <div class="modal-body">
@@ -122,10 +122,10 @@
                     <asp:TextBox ID="txtPassword" CssClass="form-control" placeholder="Password" runat="server"></asp:TextBox>
                    <h6><a href="#">Forget your password?</a></h6>
                    <asp:Label ID="lblMessage" runat="server" Text="" ForeColor="Red"></asp:Label>   
-                   
+                    <asp:Button ID="btnLogin" CssClass="btn btn-default pull-right" runat="server" Text="LogIn" onclick="btn_Login_Click"/> 
      </div>
           <div class="modal-footer">
-           <asp:Button ID="btnLogin" CssClass="btn btn-default pull-right" runat="server" Text="LogIn" onclick="btn_Login_Click"/>  
+           <%--<asp:Label ID="lblScuccessLin" runat="server" Text=""></asp:Label>--%>
           </div>
         </div>
       </div>
