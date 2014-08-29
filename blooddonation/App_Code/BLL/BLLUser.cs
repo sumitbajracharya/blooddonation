@@ -91,39 +91,41 @@ public class BLLUser
 
 
     // get all users Info
-    public static List<MemberInfo> GetAllMembers()
+    public static DataTable GetAllMembers()
     {
-        List<MemberInfo> lstmembers = new List<MemberInfo>();
+        DataTable dt = new DataTable();
         using (SqlConnection con = ConnectionHelper.GetConnection())
         {
             string Sp = "usp_get_allmember";
             SqlCommand cmd = new SqlCommand(Sp, con);
             cmd.CommandType = CommandType.StoredProcedure;
-            using (SqlDataReader _reader = cmd.ExecuteReader())
-            {
-                while (_reader.Read())
-                {
-                    lstmembers.Add(new MemberInfo
-                    {
-                        MemberId = int.Parse(_reader["DonarID"].ToString()),
-                        FullName = _reader["FullName"].ToString(),
-                        CurrentAddress = _reader["CurrentAddress"].ToString(),
-                        DOB = Convert.ToDateTime(_reader["DOB"]),
-                        BloodGroupId = int.Parse(_reader["BloodGroupID"].ToString()),
-                        Gender = _reader["Gender"].ToString(),
-                        BestTime = _reader["BestTime"].ToString(),
-                        MobileNo = _reader["MobileNumber"].ToString(),
-                        PhoneNo = _reader["PhoneNumber"].ToString(),
-                        Email = _reader["Email"].ToString(),
-                        AccountStatus = bool.Parse(_reader["AccountStatus"].ToString()),
-                        RoleId = bool.Parse(_reader["RoleID"].ToString()),
-                        ProfilePicture = _reader["ProfilePicture"].ToString(),
-                    });
-                }
-            }
+            
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+
+            
         }
-        return (lstmembers);
+        return dt;
         }        
+    
+
+    public static DataTable GetMemeberWithBloodGroupNameAndDistrictName()
+    {
+        DataTable dt = new DataTable();
+        using (SqlConnection con = ConnectionHelper.GetConnection())
+        {
+            string Sp = "Usp_GetMemeberWithBloodGroupNameAndDistrictName";
+            SqlCommand cmd = new SqlCommand(Sp, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+
+            
+        }
+        return dt;
+        }        
+
     
 
     public static List<MemberInfo> GetDeactiveMembers()
