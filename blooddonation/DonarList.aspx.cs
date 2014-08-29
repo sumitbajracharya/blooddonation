@@ -17,18 +17,18 @@ public partial class DonarList : System.Web.UI.Page
             int _districtid = int.Parse(Request.QueryString["District"]);
             int _Bloodgroup = int.Parse(Request.QueryString["BloodGroup"]);
             
-            LoadList(_districtid, _Bloodgroup);
+            LoadGrid(_districtid, _Bloodgroup);
 
         }
         
     }
 
-    protected void LoadList(int District, int BloodGroup)
+    protected void LoadGrid(int District, int BloodGroup)
     {
         try
         {
-            rptrDonorList.DataSource = BLLUser.GetDonorByDistrictAndBloodGroup(District, BloodGroup);
-            rptrDonorList.DataBind();
+            gdvDonorList.DataSource = BLLUser.GetDonorByDistrictAndBloodGroup(District, BloodGroup);
+            gdvDonorList.DataBind();
         }
         catch(Exception ex)
         {

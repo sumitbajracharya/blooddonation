@@ -181,10 +181,10 @@
  <!-- End  Search -->
         <br />
 
-  <!-- Start Main Container  Home Page -->
+ <!-- Start Main Container  Home Page -->
 
 
-<div class="row">
+<%--<div class="row">
   <div class="col-md-3 col-xs-12">
         <h3>Current Blood Request</h3>
   
@@ -214,7 +214,7 @@
   
   
   
-  </div>
+  </div>--%>
     <div class="col-md-6 col-xs-12">
 
   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
@@ -223,8 +223,8 @@
         
        </div>
 
-        <%-- <!-- Start Event -->
-  <div class="col-md-3 col-xs-12">
+       <!-- Start Event -->
+ <%-- <div class="col-md-3 col-xs-12">
   
   <h3 class="text-center">Events</h3>
     
@@ -297,8 +297,8 @@
 
 
  <!-- End Event -->
-</div>
---%>
+</div>--%>
+
 
  <!-- End Main Container  Home Page -->
 

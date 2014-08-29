@@ -3,52 +3,42 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<br/>
+    <br/>
     <asp:Label ID="LblMessage" runat="server" Text=" "></asp:Label>
 
 
-    <asp:Repeater ID="rptrDonorList" runat="server">
-        
-        <ItemTemplate>
-        <table class="table table-bordered">
-            <tr>
-                <td rowspan="7">
-                    <asp:Image ID="Image1" runat="server" Height="122px" Width="148px" />
-                </td>
-                <td>Name</td>
-                <td><%#Eval("FullName") %></td>
-            </tr>
-            <tr>
-                <td>Blood Group</td>
-                <td><%#Eval("BloodGroupID") %></td>
-                
-            </tr>
-             <tr>
-                <td>Mobile number</td>
-                <td><%#Eval("BloodGroupID") %></td>
-                
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td><%#Eval("Gender") %></td>
-            </tr>
-            
-            <tr>
-                <td>Age</td>
-                <td><%#Eval("Age") %></td>
-            </tr>
-            <tr>
-                <td>Location</td>
-                <td><%#Eval("LocationID") %></td>
-            </tr>
-            <tr>
-                <td>Last Donated Date</td>
-                <td><%#Eval("LastDonationDate") %></td>
-            </tr>
-            
-        </table>
-            </ItemTemplate>
-    </asp:Repeater>
+    <asp:GridView ID="gdvDonorList" runat="server" AutoGenerateColumns="False" 
+        CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%">
+        <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+        <Columns>
+
+            <asp:TemplateField HeaderText="SNo.">
+
+                <ItemTemplate>
+                     <%# Container.DataItemIndex + 1 %>
+                </ItemTemplate>
+
+            </asp:TemplateField>
+
+            <asp:BoundField DataField="FullName" HeaderText="Name" />
+            <asp:BoundField DataField="BloodGroup" HeaderText="BloodGroup" />
+            <asp:BoundField DataField="MobileNumber" HeaderText="Mobile no." />
+            <asp:BoundField DataField="Gender" HeaderText="Gender" />
+            <asp:BoundField DataField="DOB" HeaderText="Age" />
+            <asp:BoundField DataField="CurrentAddress" HeaderText="Address" />
+        </Columns>
+        <EditRowStyle BackColor="#999999" />
+        <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+        <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+        <SortedAscendingCellStyle BackColor="#E9E7E2" />
+        <SortedAscendingHeaderStyle BackColor="#506C8C" />
+        <SortedDescendingCellStyle BackColor="#FFFDF8" />
+        <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+
+    </asp:GridView>
 
 
 </asp:Content>
