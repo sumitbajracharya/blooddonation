@@ -23,9 +23,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
             bindsearch();
             bindregister();
 
-       
-
-        }
+       }
 
     }
 
@@ -35,7 +33,20 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         int BloodId = ddl_bloodgroup.SelectedIndex;
         int DistrictID = ddl_location.SelectedIndex;
-        Response.Redirect("DonarList.aspx?District=" + DistrictID+"&BloodGroup=" + BloodId);
+        if (BloodId != 0 && DistrictID != 0)
+        {
+            
+            Response.Redirect("DonarList.aspx?District=" + DistrictID + "&BloodGroup=" + BloodId);
+        }
+        else
+        {
+            Response.Redirect("DonarList.aspx?District=" + 0 + "&BloodGroup=" + 0);
+        }
+        
+        
+        
+       
+        
     }
 
     public void bindsearch()
@@ -44,13 +55,13 @@ public partial class MasterPage : System.Web.UI.MasterPage
         ddl_bloodgroup.DataTextField = "BloodGroup";
         ddl_bloodgroup.DataValueField = "BloodGroupID";
         ddl_bloodgroup.DataBind();
-        ddl_bloodgroup.Items.Insert(0, "Choose district");
+        ddl_bloodgroup.Items.Insert(0, "--Choose Blood Group--");
 
         ddl_location.DataSource = BLLDistrict.GetAllDistrict();
         ddl_location.DataTextField = "DistrictName";
         ddl_location.DataValueField = "DistrictID";
         ddl_location.DataBind();
-        ddl_location.Items.Insert(0, "Select District");
+        ddl_location.Items.Insert(0, "--Choose District--");
     }
 
     //Log in starts
@@ -147,14 +158,14 @@ public partial class MasterPage : System.Web.UI.MasterPage
         ddl_bloodgroupREG.DataTextField = "BloodGroup";
         ddl_bloodgroupREG.DataValueField = "BloodGroupID";
         ddl_bloodgroupREG.DataBind();
-        ddl_bloodgroupREG.Items.Insert(0, "Blood Type");
+        ddl_bloodgroupREG.Items.Insert(0, "--Choose Blood Group--");
 
         
         ddl_districtREG.DataSource = BLLDistrict.GetAllDistrict();
         ddl_districtREG.DataTextField = "DistrictName";
         ddl_districtREG.DataValueField = "DistrictID";
         ddl_districtREG.DataBind();
-        ddl_districtREG.Items.Insert(0, "Choose District");
+        ddl_districtREG.Items.Insert(0, "--Choose District--");
 
         
 

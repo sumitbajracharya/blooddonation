@@ -16,23 +16,43 @@ public partial class DonarList : System.Web.UI.Page
 
             int _districtid = int.Parse(Request.QueryString["District"]);
             int _Bloodgroup = int.Parse(Request.QueryString["BloodGroup"]);
-            
-            LoadGrid(_districtid, _Bloodgroup);
 
+            LoadGrid(_districtid, _Bloodgroup);
+            
         }
         
     }
 
     protected void LoadGrid(int District, int BloodGroup)
     {
-        try
+        if (District ==0 && BloodGroup ==0)
         {
-            gdvDonorList.DataSource = BLLUser.GetDonorByDistrictAndBloodGroup(District, BloodGroup);
-            gdvDonorList.DataBind();
+            try
+            {
+                gdvDonorList.DataSource = BLLUser.GetMemeberWithBloodGroupNameAndDistrictName();
+                gdvDonorList.DataBind(); 
+            }
+            catch (Exception ex)
+            {
+                LblMessage.Text = ex.Message;
+            }     
         }
-        catch(Exception ex)
+
+        else
         {
-            LblMessage.Text = ex.Message;
+
+        
+            try
+            {
+                gdvDonorList.DataSource = BLLUser.GetDonorByDistrictAndBloodGroup(District, BloodGroup);
+                gdvDonorList.DataBind();
+            }
+            catch (Exception ex)
+            {
+
+                LblMessage.Text = ex.Message;
+            }
         }
     }
-}
+    }
+ 
