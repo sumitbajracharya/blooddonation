@@ -34,8 +34,7 @@
 <asp:Label ID="lblResult" runat="server" ForeColor="Red"></asp:Label>
 <br />
 <asp:Button ID="btnsubmit" 
-        cssClass="btn btn-default" runat="server" Text="Sign Up" 
-        onclick="btnsubmit_Click" />
+        cssClass="btn btn-default" runat="server" Text="Sign Up" onclick="btnsubmit_Click" />
         
         
     
