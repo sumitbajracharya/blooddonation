@@ -27,7 +27,12 @@
 <tr><td>Email Id</td><td><asp:TextBox ID="TxtEmail" cssClass="form-control" runat="server"></asp:TextBox></td></tr>
 <tr><td>Mobile Number</td><td> <asp:TextBox ID="Txtmobile" cssClass="form-control" runat="server"></asp:TextBox></td></tr>
 
-<tr><td>Password</td><td> <asp:TextBox ID="TxtPassword" cssClass="form-control" runat="server" TextMode="Password"></asp:TextBox></td></tr>
+<%--<tr><td>Password</td><td> <asp:TextBox ID="TxtPassword" cssClass="form-control" runat="server" TextMode="Password"></asp:TextBox></td></tr>--%>
+<tr>
+    <td><asp:Label ID="lblCaptcha" runat="server"></asp:Label></td>
+    <td> <asp:TextBox ID="txtCaptcha" cssClass="form-control" runat="server"></asp:TextBox></td>
+</tr>
+
 
 <tr><td colspan="2" align="center"> 
 

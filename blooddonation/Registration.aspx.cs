@@ -19,34 +19,38 @@ public partial class Registration : System.Web.UI.Page
 
     protected void btnsubmit_Click(object sender, EventArgs e)
     {
-        MembershipCreateStatus _status;
-
-        var user = Membership.CreateUser(Txtmobile.Text, TxtPassword.Text+"A!#", TxtEmail.Text, null, null, true, out _status);
-        switch (_status)
+        if (TxtFirstName.Text == "" || txtLocation.Text == "" || TxtEmail.Text == "" || Txtmobile.Text == "" || txtCaptcha.Text == "" || ddl_bloodgroup.SelectedIndex == 0 || ddl_district.SelectedIndex == 0)
         {
-            case MembershipCreateStatus.Success:
-
-                Roles.AddUserToRole(Txtmobile.Text,"Members");
-                CreateMembers();
-                Session["UserName"] = Txtmobile.Text;
-                Response.Redirect("~/User/UserProfile.aspx");
-                break;
-            case MembershipCreateStatus.DuplicateUserName:
-                lblResult.Text = "The username already exists";
-                break;
-            case MembershipCreateStatus.InvalidEmail:
-                lblResult.Text = "The email entered is invalid";
-                break;
-            case MembershipCreateStatus.DuplicateEmail:
-                lblResult.Text = "The email is already in use";
-                break;
-            case MembershipCreateStatus.InvalidPassword:
-                lblResult.Text = "The pasword must contain atleast 6 words, one Capital Letter and one Character";
-                break;
-            default:
-                lblResult.Text = "Some error occured";
-                break;
+            lblResult.Text = "Please fill all information";
         }
+        else
+        {
+            if (Txtmobile.Text.Length != 10)
+            {
+                lblResult.Text = "Please Enter Valid Mobile Number";
+            }
+            else
+            {
+                bool chk = true;
+                try
+                {
+                    int.Parse(Txtmobile.Text);
+                }
+                catch
+                {
+                    lblResult.Text = "Please Enter Valid Mobile Number";
+                    chk = false;
+                }
+                if (chk == true)
+                {
+                    CreateMembers();
+                    CreateMembership();
+                }
+
+            }
+        }
+
+        
     }
     public void dataload()
     {
@@ -73,6 +77,39 @@ public partial class Registration : System.Web.UI.Page
         
     }
 
+    protected void CreateMembership()
+    {
+        MembershipCreateStatus _status;
+
+        var user = Membership.CreateUser(Txtmobile.Text,"RaktadataA1!" + "A!#", TxtEmail.Text, null, null, true, out _status);
+        switch (_status)
+        {
+            case MembershipCreateStatus.Success:
+
+                Roles.AddUserToRole(Txtmobile.Text, "Members");
+                CreateMembers();
+                Session["UserName"] = Txtmobile.Text;
+                Response.Write("<script langauge='javascript'>windows.conform('Regesterd Succesfully!!!')</scritp>");
+                lblResult.Text = "Donar Registered";
+                break;
+            case MembershipCreateStatus.DuplicateUserName:
+                lblResult.Text = "The Mobile Number already Registered";
+                break;
+            case MembershipCreateStatus.InvalidEmail:
+                lblResult.Text = "The email entered is invalid";
+                break;
+            case MembershipCreateStatus.DuplicateEmail:
+                lblResult.Text = "The email is already in use";
+                break;
+            case MembershipCreateStatus.InvalidPassword:
+                lblResult.Text = "The pasword must contain atleast 6 words, one Capital Letter and one Character";
+                break;
+            default:
+                lblResult.Text = "Some error occured";
+                break;
+        }
+    }
+
     protected void CreateMembers()
     {
         MemberInfo _member = new MemberInfo();
@@ -85,4 +122,5 @@ public partial class Registration : System.Web.UI.Page
 
         BLLUser.CreateUser(_member);
     }
+
 }
