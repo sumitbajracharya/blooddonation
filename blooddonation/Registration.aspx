@@ -50,7 +50,7 @@
 
  <div class="form-group">
     <label for="exampleInputEmail1"><asp:Label ID="lblCaptcha" runat="server"></asp:Label></label>
-    <asp:TextBox ID="txtCaptcha" placeholder="Captcha" cssClass="form-control" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtCaptcha" placeholder="Result" cssClass="form-control" runat="server"></asp:TextBox>
   </div>
 
 <div class="row">

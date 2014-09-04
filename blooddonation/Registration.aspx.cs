@@ -8,14 +8,14 @@ using System.Web.Security;
 
 public partial class Registration : System.Web.UI.Page
 {
+    int result, sum;
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
         {
             dataload();
-           
-           
         }
+        setquestion();
     }
 
     protected void btnsubmit_Click(object sender, EventArgs e)
@@ -43,10 +43,17 @@ public partial class Registration : System.Web.UI.Page
                         lblResult.Text = "Mobile Number not valid";
                     }
                 }
-                    if (chk == true)
+                if (chk == true)
+                {
+                    if (result != int.Parse(txtCaptcha.Text))
+                    {
+                        lblResult.Text = "Incorrect Calculation Value";
+                    }
+                    else
                     {
                         CreateMembership();
                     }
+                }
 
             }
         }
@@ -122,6 +129,24 @@ public partial class Registration : System.Web.UI.Page
         _member.DistrictID = int.Parse(ddl_district.SelectedItem.Value);
 
         BLLUser.CreateUser(_member);
+    }
+
+    protected void setquestion()
+    {
+        Random rnd = new Random();
+        int numb1 = rnd.Next(1, 10);
+        int numb2 = rnd.Next(1, numb1);
+        int Calc = rnd.Next(1, 3);
+        if (Calc == 1)
+        {
+            lblCaptcha.Text=string.Format("what is the Result of {0} + {1} = ", numb1, numb2);
+            result = numb1 + numb2;
+        }
+        else
+        {
+            lblCaptcha.Text = string.Format("what is the Result of {0} - {1} = ", numb1, numb2);
+            result = numb1 - numb2;
+        }
     }
 
     
