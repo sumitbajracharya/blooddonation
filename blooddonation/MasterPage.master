@@ -180,9 +180,12 @@
                         onclick="btn_search_Click" CssClass="form-control btn-info"/>
         
       </div>
-      
+      <div class="row">
+    <div class="col-md-12">
 <asp:Label ID="lblMessage"  runat="server" ForeColor="Red"></asp:Label>
-           
+              </div>
+    </div>
+ 
 </div>
 </div>
 
