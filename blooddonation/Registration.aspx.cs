@@ -14,6 +14,7 @@ public partial class Registration : System.Web.UI.Page
         {
             dataload();
            
+           
         }
     }
 
@@ -27,25 +28,25 @@ public partial class Registration : System.Web.UI.Page
         {
             if (Txtmobile.Text.Length != 10)
             {
-                lblResult.Text = "Please Enter Valid Mobile Number";
+                lblResult.Text = "Please Enter Mobile Number";
             }
             else
             {
                 bool chk = true;
-                try
+                char[] numb= (Txtmobile.Text).ToCharArray(); 
+                int i=0;
+                foreach (char a in numb)
                 {
-                    int.Parse(Txtmobile.Text);
+                    if (numb[i] != '0' && numb[i] != '1' && numb[i] != '2' && numb[i] != '3' && numb[i] != '4' && numb[i] != '5' && numb[i] != '6' && numb[i] != '7' && numb[i] != '8' && numb[i] != '9')
+                    {
+                        chk = false;
+                        lblResult.Text = "Mobile Number not valid";
+                    }
                 }
-                catch
-                {
-                    lblResult.Text = "Please Enter Valid Mobile Number";
-                    chk = false;
-                }
-                if (chk == true)
-                {
-                    CreateMembers();
-                    CreateMembership();
-                }
+                    if (chk == true)
+                    {
+                        CreateMembership();
+                    }
 
             }
         }
@@ -89,8 +90,8 @@ public partial class Registration : System.Web.UI.Page
                 Roles.AddUserToRole(Txtmobile.Text, "Members");
                 CreateMembers();
                 Session["UserName"] = Txtmobile.Text;
-                Response.Write("<script langauge='javascript'>windows.conform('Regesterd Succesfully!!!')</scritp>");
-                lblResult.Text = "Donar Registered";
+                pnlRegister.Visible = false;
+                pnlsuccesful.Visible = true;
                 break;
             case MembershipCreateStatus.DuplicateUserName:
                 lblResult.Text = "The Mobile Number already Registered";
@@ -122,5 +123,7 @@ public partial class Registration : System.Web.UI.Page
 
         BLLUser.CreateUser(_member);
     }
+
+    
 
 }

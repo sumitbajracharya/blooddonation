@@ -106,8 +106,8 @@ public class BLLUser
             
         }
         return dt;
-        }        
-    
+        }
+
 
     public static DataTable GetMemeberWithBloodGroupNameAndDistrictName()
     {
@@ -117,15 +117,17 @@ public class BLLUser
             string Sp = "Usp_GetMemeberWithBloodGroupNameAndDistrictName";
             SqlCommand cmd = new SqlCommand(Sp, con);
             cmd.CommandType = CommandType.StoredProcedure;
-            
+
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
 
-            
+
         }
         return dt;
-        }        
+    }
 
+
+     
     
 
     public static List<MemberInfo> GetDeactiveMembers()
@@ -266,6 +268,38 @@ public class BLLUser
         SqlConnection Con = ConnectionHelper.GetConnection();
         SqlCommand cmd = new SqlCommand(sp, Con);
         cmd.Parameters.Add(new SqlParameter("@DistrictID", DistrictID));
+        cmd.Parameters.Add(new SqlParameter("@BloodGroup", BloodGroupID));
+        cmd.CommandType = CommandType.StoredProcedure;
+
+        DataTable dt = new DataTable();
+        SqlDataAdapter da = new SqlDataAdapter(cmd);
+        da.Fill(dt);
+
+        return dt;
+    }
+
+    public static DataTable GetDonorByDistrict(int DistrictID)
+    {
+        String sp = "Usp_GetMemeberbyDistrict";
+        SqlConnection Con = ConnectionHelper.GetConnection();
+        SqlCommand cmd = new SqlCommand(sp, Con);
+        cmd.Parameters.Add(new SqlParameter("@DistrictID", DistrictID));
+        
+        cmd.CommandType = CommandType.StoredProcedure;
+
+        DataTable dt = new DataTable();
+        SqlDataAdapter da = new SqlDataAdapter(cmd);
+        da.Fill(dt);
+
+        return dt;
+    }
+
+    public static DataTable GetDonorByBloodGroup(int BloodGroupID)
+    {
+        String sp = "Usp_GetMemeberbyBloodGroup";
+        SqlConnection Con = ConnectionHelper.GetConnection();
+        SqlCommand cmd = new SqlCommand(sp, Con);
+        
         cmd.Parameters.Add(new SqlParameter("@BloodGroup", BloodGroupID));
         cmd.CommandType = CommandType.StoredProcedure;
 

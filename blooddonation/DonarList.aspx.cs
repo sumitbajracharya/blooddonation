@@ -37,6 +37,16 @@ public partial class DonarList : System.Web.UI.Page
                 LblMessage.Text = ex.Message;
             }     
         }
+        else if(District==0 && BloodGroup!=0)
+	        {
+                gdvDonorList.DataSource = BLLUser.GetDonorByBloodGroup(BloodGroup);
+                gdvDonorList.DataBind(); 
+	        }
+        else if (District!=0 && BloodGroup ==0)
+        {
+            gdvDonorList.DataSource = BLLUser.GetDonorByDistrict(District);
+                gdvDonorList.DataBind(); 
+        }
 
         else
         {

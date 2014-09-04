@@ -12,8 +12,9 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
-<table class="table table-bordered">
+<asp:Panel ID="pnlRegister" runat="server" ScrollBars="None">
+<div class="table-responsive">
+<table class="table">
 
 
 <tr><td>Full Name</td><td><asp:TextBox ID="TxtFirstName" cssClass="form-control" runat="server"></asp:TextBox></td></tr>
@@ -39,13 +40,29 @@
 <asp:Label ID="lblResult" runat="server" ForeColor="Red"></asp:Label>
 <br />
 <asp:Button ID="btnsubmit" 
-        cssClass="btn btn-default" runat="server" Text="Sign Up" onclick="btnsubmit_Click" />
+        cssClass="btn btn-default" runat="server" Text="Register" onclick="btnsubmit_Click" />
         
         
     
         </td></tr>
 
-</table>
+</table></div>
+</asp:Panel>
+
+<asp:Panel ID="pnlsuccesful" runat="server" Visible="false">
+<br /><br /><br /><br />
+<center><h3><font color="Green">Registration Successful</font></h3>
+<br /><br />
+You will be contacted by seeker in Need
+
+<br />
+<br />
+<h4>Thank you!!!</h4>
+
+
+</center>
+
+</asp:Panel> 
     </div>
     </form>
 </body>

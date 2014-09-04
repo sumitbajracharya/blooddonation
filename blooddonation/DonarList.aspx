@@ -8,8 +8,8 @@
     <br/>
     <asp:Label ID="LblMessage" runat="server" Text=" "></asp:Label>
 
-
-    <asp:GridView ID="gdvDonorList" runat="server" AutoGenerateColumns="False" 
+    <div class="table-responsive">
+    <asp:GridView ID="gdvDonorList" runat="server" CssClass="table" AutoGenerateColumns="False" 
         CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
@@ -25,8 +25,7 @@
             <asp:BoundField DataField="FullName" HeaderText="Name" />
             <asp:BoundField DataField="BloodGroup" HeaderText="BloodGroup" />
             <asp:BoundField DataField="MobileNumber" HeaderText="Mobile no." />
-            <asp:BoundField DataField="Gender" HeaderText="Gender" />
-            <asp:BoundField DataField="DOB" HeaderText="Age" />
+          
             <asp:BoundField DataField="CurrentAddress" HeaderText="Address" />
         </Columns>
         <EditRowStyle BackColor="#999999" />
@@ -41,7 +40,7 @@
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
 
     </asp:GridView>
-
+    </div>
 
 </asp:Content>
 
