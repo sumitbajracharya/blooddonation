@@ -14,8 +14,9 @@ public partial class Registration : System.Web.UI.Page
         if (!IsPostBack)
         {
             dataload();
+            setquestion();
         }
-        setquestion();
+       
     }
 
     protected void btnsubmit_Click(object sender, EventArgs e)
