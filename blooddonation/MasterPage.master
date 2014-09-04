@@ -89,7 +89,7 @@
     <ul class="nav pull-right" style="position:absolute; right:15px;"> 
         <%--  <li class="pull-right"><a ID="SignIn" href='LogIn.aspx'>Sign In</a></li>--%>
 
-         <li class="pull-left"> <a ID="SignUp" href='Registration.aspx'>Register</a></li>
+         <li class="pull-left btn btn-default"> <a ID="SignUp" href='Registration.aspx'>Register</a></li>
      
       </ul>
 
