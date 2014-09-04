@@ -92,7 +92,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
     //}
 
     //protected void login()
-<<<<<<< .mine
+
     //{
     //    if (Membership.ValidateUser(txtUsername.Text, txtPassword.Text + "A!#"))
     //    {
@@ -106,22 +106,8 @@ public partial class MasterPage : System.Web.UI.MasterPage
     //    }
 
 
-=======
-    {
-        
-        if (Membership.ValidateUser(txtUsername.Text, txtPassword.Text + "A!#"))
-        {
-            FormsAuthentication.RedirectFromLoginPage(txtUsername.Text, false);
-            Session["UserName"] = txtUsername.Text;
-            //lblScuccessLin.Text = "Logined";
-            Response.Redirect("~/User/UserProfile.aspx");
-        }
-        else
-        {
-            lblMessage.Text = "Invalid Password";
-        }
->>>>>>> .theirs
 
+  
     //}
 
 
