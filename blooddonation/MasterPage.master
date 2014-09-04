@@ -51,8 +51,8 @@
                 .dialog({
                     autoOpen: false,
                     modal: true,
-                    height: 550,
-                    width: 550,
+                    height: 650,
+                    width: 350,
                     title: "Registration Form",
 
                     close: function (event, ui) {

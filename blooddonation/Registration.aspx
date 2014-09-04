@@ -11,31 +11,50 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-<asp:Panel ID="pnlRegister" runat="server" ScrollBars="None">
-<div class="table-responsive">
-<table class="table">
+    <div style="overflow:hidden;">
+<asp:Panel ID="pnlRegister" runat="server">
+<div class="row">
 
+<div class="col-xs-12">
+ <div class="form-group">
+    <label for="exampleInputEmail1">Full Name</label>
+  <asp:TextBox ID="TxtFirstName" placeholder="Full Name" cssClass="form-control" runat="server"></asp:TextBox>
+  </div>
 
-<tr><td>Full Name</td><td><asp:TextBox ID="TxtFirstName" cssClass="form-control" runat="server"></asp:TextBox></td></tr>
+ <div class="form-group">
+    <label for="exampleInputEmail1">Blood Group</label>
+    <asp:DropDownList ID="ddl_bloodgroup" 
+        cssClass="form-control" runat="server" Width="100%"></asp:DropDownList>
+  </div>
 
-<tr><td>Blood Group</td><td><asp:DropDownList ID="ddl_bloodgroup" 
-        cssClass="btn btn-default" runat="server" Width="50%"></asp:DropDownList></td></tr>
-<tr><td>Current District</td><td><asp:DropDownList ID="ddl_district" 
-        cssClass="btn btn-default" runat="server" Width="100%"></asp:DropDownList></td></tr>
-<tr><td>Current Address</td><td><asp:TextBox ID="txtLocation" 
-        cssClass="form-control" runat="server"></asp:TextBox></td></tr>
-<tr><td>Email Id</td><td><asp:TextBox ID="TxtEmail" cssClass="form-control" runat="server"></asp:TextBox></td></tr>
-<tr><td>Mobile Number</td><td> <asp:TextBox ID="Txtmobile" cssClass="form-control" runat="server"></asp:TextBox></td></tr>
+ <div class="form-group">
+    <label for="exampleInputEmail1">Current District</label>
+  <asp:DropDownList ID="ddl_district" 
+        cssClass="form-control" runat="server" Width="100%"></asp:DropDownList>
+  </div>
 
-<%--<tr><td>Password</td><td> <asp:TextBox ID="TxtPassword" cssClass="form-control" runat="server" TextMode="Password"></asp:TextBox></td></tr>--%>
-<tr>
-    <td><asp:Label ID="lblCaptcha" runat="server"></asp:Label></td>
-    <td> <asp:TextBox ID="txtCaptcha" cssClass="form-control" runat="server"></asp:TextBox></td>
-</tr>
+ <div class="form-group">
+    <label for="exampleInputEmail1">Current address</label>
+    <asp:TextBox ID="txtLocation" 
+        cssClass="form-control" placeholder="Current Address" runat="server"></asp:TextBox>
+  </div>
 
+ <div class="form-group">
+    <label for="exampleInputEmail1">Email Id</label>
+    <asp:TextBox ID="TxtEmail" placeholder="Email Id" cssClass="form-control" runat="server"></asp:TextBox>
+  </div>
+ <div class="form-group">
+    <label for="exampleInputEmail1">Mobile Number</label>
+    <asp:TextBox ID="Txtmobile" placeholder="Mobile Number" cssClass="form-control" runat="server"></asp:TextBox>
+  </div>
 
-<tr><td colspan="2" align="center"> 
+ <div class="form-group">
+    <label for="exampleInputEmail1"><asp:Label ID="lblCaptcha" runat="server"></asp:Label></label>
+    <asp:TextBox ID="txtCaptcha" placeholder="Captcha" cssClass="form-control" runat="server"></asp:TextBox>
+  </div>
+
+<div class="row">
+<div class="col-md-12">
 
 <asp:Label ID="lblResult" runat="server" ForeColor="Red"></asp:Label>
 <br />
@@ -43,10 +62,11 @@
         cssClass="btn btn-default" runat="server" Text="Register" onclick="btnsubmit_Click" />
         
         
-    
-        </td></tr>
+</div>
+</div>
 
-</table></div>
+</div>
+</div>
 </asp:Panel>
 
 <asp:Panel ID="pnlsuccesful" runat="server" Visible="false">
