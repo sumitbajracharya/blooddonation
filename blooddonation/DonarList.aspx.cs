@@ -11,58 +11,17 @@ public partial class DonarList : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Request.QueryString["District"] != null)
+        if (Request.QueryString["Location&Bloodgroup"] != null)
         {
-
-            int _districtid = int.Parse(Request.QueryString["District"]);
-            int _Bloodgroup = int.Parse(Request.QueryString["BloodGroup"]);
-
-            LoadGrid(_districtid, _Bloodgroup);
-            
+            int _location = int.Parse(Request.QueryString["Location"]);
+            int _Bloodgroup = int.Parse(Request.QueryString["Bloodgroup"]);
+            LoadList(_location, _Bloodgroup);
         }
-        
     }
 
-    protected void LoadGrid(int District, int BloodGroup)
+    protected void LoadList(int Location, int BloodGroup)
     {
-        if (District ==0 && BloodGroup ==0)
-        {
-            try
-            {
-                gdvDonorList.DataSource = BLLUser.GetAllMemeberWithBloodGroupNameAndDistrictName();
-                gdvDonorList.DataBind(); 
-            }
-            catch (Exception ex)
-            {
-                LblMessage.Text = ex.Message;
-            }     
-        }
-        else if(District==0 && BloodGroup!=0)
-	        {
-                gdvDonorList.DataSource = BLLUser.GetDonorByBloodGroup(BloodGroup);
-                gdvDonorList.DataBind(); 
-	        }
-        else if (District!=0 && BloodGroup ==0)
-        {
-            gdvDonorList.DataSource = BLLUser.GetDonorByDistrict(District);
-                gdvDonorList.DataBind(); 
-        }
-
-        else
-        {
-
-        
-            try
-            {
-                gdvDonorList.DataSource = BLLUser.GetDonorByDistrictAndBloodGroup(District, BloodGroup);
-                gdvDonorList.DataBind();
-            }
-            catch (Exception ex)
-            {
-
-                LblMessage.Text = ex.Message;
-            }
-        }
+        rptrDonorList.DataSource = BLLUser.GetDonarByLocationAndBloodGroup(Location, BloodGroup);
+        rptrDonorList.DataBind();
     }
-    }
- 
+}

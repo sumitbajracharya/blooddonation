@@ -17,6 +17,5 @@ public class LocationInfo
     public int LocationId { get; set; }
     public string LocationName { get; set; }
     public int DistrictId { get; set; }
-    public string DistrictName { get; set; }
 
 }

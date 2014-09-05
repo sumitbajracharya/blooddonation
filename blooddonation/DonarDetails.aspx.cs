@@ -9,21 +9,6 @@ public partial class DonarDetails : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Request.QueryString["DonarID"] != null)
-        {
-            int _Donar = int.Parse(Request.QueryString["DonarID"]);
 
-            MemberInfo Member = BLLUser.GetMemberByUserID(_Donar);
-
-            ImgProfilePicture.ImageUrl = string.Format("../Assets/Images/UserImage/ProfilePicture/" + Member.ProfilePicture);
-            LblName.Text = Member.FullName;
-           
-            LblBestTime.Text = Member.BestTime;
-            LblBloodGroup.Text = BLLBloodGroup.GetBloodGroupByID(Member.BloodGroupId);
-            LblDOB.Text = (Member.DOB).ToString();
-            LblGender.Text = Member.Gender;
-          
-            
-        }
     }
 }

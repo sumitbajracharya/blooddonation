@@ -11,43 +11,66 @@
     <tr>
     
     <td class="col-sm-3">Name</td>
-    <td>
-        <asp:Label ID="LblName" runat="server" Text="Label"></asp:Label></td>
+    <td><%#Eval("Name")%></td>
     <td rowspan='4' class="col-sm-2">
-        <asp:Image ID="ImgProfilePicture" runat="server" Width="150" CssClass="img-thumbnail" ImageUrl="~/Assets/Images/Slider/slider1.jpg" />
+        <asp:Image ID="Image1" runat="server" Width="150" CssClass="img-thumbnail" ImageUrl="~/Assets/Images/Slider/slider1.jpg" />
    </td>
+    
      </tr>
 
     <tr>
     <td>Gender</td>
-    <td><asp:Label ID="LblGender" runat="server" Text="Label"></asp:Label></td>
+    <td><%#Eval("Gender")%></td>
     </tr>
 
     <tr>
     <td>Adderss</td>
-    <td><asp:Label ID="LblAddress" runat="server" Text="Label"></asp:Label></td>
+    <td><%#Eval("Address")%></td>
     </tr>
 
     <tr>
     <td>Blood Group</td>
-    <td><asp:Label ID="LblBloodGroup" runat="server" Text="Label"></asp:Label></td>
+    <td><%#Eval("BloodGroup")%></td>
     </tr>
 
     <tr>
     <td class="style1">Date of Birth</td>
-    <td colspan='2'><asp:Label ID="LblDOB" runat="server" Text="Label"></asp:Label></td>
+    <td colspan='2'><%#Eval("DateOfBirth")%></td>
     </tr>
 
     <tr>
     <td class="style1">Last Donation date</td>
-    <td colspan='2'><asp:Label ID="LblLastDonationdate" runat="server" Text="Label"></asp:Label></td>
+    <td colspan='2'><%#Eval("LastDonationDate")%></td>
     </tr>
 
+    <tr>
+    <td class="style1">Occupation</td>
+    <td colspan='2'><%#Eval("Occupation")%></td>
+    </tr>
 
+    <tr>
+    <td class="style1">Recent Medication</td>
+    <td colspan='2'><%#Eval("RecentMedication")%></td>
+    </tr>
+
+    <tr>
+    <td class="style1">Heridatory Disease</td>
+    <td colspan='2'><%#Eval("HeridotaryDisease")%></td>
+    </tr>
+
+    <tr>
+    <td class="style1">Weight</td>
+    <td colspan='2'><%#Eval("Weight")%></td>
+    </tr>
+
+    <tr>
+    <td class="style1">Habbit</td>
+    <td colspan='2'><%#Eval("Habbits")%></td>
+    </tr>
 
     <tr>
     <td class="style1">Best Avaliability</td>
-    <td colspan='2'><asp:Label ID="LblBestTime" runat="server" Text="Label"></asp:Label></td>
+    <td colspan='2'><%#Eval("BestAvalibility")%></td>
     </tr>
 
     <tr>

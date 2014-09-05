@@ -17,9 +17,9 @@ public class EmergencyBloodRequest
     public int RequestId { get; set; }
     public string FullName { get; set; }
     public int DistrictId { get; set; }
-    public int LocationId { get; set; }
+    public string LocationId { get; set; }
     public int BloodGroupId { get; set; }
-    public int MobileNo { get; set; }
+    public string PhoneNo { get; set; }
     public string Message { get; set; }
     public int Age { get; set; }
 }

@@ -35,10 +35,4 @@ public partial class Admin_WebSettings : System.Web.UI.Page
     {
         Response.Redirect("AddBloodCenter.aspx");
     }
-
-
-    protected void btnAddLocaton_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("AddLocation.aspx");
-    }
 }

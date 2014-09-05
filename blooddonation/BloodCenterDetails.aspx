@@ -7,82 +7,54 @@
 
 
 <div class="row">
-
-
-
-</div>
-
-
-
-<div class="row">
  
-
-
-
-  <div class="col-md-4  col-xs-12">
- 
-   <h4>Blood Center Lists</h4>
-  <ul class="list-group">
-
- 
-     <asp:Repeater ID="rptBloodCenterList" runat="server">
-              <HeaderTemplate>
-               
-              </HeaderTemplate>
-              <ItemTemplate>
-      
-  <li class="list-group-item"> <asp:LinkButton ID="lnkbtnEvent" runat="server" CommandArgument='<%#Eval("CenterID")  %>' OnClick="lnkbtnBloodCenter_click"><%#Eval("Name") %></asp:LinkButton></li>
-
-                    
-            </ItemTemplate>
-          </asp:Repeater>
-           </ul>
-   </div>
+  <div class="col-md-4  col-xs-12">  <asp:Image ID="Image1" runat="server" ImageUrl="~/Assets/Images/logo.png" CssClass="img-thumbnail"/></div>
 
    <div class="col-md-8 col-xs-12">
 
- <asp:Image ID="imgBloodCenter" runat="server" CssClass="img-thumbnail"/>
-
-
+ <div class="col-md-12 col-xs-12">
                     <h3>Nepal Red Cross</h3>
-                  
-             
+                   <b> Balkumari, Lalitpur</b>
+              </div>
               <div class="col-md-12 col-xs-12">
-                  <div class="col-md-6 col-xs-6" > <h5>Location</h5> </div>
-                  <div class="col-md-6 col-xs-6" ><h5>
-                      <asp:Label ID="lblLocation" runat="server"></asp:Label></h5></div>
+                  <div class="col-md-6 col-xs-6" > <h5>Location:</h5> </div>
+                  <div class="col-md-6 col-xs-6" ><h5>Pokhara</h5></div>
                   
 
               </div>
-       <%--       <div class="col-md-12 col-xs-12">
-                  <div class="col-md-6 col-xs-6"><h5>Available Services</h5></div>
-                  <div class="col-md-6 col-xs-6" ><h5><asp:Label ID="lblAvailableServices" runat="server"></asp:Label></h5></div>
+              <div class="col-md-12 col-xs-12">
+                  <div class="col-md-6 col-xs-6"><h5>Available Services:</h5></div>
+                  <div class="col-md-6 col-xs-6" ><h5>I dont know</h5></div>
      
-              </div>--%>
-            
+              </div>
+              <div class="col-md-12 col-xs-12">
+                  <div class="col-md-6 col-xs-6" ><h5>Contact NO:</h5></div>
+                  <div class="col-md-6 col-xs-6" ><h5>01-444444</h5></div>
+     
+              </div>
 
                <div class="col-md-12 col-xs-12">
-                  <div class="col-md-6 col-xs-6" ><h5>Contact No</h5></div>
-                  <div class="col-md-6 col-xs-6" ><h5><asp:Label ID="lblPhoneNumber" runat="server"></asp:Label></h5></div>
+                  <div class="col-md-6 col-xs-6" ><h5>Contact no:</h5></div>
+                  <div class="col-md-6 col-xs-6" ><h5>I dont know</h5></div>
                   
 
               </div>
 
-              <%-- <div class="col-md-12 col-xs-12">
-                  <div class="col-md-6 col-xs-6" ><h5>PO Box</h5></div>
-                  <div class="col-md-6 col-xs-6" ><h5><asp:Label ID="lblPOBox" runat="server"></asp:Label></h5></div>
+               <div class="col-md-12 col-xs-12">
+                  <div class="col-md-6 col-xs-6" ><h5>PO Box:</h5></div>
+                  <div class="col-md-6 col-xs-6" ><h5>I dont know</h5></div>
                   
 
-              </div>--%>
+              </div>
 
-             <%-- <div class="col-md-12 col-xs-12">
+              <div class="col-md-12 col-xs-12">
                   <h4>Blood Stocks</h4>
-                  </div>--%>
+                  </div>
 </div>
 </div>
 
 
-<%--<div class="row">
+<div class="row">
   <div class="col-md-12 col-xs-12 table-responsive"><table class="table table-bordered">
                       <tr>
                           <td>&nbsp;</td>
@@ -141,13 +113,11 @@
                       </tr>
                   </table></div>
 
-</div>--%>
+</div>
 
-<%--<div class="row">
+<div class="row">
   <div class="col-md-12 col-xs-12"><h4>Google Maps </h4></div>
   
-</div>--%>
-
-
+</div>
 </asp:Content>
 

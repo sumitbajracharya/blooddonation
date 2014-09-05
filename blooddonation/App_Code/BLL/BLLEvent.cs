@@ -26,17 +26,6 @@ public class BLLEvent
          return ConnectionHelper.GetTable("SELECT * FROM TblEvent where EventId=@EventId", param);
     }
 
-
-    public static DataTable GetEvent_ByUserId(int UserId)
-    {
-        SqlParameter[] param = new SqlParameter[]
-        {
-            new SqlParameter("@userId", UserId)
-        };
-
-        return ConnectionHelper.GetTable("SELECT * FROM TblEvent where UserId=@userId", param);
-    }
-
     public DataTable GetEvent_All()
     {
         return ConnectionHelper.GetTable("SELECT * FROM TblEvent", null);

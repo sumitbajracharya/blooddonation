@@ -17,8 +17,8 @@ public class EventInfo
     public int EventId { get; set; }
     public string EventTitle { get; set; }
     public DateTime Date { get; set; }
-    public DateTime StartingTime { get; set; }
-    public DateTime EndingTime { get; set; }
+    public int StartingTime { get; set; }
+    public int EndingTime { get; set; }
     public string Venue { get; set; }
     public string PostedBy { get; set; }
     public string Description { get; set; }
