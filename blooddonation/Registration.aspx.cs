@@ -8,7 +8,7 @@ using System.Web.Security;
 
 public partial class Registration : System.Web.UI.Page
 {
-    Public Static int result;
+    public static int result;
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
