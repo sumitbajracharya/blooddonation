@@ -8,7 +8,7 @@
     <br/>
     <asp:Label ID="LblMessage" runat="server" Text=" "></asp:Label>
 
-    <div class="table-responsive">
+    <div class="table-responsive" style="overflow:hidden;">
     <asp:GridView ID="gdvDonorList" runat="server" CssClass="table" AutoGenerateColumns="False" 
         CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
@@ -23,7 +23,7 @@
             </asp:TemplateField>
 
             <asp:BoundField DataField="FullName" HeaderText="Name" />
-            <asp:BoundField DataField="BloodGroup" HeaderText="BloodGroup" />
+           
             <asp:BoundField DataField="MobileNumber" HeaderText="Mobile no." />
           
             <asp:BoundField DataField="CurrentAddress" HeaderText="Address" />
