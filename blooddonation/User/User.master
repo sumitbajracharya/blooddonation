@@ -28,15 +28,21 @@
     
       
      <div class="row">
-  <div class="col-md-3">
+   <div class="col-md-3 col-sm-12 col-xs-12">
   <!-- Main Logo 225px x 224px -->
       <asp:Image ID="Image1" ImageUrl="~/Assets/Images/logo.png" runat="server" CssClass="img-responsive" /></div>
       <!-- header banner width 700 x 200 -->
-  <div class="col-md-9">  <asp:Image ID="Image4" height="200" Width="850" ImageUrl="~/Assets/Images/header.jpg" runat="server" CssClass="img-responsive" />
-      
-  <br /> <asp:Label ID="LblUser" runat="server" Text=" "></asp:Label><br />
-  <asp:LinkButton ID="lnbLogout" runat="server" onclick="lnbLogout_Click">Logout</asp:LinkButton>
+ <div class="col-md-9 col-sm-12 col-xs-12">
+   <ul class="nav pull-right"> 
+     <li class="pull-right"> <asp:LinkButton ID="lnbLogout" runat="server" onclick="lnbLogout_Click">Logout</asp:LinkButton></li>
+        <li class="pull-left"><a href=""> <asp:Label ID="LblUser" runat="server" Text=" "></asp:Label></a></li>
 
+       
+     
+      </ul>
+  
+  <a href="UserProfile.aspx"><asp:Image ID="Image4" ImageUrl="~/Assets/Images/header.jpg" runat="server" CssClass="img-rounded img-responsive" /></a>
+  
   
   </div>
 </div>
@@ -98,19 +104,20 @@
   <!-- Start Main Container  Home Page -->
 
 
-<div class="row">
+<%--<div class="row">
    <div class="col-md-3">
  <ul class="list-group">
   <li class="list-group-item"><a href="DashBoard.aspx">Dash Board</a></li>
  <li class="list-group-item"><a href="UserProfile.aspx">Profile </a></li>
 <li class="list-group-item"><a href="AdvanceBloodRequestForm.aspx"> Blood Requests</a></li>
+<li class="list-group-item"><a href="EventList.aspx"> Event</a></li>
   
 </ul>
   
   </div>
 
 
-  <div class="col-md-6"> 
+  <div class="col-md-6"> --%>
 
   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
@@ -119,7 +126,7 @@
        </div>
 
          <!-- Start Event -->
-  <div class="col-md-3">
+<%--  <div class="col-md-3">
   <h3 class="text-center"style="margin-top:0px; ">Events</h3>
   
      <div class="panel-group" id="accordion">
@@ -194,7 +201,7 @@ Blood donation campain in Koteswor<br /><br />
 
  <!-- End Event -->
 </div>
-
+--%>
 
  <!-- End Main Container  Home Page -->
 

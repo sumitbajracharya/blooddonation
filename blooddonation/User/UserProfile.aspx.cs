@@ -17,13 +17,20 @@ public partial class User_UserProfile : System.Web.UI.Page
             MemberInfo Member = BLLUser.GetMemberByUserName(name);
 
             ImgProfilePicture.ImageUrl = string.Format("../Assets/Images/UserImage/ProfilePicture/" + Member.ProfilePicture);
-            lblName.Text = string.Format(Member.FirstName + " " + Member.LastName);
-            lblAdderss.Text = Member.PermanentAddress;
+            lblName.Text = string.Format(Member.FullName);
+            //lblAdderss.Text = BLLLocation.GetLocationByID(Member.CurrentAddress);           
             lblBestTime.Text = Member.BestTime;
+            
             lblBloodGroup.Text = BLLBloodGroup.GetBloodGroupByID(Member.BloodGroupId);
-            lblDOB.Text = (Member.DOB).ToString();
+            if(Member.DOB.Date==DateTime.Now.Date)
+                lblDOB.Text = "No Information Avilable";
+            else
+                lblDOB.Text = (Member.DOB).ToString();
+            
             lblGender.Text= Member.Gender;
-            lblLastDonationdate.Text = (Member.LastDonationDate).ToString();
+            LblMobile.Text = Member.MobileNo;
+            lblEmail.Text = Member.Email;
+            lblPhone.Text = Member.PhoneNo;
         }
     }
 }

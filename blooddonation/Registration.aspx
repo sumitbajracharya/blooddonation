@@ -71,11 +71,7 @@
 
 <asp:Panel ID="pnlsuccesful" runat="server" Visible="false">
 <br /><br /><br /><br />
-
-<center>
-
-    <img alt="ImaBloodDonar" src="Assets/Images/ImABloodDonar.png" class="img-responsive img-rounded" />
-<h3><font color="Green">Registration Successful</font></h3>
+<center><h3><font color="Green">Registration Successful</font></h3>
 <br /><br />
 You will be contacted by seeker in Need
 

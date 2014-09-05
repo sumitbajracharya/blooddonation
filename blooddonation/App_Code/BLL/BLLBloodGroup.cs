@@ -40,6 +40,33 @@ public class BLLBloodGroup
         }
     }
 
+    //Get all blood group
+    public static List<BloodGroupInfo> GetAllBloodGroup()
+    {
+        using (SqlConnection con = ConnectionHelper.GetConnection())
+        {
+            string Sp = "Usp_get_AllBloodGroup";
+            SqlCommand cmd = new SqlCommand(Sp, con);
+            List<BloodGroupInfo> lstbloodgroup = new List<BloodGroupInfo>();
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            using (SqlDataReader _reader = cmd.ExecuteReader())
+            {
+                while (_reader.Read())
+                {
+                    lstbloodgroup.Add(new BloodGroupInfo
+                    {
+                        BloodGroupId = int.Parse(_reader["BloodGroupId"].ToString()),
+                        BloodGroup = _reader["BloodGroup"].ToString(),
+                       
+
+                    });
+                }
+            }
+            return lstbloodgroup;
+        }
+
+    }
     // Get Blood Group Name By ID
     public static String GetBloodGroupByID(int BloodID)
     {
