@@ -8,7 +8,7 @@
     
    
     <asp:Label ID="LblMessage" runat="server" Text=" "></asp:Label>
-
+  
     <div class="table-responsive">
     <asp:GridView ID="gdvDonorList" runat="server" CssClass="table" AutoGenerateColumns="False" 
         CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%">
@@ -42,6 +42,6 @@
 
     </asp:GridView>
     </div>
-
+   
 </asp:Content>
 

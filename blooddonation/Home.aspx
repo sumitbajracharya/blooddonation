@@ -7,7 +7,7 @@
 
 
 <div class="row">
-<div class="container">
+
   <div class="col-md-8 col-xs-12">
   
   <div class="panel panel-info">
@@ -40,12 +40,12 @@
   </div>
  
 
-</div>
+
 
 
 
 <div class="row">
-<div class="container">
+
   <div class="col-md-4 col-xs-12">
   
   <div class="panel panel-info">
@@ -57,9 +57,10 @@ Autoimmune diseases such as SLE, Rheumatoid Arthritis, Thyrotoxicosis.Been infec
   </div>
   
   
+
+  
+  
   </div>
-  
-  
   </div>
   
 
@@ -94,7 +95,7 @@ Safe blood is blood that does not contain viruses, bacteria, parasites, drugs or
   </div>
 
   </div>
-</div>
+
 
 
 
