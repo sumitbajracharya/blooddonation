@@ -17,34 +17,35 @@
 
 <div class="col-xs-12">
  <div class="form-group">
-    <label for="exampleInputEmail1">Full Name</label>
+
+   <%-- <label for="exampleInputEmail1">Full Name</label>--%>
   <asp:TextBox ID="TxtFirstName" placeholder="Full Name" cssClass="form-control" runat="server"></asp:TextBox>
   </div>
 
  <div class="form-group">
-    <label for="exampleInputEmail1">Blood Group</label>
+    <%--<label for="exampleInputEmail1">Blood Group</label>--%>
     <asp:DropDownList ID="ddl_bloodgroup" 
         cssClass="form-control" runat="server" Width="100%"></asp:DropDownList>
   </div>
 
  <div class="form-group">
-    <label for="exampleInputEmail1">Current District</label>
+    <%--<label for="exampleInputEmail1">Current District</label>--%>
   <asp:DropDownList ID="ddl_district" 
         cssClass="form-control" runat="server" Width="100%"></asp:DropDownList>
   </div>
 
  <div class="form-group">
-    <label for="exampleInputEmail1">Current address</label>
+    <%--<label for="exampleInputEmail1">Current address</label>--%>
     <asp:TextBox ID="txtLocation" 
         cssClass="form-control" placeholder="Current Address" runat="server"></asp:TextBox>
   </div>
 
  <div class="form-group">
-    <label for="exampleInputEmail1">Email Id</label>
+    <%--<label for="exampleInputEmail1">Email Id</label>--%>
     <asp:TextBox ID="TxtEmail" placeholder="Email Id" cssClass="form-control" runat="server"></asp:TextBox>
   </div>
  <div class="form-group">
-    <label for="exampleInputEmail1">Mobile Number</label>
+    <%--<label for="exampleInputEmail1">Mobile Number</label>--%>
     <asp:TextBox ID="Txtmobile" placeholder="Mobile Number" cssClass="form-control" runat="server"></asp:TextBox>
   </div>
 

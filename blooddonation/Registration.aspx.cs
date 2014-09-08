@@ -13,8 +13,8 @@ public partial class Registration : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            dataload();
             setquestion();
+            dataload();
         }
        
     }
@@ -134,13 +134,14 @@ public partial class Registration : System.Web.UI.Page
 
     protected void setquestion()
     {
+        
         Random rnd = new Random();
         int numb1 = rnd.Next(1, 10);
         int numb2 = rnd.Next(1, numb1);
         int Calc = rnd.Next(1, 3);
         if (Calc == 1)
         {
-            lblCaptcha.Text=string.Format("what is the Result of {0} + {1} = ", numb1, numb2);
+            lblCaptcha.Text =string.Format("what is the Result of {0} + {1} = ", numb1, numb2);
             result = numb1 + numb2;
         }
         else
