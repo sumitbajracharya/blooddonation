@@ -54,8 +54,18 @@ public partial class DonarList : System.Web.UI.Page
         
             try
             {
-                gdvDonorList.DataSource = BLLUser.GetDonorByDistrictAndBloodGroup(District, BloodGroup);
+                DataTable dt = BLLUser.GetDonorByDistrictAndBloodGroup(District, BloodGroup);
+                gdvDonorList.DataSource = dt;
                 gdvDonorList.DataBind();
+
+                if (dt.Rows.Count > 0)
+                {
+                    lblCount.Text = dt.Rows.Count.ToString() + " Donors Found!!!";
+                }
+                else 
+                {
+                    lblCount.Text = "No Donors Found !!!";
+                }
             }
             catch (Exception ex)
             {

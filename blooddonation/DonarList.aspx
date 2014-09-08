@@ -6,11 +6,14 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <br/>
+    <asp:Label ID="lblCount" runat="server" Font-Bold="False" Font-Size="Medium" 
+        ForeColor="Blue"></asp:Label>
     <asp:Label ID="LblMessage" runat="server" Text=" "></asp:Label>
 
     <div class="table-responsive" style="overflow:hidden;">
     <asp:GridView ID="gdvDonorList" runat="server" CssClass="table" AutoGenerateColumns="False" 
-        CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%">
+        CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%" 
+            AllowPaging="True">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
 
